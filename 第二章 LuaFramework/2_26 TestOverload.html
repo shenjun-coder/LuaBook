@@ -1,0 +1,1976 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.26 TestOverload · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="2_25 TestErrorStack.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../第一章 Lua程序设计/">
+            
+                <a href="../第一章 Lua程序设计/">
+            
+                    
+                    第一章 Lua程序设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第一章 Lua程序设计/1_1 类型与值.html">
+            
+                <a href="../第一章 Lua程序设计/1_1 类型与值.html">
+            
+                    
+                    1.1 类型与值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../第一章 Lua程序设计/1_2 表达式.html">
+            
+                <a href="../第一章 Lua程序设计/1_2 表达式.html">
+            
+                    
+                    1.2 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../第一章 Lua程序设计/1_3 语句.html">
+            
+                <a href="../第一章 Lua程序设计/1_3 语句.html">
+            
+                    
+                    1.3 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../第一章 Lua程序设计/1_4 函数.html">
+            
+                <a href="../第一章 Lua程序设计/1_4 函数.html">
+            
+                    
+                    1.4 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../第一章 Lua程序设计/1_5 迭代器与范型for.html">
+            
+                <a href="../第一章 Lua程序设计/1_5 迭代器与范型for.html">
+            
+                    
+                    1.5 迭代器与范型for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../第一章 Lua程序设计/1_6 协同程序.html">
+            
+                <a href="../第一章 Lua程序设计/1_6 协同程序.html">
+            
+                    
+                    1.6 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../第一章 Lua程序设计/1_7 数据结构.html">
+            
+                <a href="../第一章 Lua程序设计/1_7 数据结构.html">
+            
+                    
+                    1.7 数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../第一章 Lua程序设计/1_8 数据文件与持久性.html">
+            
+                <a href="../第一章 Lua程序设计/1_8 数据文件与持久性.html">
+            
+                    
+                    1.8 数据文件与持久性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../第一章 Lua程序设计/1_9 元表与元方法.html">
+            
+                <a href="../第一章 Lua程序设计/1_9 元表与元方法.html">
+            
+                    
+                    1.9 元表与元方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../第一章 Lua程序设计/1_10 环境.html">
+            
+                <a href="../第一章 Lua程序设计/1_10 环境.html">
+            
+                    
+                    1.10 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../第一章 Lua程序设计/1_11 模块与包.html">
+            
+                <a href="../第一章 Lua程序设计/1_11 模块与包.html">
+            
+                    
+                    1.11 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../第一章 Lua程序设计/1_12 面向对象编程.html">
+            
+                <a href="../第一章 Lua程序设计/1_12 面向对象编程.html">
+            
+                    
+                    1.12 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../第一章 Lua程序设计/1_13 弱引用table.html">
+            
+                <a href="../第一章 Lua程序设计/1_13 弱引用table.html">
+            
+                    
+                    1.13 弱引用table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../第一章 Lua程序设计/1_14 数学库.html">
+            
+                <a href="../第一章 Lua程序设计/1_14 数学库.html">
+            
+                    
+                    1.14 数学库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../第一章 Lua程序设计/1_15 table库.html">
+            
+                <a href="../第一章 Lua程序设计/1_15 table库.html">
+            
+                    
+                    1.15 table库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../第一章 Lua程序设计/1_16 字符串库.html">
+            
+                <a href="../第一章 Lua程序设计/1_16 字符串库.html">
+            
+                    
+                    1.16 字符串库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../第一章 Lua程序设计/1_17 I／O库.html">
+            
+                <a href="../第一章 Lua程序设计/1_17 I／O库.html">
+            
+                    
+                    1.17 I／O库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../第一章 Lua程序设计/1_18 用户自定义类型.html">
+            
+                <a href="../第一章 Lua程序设计/1_18 用户自定义类型.html">
+            
+                    
+                    1.18 用户自定义类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第二章 LuaFramework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2_1 HelloWorld.html">
+            
+                <a href="2_1 HelloWorld.html">
+            
+                    
+                    2.1 HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2_2 ScriptsFromFile.html">
+            
+                <a href="2_2 ScriptsFromFile.html">
+            
+                    
+                    2.2 ScriptsFromFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2_3 CallLuaFunction.html">
+            
+                <a href="2_3 CallLuaFunction.html">
+            
+                    
+                    2.3 CallLuaFunction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="2_4 AccessingLuaVariables.html">
+            
+                <a href="2_4 AccessingLuaVariables.html">
+            
+                    
+                    2.4 AccessingLuaVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="2_5 LuaCoroutine.html">
+            
+                <a href="2_5 LuaCoroutine.html">
+            
+                    
+                    2.5 LuaCoroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="2_6 LuaCoroutine2.html">
+            
+                <a href="2_6 LuaCoroutine2.html">
+            
+                    
+                    2.6 LuaCoroutine2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="2_7 LuaThread.html">
+            
+                <a href="2_7 LuaThread.html">
+            
+                    
+                    2.7 LuaThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="2_8 AccessingArray.html">
+            
+                <a href="2_8 AccessingArray.html">
+            
+                    
+                    2.8 AccessingArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="2_9 Dictionary.html">
+            
+                <a href="2_9 Dictionary.html">
+            
+                    
+                    2.9 Dictionary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="2_10 Enum.html">
+            
+                <a href="2_10 Enum.html">
+            
+                    
+                    2.10 Enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="2_11 Delegate.html">
+            
+                <a href="2_11 Delegate.html">
+            
+                    
+                    2.11 Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="2_12 GameObject.html">
+            
+                <a href="2_12 GameObject.html">
+            
+                    
+                    2.12 GameObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="2_13 CustomLoader.html">
+            
+                <a href="2_13 CustomLoader.html">
+            
+                    
+                    2.13 CustomLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="2_14 Out.html">
+            
+                <a href="2_14 Out.html">
+            
+                    
+                    2.14 Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="2_15 ProtoBuffer.html">
+            
+                <a href="2_15 ProtoBuffer.html">
+            
+                    
+                    2.15 ProtoBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="2_16 Int64.html">
+            
+                <a href="2_16 Int64.html">
+            
+                    
+                    2.16 Int64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="2_17 Inherit.html">
+            
+                <a href="2_17 Inherit.html">
+            
+                    
+                    2.17 Inherit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="2_18 Bundle.html">
+            
+                <a href="2_18 Bundle.html">
+            
+                    
+                    2.18 Bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="2_19 cjson.html">
+            
+                <a href="2_19 cjson.html">
+            
+                    
+                    2.19 cjson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="2_20 utf8.html">
+            
+                <a href="2_20 utf8.html">
+            
+                    
+                    2.20 utf8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="2_21 String.html">
+            
+                <a href="2_21 String.html">
+            
+                    
+                    2.21 String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="2_22 Reflection.html">
+            
+                <a href="2_22 Reflection.html">
+            
+                    
+                    2.22 Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="2_23 List.html">
+            
+                <a href="2_23 List.html">
+            
+                    
+                    2.23 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="2_24 Performance.html">
+            
+                <a href="2_24 Performance.html">
+            
+                    
+                    2.24 Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="2_25 TestErrorStack.html">
+            
+                <a href="2_25 TestErrorStack.html">
+            
+                    
+                    2.25 TestErrorStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.26" data-path="2_26 TestOverload.html">
+            
+                <a href="2_26 TestOverload.html">
+            
+                    
+                    2.26 TestOverload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.26 TestOverload</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="testoverloadcs">TestOverload.cs</h4>
+<pre><code class="lang-csharp">    <span class="hljs-keyword">using</span> UnityEngine;
+    <span class="hljs-keyword">using</span> System.Collections;
+    <span class="hljs-keyword">using</span> LuaInterface;
+    <span class="hljs-keyword">using</span> System;
+    <span class="hljs-keyword">using</span> System.Reflection;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestEnum</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TestEnum</span>(<span class="hljs-params"></span>)
+        </span>{
+
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test</span>(<span class="hljs-params">UnityEngine.Space e</span>)
+        </span>{
+
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestExport</span>
+    {
+        [LuaByteBufferAttribute]
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">delegate</span> <span class="hljs-keyword">void</span> <span class="hljs-title">TestBuffer</span>(<span class="hljs-params"><span class="hljs-keyword">byte</span>[] buffer</span>)</span>;       
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Space
+        {
+            World = <span class="hljs-number">1</span>
+        }
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> field = <span class="hljs-number">1024</span>;
+
+        <span class="hljs-keyword">public</span> System.Action OnClick = <span class="hljs-keyword">delegate</span> { };
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">delegate</span> <span class="hljs-keyword">void</span> <span class="hljs-title">TestRefEvent</span>(<span class="hljs-params"><span class="hljs-keyword">ref</span> GameObject go</span>)</span>;
+
+        <span class="hljs-keyword">public</span> TestRefEvent OnRefEvent;
+
+        <span class="hljs-comment">//public int Item { get; set; }</span>
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> number = <span class="hljs-number">123</span>;
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Number
+        {
+            <span class="hljs-keyword">get</span>
+            {            
+                <span class="hljs-keyword">return</span> number;
+            }
+
+            <span class="hljs-keyword">set</span>
+            {            
+                number = <span class="hljs-keyword">value</span>;            
+            }
+        }
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-keyword">this</span>[<span class="hljs-keyword">int</span> pos]
+        {
+            <span class="hljs-keyword">get</span> { <span class="hljs-keyword">return</span> pos; }
+            <span class="hljs-keyword">set</span> { Debugger.Log(<span class="hljs-keyword">value</span>); }
+        }
+
+        [LuaByteBufferAttribute]
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">byte</span>[] buffer;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_Item</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> pos</span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_Item</span>(<span class="hljs-params"><span class="hljs-keyword">double</span> pos</span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">set_Item</span>(<span class="hljs-params"><span class="hljs-keyword">double</span> pos</span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">TestByteBuffer</span>(<span class="hljs-params">TestBuffer tb</span>)
+        </span>{
+
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> o, <span class="hljs-keyword">string</span> str</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(object o, string str)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+        }
+
+        [LuaRenameAttribute(Name = <span class="hljs-string">&quot;TestChar&quot;</span>)]
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">char</span> c</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(char c)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">bool</span> b</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(bool b)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">15</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">int</span>[,] objs</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(int[,] objs)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">16</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> i</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(int i)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">3</span>;
+        }
+
+        <span class="hljs-comment">//&#x6709;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x8981;&#x6254;&#x6389;&#x4E0A;&#x9762;&#x4E24;&#x4E2A;&#x7CBE;&#x5EA6;&#x4E0D;&#x5339;&#x914D;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;lua&#x662F;double</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">double</span> d</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(double d)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">4</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">out</span> <span class="hljs-keyword">int</span> i</span>)
+        </span>{
+            i = <span class="hljs-number">1024</span>;
+            Debugger.Log(<span class="hljs-string">&quot;call Test(ref int i)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">3</span>;
+        }
+
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> i, <span class="hljs-keyword">int</span> j</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(int i, int j)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">5</span>;
+        }
+
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> str</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(string str)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">6</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> str1, <span class="hljs-keyword">string</span> str2</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call static Test(string str1, string str2)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">7</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> o</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(object o)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">8</span>;
+        }    
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">params</span> <span class="hljs-keyword">int</span>[] objs</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(params int[] objs)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">12</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">params</span> <span class="hljs-keyword">string</span>[] objs</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(params int[] objs)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">13</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params"><span class="hljs-keyword">params</span> <span class="hljs-keyword">object</span>[] objs</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(params object[] objs)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params">Space e</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call Test(Space e)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">10</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test33</span>(<span class="hljs-params"><span class="hljs-keyword">ref</span> System.Action&lt;<span class="hljs-keyword">int</span>&gt; action</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;ref System.Action action&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">14</span>;
+        }
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> TestGeneric&lt;T&gt; (T t) <span class="hljs-keyword">where</span> T : Component
+        {
+            Debugger.Log(<span class="hljs-string">&quot;TestGeneric(T t) Call&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">11</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestEnum</span>(<span class="hljs-params">Space e</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call TestEnum(Space e)&quot;</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">10</span>;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestCheckParamNumber</span>(<span class="hljs-params"><span class="hljs-keyword">params</span> <span class="hljs-keyword">int</span>[] ns</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call TestCheckParamNumber(params int[] ns)&quot;</span>);
+            <span class="hljs-keyword">int</span> n = <span class="hljs-number">0</span>;
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; ns.Length; i++)
+            {
+                n += ns[i];
+            }
+
+            <span class="hljs-keyword">return</span> n;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> <span class="hljs-title">TestCheckParamString</span>(<span class="hljs-params"><span class="hljs-keyword">params</span> <span class="hljs-keyword">string</span>[] ss</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call TestCheckParamNumber(params string[] ss)&quot;</span>);
+            <span class="hljs-keyword">string</span> str = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; ss.Length; i++)
+            {
+                str += ss[i];
+            }
+
+            <span class="hljs-keyword">return</span> str;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">TestReflection</span>(<span class="hljs-params"></span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call TestReflection()&quot;</span>);        
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">TestRefGameObject</span>(<span class="hljs-params"><span class="hljs-keyword">ref</span> GameObject go</span>)
+        </span>{
+
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoClick</span>(<span class="hljs-params"></span>)
+        </span>{
+            OnClick();
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TestExport</span>(<span class="hljs-params"></span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call TestExport()&quot;</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TestExport</span>(<span class="hljs-params">Vector3[] v</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call TestExport(params Vector3[] v)&quot;</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TestExport</span>(<span class="hljs-params">Vector3 v, <span class="hljs-keyword">string</span> str</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call TestExport(Vector3 v, string str)&quot;</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TestExport</span>(<span class="hljs-params">Vector3 v</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;call TestExport(Vector3 v)&quot;</span>);
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestOverload</span> : <span class="hljs-title">MonoBehaviour</span>
+    {
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">string</span> script =
+    <span class="hljs-string">@&quot;                  
+            require &apos;TestExport&apos;                                        
+            local out = require &apos;tolua.out&apos;
+            local GameObject = UnityEngine.GameObject                                
+
+            function Test(to)            
+                assert(to:Test(1) == 4)            
+                local flag, num = to:Test(out.int)
+                assert(flag == 3 and num == 1024, &apos;Test(out)&apos;)
+                assert(to:Test(&apos;hello&apos;) == 6, &apos;Test(string)&apos;)
+                assert(to:Test(System.Object.New()) == 8)            
+                assert(to:Test(true) == 15)
+                assert(to:Test(123, 456) == 5)            
+                assert(to:Test(&apos;123&apos;, &apos;456&apos;) == 1)
+                assert(to:Test(System.Object.New(), &apos;456&apos;) == 1)
+                assert(to:Test(&apos;123&apos;, 456) == 9)
+                assert(to:Test(&apos;123&apos;, System.Object.New()) == 9)
+                assert(to:Test(1,2,3) == 12)            
+                assert(to:TestGeneric(GameObject().transform) == 11)
+                assert(to:TestCheckParamNumber(1,2,3) == 6)
+                assert(to:TestCheckParamString(&apos;1&apos;, &apos;2&apos;, &apos;3&apos;) == &apos;123&apos;)
+                assert(to:Test(TestExport.Space.World) == 10)        
+                print(to.this:get(123))
+                to.this:set(1, 456)           
+            end
+        &quot;</span>;
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Awake</span> (<span class="hljs-params"></span>)
+        </span>{
+            LuaState state = <span class="hljs-keyword">new</span> LuaState();
+            state.Start();
+            LuaBinder.Bind(state);
+            Bind(state);
+            state.DoString(script, <span class="hljs-string">&quot;TestOverload.cs&quot;</span>);
+
+            TestExport to = <span class="hljs-keyword">new</span> TestExport();
+            LuaFunction func = state.GetFunction(<span class="hljs-string">&quot;Test&quot;</span>);
+            func.Call(to);          
+            state.Dispose();                     
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Bind</span>(<span class="hljs-params">LuaState state</span>)
+        </span>{
+            state.BeginModule(<span class="hljs-keyword">null</span>);
+            TestExportWrap.Register(state);
+            state.BeginModule(<span class="hljs-string">&quot;TestExport&quot;</span>);
+            TestExport_SpaceWrap.Register(state);
+            state.EndModule();
+            state.EndModule();
+        }
+    }
+</code></pre>
+<p>&#x2003;</p>
+<h4 id="testexportwrapcs">TestExportWrap.cs</h4>
+<pre><code class="lang-csharp">    <span class="hljs-comment">//this source code was auto-generated by tolua#, do not modify it</span>
+    <span class="hljs-keyword">using</span> System;
+    <span class="hljs-keyword">using</span> LuaInterface;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestExportWrap</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Register</span>(<span class="hljs-params">LuaState L</span>)
+        </span>{
+            L.BeginClass(<span class="hljs-keyword">typeof</span>(TestExport), <span class="hljs-keyword">typeof</span>(System.Object));
+            L.RegFunction(<span class="hljs-string">&quot;.geti&quot;</span>, get_Item);
+            L.RegFunction(<span class="hljs-string">&quot;get_Item&quot;</span>, get_Item);
+            L.RegFunction(<span class="hljs-string">&quot;.seti&quot;</span>, set_Item);
+            L.RegFunction(<span class="hljs-string">&quot;set_Item&quot;</span>, set_Item);
+            L.RegFunction(<span class="hljs-string">&quot;TestByteBuffer&quot;</span>, TestByteBuffer);
+            L.RegFunction(<span class="hljs-string">&quot;Test&quot;</span>, Test);
+            L.RegFunction(<span class="hljs-string">&quot;TestChar&quot;</span>, TestChar);
+            L.RegFunction(<span class="hljs-string">&quot;Test33&quot;</span>, Test33);
+            L.RegFunction(<span class="hljs-string">&quot;TestGeneric&quot;</span>, TestGeneric);
+            L.RegFunction(<span class="hljs-string">&quot;TestEnum&quot;</span>, TestEnum);
+            L.RegFunction(<span class="hljs-string">&quot;TestCheckParamNumber&quot;</span>, TestCheckParamNumber);
+            L.RegFunction(<span class="hljs-string">&quot;TestCheckParamString&quot;</span>, TestCheckParamString);
+            L.RegFunction(<span class="hljs-string">&quot;TestReflection&quot;</span>, TestReflection);
+            L.RegFunction(<span class="hljs-string">&quot;TestRefGameObject&quot;</span>, TestRefGameObject);
+            L.RegFunction(<span class="hljs-string">&quot;DoClick&quot;</span>, DoClick);
+            L.RegFunction(<span class="hljs-string">&quot;New&quot;</span>, _CreateTestExport);
+            L.RegVar(<span class="hljs-string">&quot;this&quot;</span>, _this, <span class="hljs-keyword">null</span>);
+            L.RegFunction(<span class="hljs-string">&quot;__tostring&quot;</span>, ToLua.op_ToString);
+            L.RegVar(<span class="hljs-string">&quot;field&quot;</span>, get_field, set_field);
+            L.RegVar(<span class="hljs-string">&quot;OnClick&quot;</span>, get_OnClick, set_OnClick);
+            L.RegVar(<span class="hljs-string">&quot;OnRefEvent&quot;</span>, get_OnRefEvent, set_OnRefEvent);
+            L.RegVar(<span class="hljs-string">&quot;buffer&quot;</span>, get_buffer, set_buffer);
+            L.RegVar(<span class="hljs-string">&quot;Number&quot;</span>, get_Number, set_Number);
+            L.RegFunction(<span class="hljs-string">&quot;TestBuffer&quot;</span>, TestExport_TestBuffer);
+            L.RegFunction(<span class="hljs-string">&quot;TestRefEvent&quot;</span>, TestExport_TestRefEvent);
+            L.EndClass();
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> _CreateTestExport(IntPtr L)
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">int</span> count = LuaDLL.lua_gettop(L);
+
+                <span class="hljs-keyword">if</span> (count == <span class="hljs-number">0</span>)
+                {
+                    TestExport obj = <span class="hljs-keyword">new</span> TestExport();
+                    ToLua.PushObject(L, obj);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">1</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(UnityEngine.Vector3</span>)))
+                </span>{
+                    UnityEngine.Vector3 arg0 = ToLua.ToVector3(L, <span class="hljs-number">1</span>);
+                    TestExport obj = <span class="hljs-keyword">new</span> TestExport(arg0);
+                    ToLua.PushObject(L, obj);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">1</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(UnityEngine.Vector3[]</span>)))
+                </span>{
+                    UnityEngine.Vector3[] arg0 = ToLua.CheckObjectArray&lt;UnityEngine.Vector3&gt;(L, <span class="hljs-number">1</span>);
+                    TestExport obj = <span class="hljs-keyword">new</span> TestExport(arg0);
+                    ToLua.PushObject(L, obj);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(UnityEngine.Vector3</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">string</span></span>)))
+                </span>{
+                    UnityEngine.Vector3 arg0 = ToLua.ToVector3(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">string</span> arg1 = ToLua.CheckString(L, <span class="hljs-number">2</span>);
+                    TestExport obj = <span class="hljs-keyword">new</span> TestExport(arg0, arg1);
+                    ToLua.PushObject(L, obj);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    <span class="hljs-keyword">return</span> LuaDLL.luaL_throw(L, <span class="hljs-string">&quot;invalid arguments to ctor method: TestExport.New&quot;</span>);
+                }
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> _get_this(IntPtr L)
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">2</span>);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                <span class="hljs-keyword">int</span> arg0 = (<span class="hljs-keyword">int</span>)LuaDLL.luaL_checknumber(L, <span class="hljs-number">2</span>);
+                <span class="hljs-keyword">int</span> o = obj[arg0];
+                LuaDLL.lua_pushinteger(L, o);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> _set_this(IntPtr L)
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">3</span>);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                <span class="hljs-keyword">int</span> arg0 = (<span class="hljs-keyword">int</span>)LuaDLL.luaL_checknumber(L, <span class="hljs-number">2</span>);
+                <span class="hljs-keyword">int</span> arg1 = (<span class="hljs-keyword">int</span>)LuaDLL.luaL_checknumber(L, <span class="hljs-number">3</span>);
+                obj[arg0] = arg1;
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> _this(IntPtr L)
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                LuaDLL.lua_pushvalue(L, <span class="hljs-number">1</span>);
+                LuaDLL.tolua_bindthis(L, _get_this, _set_this);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_Item</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">int</span> count = LuaDLL.lua_gettop(L);
+
+                <span class="hljs-keyword">if</span> (count == <span class="hljs-number">1</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">double</span>)))
+                {
+                    <span class="hljs-keyword">double</span> arg0 = (<span class="hljs-keyword">double</span>)LuaDLL.lua_tonumber(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> o = TestExport.get_Item(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">1</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">string</span></span>)))
+                </span>{
+                    <span class="hljs-keyword">string</span> arg0 = ToLua.ToString(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> o = TestExport.get_Item(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">int</span></span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> arg0 = (<span class="hljs-keyword">int</span>)LuaDLL.lua_tonumber(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> o = obj[arg0];
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    <span class="hljs-keyword">return</span> LuaDLL.luaL_throw(L, <span class="hljs-string">&quot;invalid arguments to method: TestExport.get_Item&quot;</span>);
+                }
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">set_Item</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">int</span> count = LuaDLL.lua_gettop(L);
+
+                <span class="hljs-keyword">if</span> (count == <span class="hljs-number">1</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">double</span>)))
+                {
+                    <span class="hljs-keyword">double</span> arg0 = (<span class="hljs-keyword">double</span>)LuaDLL.lua_tonumber(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> o = TestExport.set_Item(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">3</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">int</span></span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">int</span></span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> arg0 = (<span class="hljs-keyword">int</span>)LuaDLL.lua_tonumber(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> arg1 = (<span class="hljs-keyword">int</span>)LuaDLL.lua_tonumber(L, <span class="hljs-number">3</span>);
+                    obj[arg0] = arg1;
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    <span class="hljs-keyword">return</span> LuaDLL.luaL_throw(L, <span class="hljs-string">&quot;invalid arguments to method: TestExport.set_Item&quot;</span>);
+                }
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestByteBuffer</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">2</span>);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                TestExport.TestBuffer arg0 = <span class="hljs-keyword">null</span>;
+                LuaTypes funcType2 = LuaDLL.lua_type(L, <span class="hljs-number">2</span>);
+
+                <span class="hljs-keyword">if</span> (funcType2 != LuaTypes.LUA_TFUNCTION)
+                {
+                     arg0 = (TestExport.TestBuffer)ToLua.CheckObject(L, <span class="hljs-number">2</span>, <span class="hljs-keyword">typeof</span>(TestExport.TestBuffer));
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    LuaFunction func = ToLua.ToLuaFunction(L, <span class="hljs-number">2</span>);
+                    arg0 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestExport.TestBuffer), func) <span class="hljs-keyword">as</span> TestExport.TestBuffer;
+                }
+
+                obj.TestByteBuffer(arg0);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">int</span> count = LuaDLL.lua_gettop(L);
+
+                <span class="hljs-keyword">if</span> (count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport), <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">string</span>)))
+                {
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">string</span> arg0 = ToLua.ToString(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params">LuaInterface.LuaOut&lt;<span class="hljs-keyword">int</span>&gt;</span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> arg0;
+                    <span class="hljs-keyword">int</span> o = obj.Test(<span class="hljs-keyword">out</span> arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    LuaDLL.lua_pushinteger(L, arg0);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params">TestExport.Space</span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    TestExport.Space arg0 = (TestExport.Space)ToLua.ToObject(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">string</span></span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">string</span></span>)))
+                </span>{
+                    <span class="hljs-keyword">string</span> arg0 = ToLua.ToString(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">string</span> arg1 = ToLua.ToString(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> o = TestExport.Test(arg0, arg1);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">int</span>[,]</span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span>[,] arg0 = (<span class="hljs-keyword">int</span>[,])ToLua.ToObject(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">bool</span></span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">bool</span> arg0 = LuaDLL.lua_toboolean(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">double</span></span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">double</span> arg0 = (<span class="hljs-keyword">double</span>)LuaDLL.lua_tonumber(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">object</span></span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">object</span> arg0 = ToLua.ToVarObject(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">3</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">int</span></span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">int</span></span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> arg0 = (<span class="hljs-keyword">int</span>)LuaDLL.lua_tonumber(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">int</span> arg1 = (<span class="hljs-keyword">int</span>)LuaDLL.lua_tonumber(L, <span class="hljs-number">3</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0, arg1);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">3</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">object</span></span>), <span class="hljs-title">typeof</span>(<span class="hljs-params"><span class="hljs-keyword">string</span></span>)))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">object</span> arg0 = ToLua.ToVarObject(L, <span class="hljs-number">2</span>);
+                    <span class="hljs-keyword">string</span> arg1 = ToLua.ToString(L, <span class="hljs-number">3</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0, arg1);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">TypeChecker.CheckParamsType(L, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">string</span></span>), 2, count - 1))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">string</span>[] arg0 = ToLua.ToParamsString(L, <span class="hljs-number">2</span>, count - <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">TypeChecker.CheckParamsType(L, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">int</span></span>), 2, count - 1))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span>[] arg0 = ToLua.ToParamsNumber&lt;<span class="hljs-keyword">int</span>&gt;(L, <span class="hljs-number">2</span>, count - <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">TypeChecker.CheckParamsType(L, <span class="hljs-keyword">typeof</span>(<span class="hljs-keyword">object</span></span>), 2, count - 1))
+                </span>{
+                    TestExport obj = (TestExport)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">object</span>[] arg0 = ToLua.ToParamsObject(L, <span class="hljs-number">2</span>, count - <span class="hljs-number">1</span>);
+                    <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                    LuaDLL.lua_pushinteger(L, o);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    <span class="hljs-keyword">return</span> LuaDLL.luaL_throw(L, <span class="hljs-string">&quot;invalid arguments to method: TestExport.Test&quot;</span>);
+                }
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestChar</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">2</span>);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                <span class="hljs-keyword">char</span> arg0 = (<span class="hljs-keyword">char</span>)LuaDLL.luaL_checknumber(L, <span class="hljs-number">2</span>);
+                <span class="hljs-keyword">int</span> o = obj.Test(arg0);
+                LuaDLL.lua_pushinteger(L, o);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Test33</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">2</span>);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                System.Action&lt;<span class="hljs-keyword">int</span>&gt; arg0 = <span class="hljs-keyword">null</span>;
+                LuaTypes funcType2 = LuaDLL.lua_type(L, <span class="hljs-number">2</span>);
+
+                <span class="hljs-keyword">if</span> (funcType2 != LuaTypes.LUA_TFUNCTION)
+                {
+                     arg0 = (System.Action&lt;<span class="hljs-keyword">int</span>&gt;)ToLua.CheckObject(L, <span class="hljs-number">2</span>, <span class="hljs-keyword">typeof</span>(System.Action&lt;<span class="hljs-keyword">int</span>&gt;));
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    LuaFunction func = ToLua.ToLuaFunction(L, <span class="hljs-number">2</span>);
+                    arg0 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(System.Action&lt;<span class="hljs-keyword">int</span>&gt;), func) <span class="hljs-keyword">as</span> System.Action&lt;<span class="hljs-keyword">int</span>&gt;;
+                }
+
+                <span class="hljs-keyword">int</span> o = obj.Test33(<span class="hljs-keyword">ref</span> arg0);
+                LuaDLL.lua_pushinteger(L, o);
+                ToLua.Push(L, arg0);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestGeneric</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">2</span>);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                UnityEngine.Component arg0 = (UnityEngine.Component)ToLua.CheckUnityObject(L, <span class="hljs-number">2</span>, <span class="hljs-keyword">typeof</span>(UnityEngine.Component));
+                <span class="hljs-keyword">int</span> o = obj.TestGeneric(arg0);
+                LuaDLL.lua_pushinteger(L, o);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestEnum</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">2</span>);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                TestExport.Space arg0 = (TestExport.Space)ToLua.CheckObject(L, <span class="hljs-number">2</span>, <span class="hljs-keyword">typeof</span>(TestExport.Space));
+                <span class="hljs-keyword">int</span> o = obj.TestEnum(arg0);
+                LuaDLL.lua_pushinteger(L, o);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestCheckParamNumber</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">int</span> count = LuaDLL.lua_gettop(L);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                <span class="hljs-keyword">int</span>[] arg0 = ToLua.CheckParamsNumber&lt;<span class="hljs-keyword">int</span>&gt;(L, <span class="hljs-number">2</span>, count - <span class="hljs-number">1</span>);
+                <span class="hljs-keyword">int</span> o = obj.TestCheckParamNumber(arg0);
+                LuaDLL.lua_pushinteger(L, o);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestCheckParamString</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">int</span> count = LuaDLL.lua_gettop(L);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                <span class="hljs-keyword">string</span>[] arg0 = ToLua.CheckParamsString(L, <span class="hljs-number">2</span>, count - <span class="hljs-number">1</span>);
+                <span class="hljs-keyword">string</span> o = obj.TestCheckParamString(arg0);
+                LuaDLL.lua_pushstring(L, o);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestReflection</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">0</span>);
+                TestExport.TestReflection();
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestRefGameObject</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">1</span>);
+                UnityEngine.GameObject arg0 = (UnityEngine.GameObject)ToLua.CheckUnityObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(UnityEngine.GameObject));
+                TestExport.TestRefGameObject(<span class="hljs-keyword">ref</span> arg0);
+                ToLua.Push(L, arg0);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">DoClick</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestExport));
+                obj.DoClick();
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_field</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                <span class="hljs-keyword">int</span> ret = obj.field;
+                LuaDLL.lua_pushinteger(L, ret);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index field on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_OnClick</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                System.Action ret = obj.OnClick;
+                ToLua.Push(L, ret);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index OnClick on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_OnRefEvent</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                TestExport.TestRefEvent ret = obj.OnRefEvent;
+                ToLua.Push(L, ret);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index OnRefEvent on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_buffer</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                <span class="hljs-keyword">byte</span>[] ret = obj.buffer;
+                LuaDLL.tolua_pushlstring(L, ret, ret.Length);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index buffer on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_Number</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                <span class="hljs-keyword">int</span> ret = obj.Number;
+                LuaDLL.lua_pushinteger(L, ret);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index Number on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">set_field</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                <span class="hljs-keyword">int</span> arg0 = (<span class="hljs-keyword">int</span>)LuaDLL.luaL_checknumber(L, <span class="hljs-number">2</span>);
+                obj.field = arg0;
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index field on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">set_OnClick</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                System.Action arg0 = <span class="hljs-keyword">null</span>;
+                LuaTypes funcType2 = LuaDLL.lua_type(L, <span class="hljs-number">2</span>);
+
+                <span class="hljs-keyword">if</span> (funcType2 != LuaTypes.LUA_TFUNCTION)
+                {
+                     arg0 = (System.Action)ToLua.CheckObject(L, <span class="hljs-number">2</span>, <span class="hljs-keyword">typeof</span>(System.Action));
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    LuaFunction func = ToLua.ToLuaFunction(L, <span class="hljs-number">2</span>);
+                    arg0 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(System.Action), func) <span class="hljs-keyword">as</span> System.Action;
+                }
+
+                obj.OnClick = arg0;
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index OnClick on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">set_OnRefEvent</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                TestExport.TestRefEvent arg0 = <span class="hljs-keyword">null</span>;
+                LuaTypes funcType2 = LuaDLL.lua_type(L, <span class="hljs-number">2</span>);
+
+                <span class="hljs-keyword">if</span> (funcType2 != LuaTypes.LUA_TFUNCTION)
+                {
+                     arg0 = (TestExport.TestRefEvent)ToLua.CheckObject(L, <span class="hljs-number">2</span>, <span class="hljs-keyword">typeof</span>(TestExport.TestRefEvent));
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    LuaFunction func = ToLua.ToLuaFunction(L, <span class="hljs-number">2</span>);
+                    arg0 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestExport.TestRefEvent), func) <span class="hljs-keyword">as</span> TestExport.TestRefEvent;
+                }
+
+                obj.OnRefEvent = arg0;
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index OnRefEvent on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">set_buffer</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                <span class="hljs-keyword">byte</span>[] arg0 = ToLua.CheckByteBuffer(L, <span class="hljs-number">2</span>);
+                obj.buffer = arg0;
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index buffer on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">set_Number</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestExport obj = (TestExport)o;
+                <span class="hljs-keyword">int</span> arg0 = (<span class="hljs-keyword">int</span>)LuaDLL.luaL_checknumber(L, <span class="hljs-number">2</span>);
+                obj.Number = arg0;
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index Number on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestExport_TestBuffer</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">int</span> count = LuaDLL.lua_gettop(L);
+                LuaFunction func = ToLua.CheckLuaFunction(L, <span class="hljs-number">1</span>);
+
+                <span class="hljs-keyword">if</span> (count == <span class="hljs-number">1</span>)
+                {
+                    Delegate arg1 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestExport.TestBuffer), func);
+                    ToLua.Push(L, arg1);
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    LuaTable self = ToLua.CheckLuaTable(L, <span class="hljs-number">2</span>);
+                    Delegate arg1 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestExport.TestBuffer), func, self);
+                    ToLua.Push(L, arg1);
+                }
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestExport_TestRefEvent</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">int</span> count = LuaDLL.lua_gettop(L);
+                LuaFunction func = ToLua.CheckLuaFunction(L, <span class="hljs-number">1</span>);
+
+                <span class="hljs-keyword">if</span> (count == <span class="hljs-number">1</span>)
+                {
+                    Delegate arg1 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestExport.TestRefEvent), func);
+                    ToLua.Push(L, arg1);
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    LuaTable self = ToLua.CheckLuaTable(L, <span class="hljs-number">2</span>);
+                    Delegate arg1 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestExport.TestRefEvent), func, self);
+                    ToLua.Push(L, arg1);
+                }
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+    }
+</code></pre>
+<p>&#x2003;</p>
+<h4 id="testexportspacewrapcs">TestExport_SpaceWrap.cs</h4>
+<pre><code class="lang-csharp">    <span class="hljs-comment">//this source code was auto-generated by tolua#, do not modify it</span>
+    <span class="hljs-keyword">using</span> System;
+    <span class="hljs-keyword">using</span> LuaInterface;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestExport_SpaceWrap</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Register</span>(<span class="hljs-params">LuaState L</span>)
+        </span>{
+            L.BeginEnum(<span class="hljs-keyword">typeof</span>(TestExport.Space));
+            L.RegVar(<span class="hljs-string">&quot;World&quot;</span>, get_World, <span class="hljs-keyword">null</span>);
+            L.RegFunction(<span class="hljs-string">&quot;IntToEnum&quot;</span>, IntToEnum);
+            L.EndEnum();
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_World</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            ToLua.Push(L, TestExport.Space.World);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">IntToEnum</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">int</span> arg0 = (<span class="hljs-keyword">int</span>)LuaDLL.lua_tonumber(L, <span class="hljs-number">1</span>);
+            TestExport.Space o = (TestExport.Space)arg0;
+            ToLua.Push(L, o);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+        }
+    }
+</code></pre>
+<p>&#x1F51A;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2_25 TestErrorStack.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2.25 TestErrorStack">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.26 TestOverload","level":"1.3.26","depth":2,"previous":{"title":"2.25 TestErrorStack","level":"1.3.25","depth":2,"path":"第二章 LuaFramework/2_25 TestErrorStack.md","ref":"第二章 LuaFramework/2_25 TestErrorStack.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第二章 LuaFramework/2_26 TestOverload.md","mtime":"2017-11-04T14:03:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-04T14:06:07.623Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

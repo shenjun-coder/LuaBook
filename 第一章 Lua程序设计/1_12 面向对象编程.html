@@ -1,0 +1,1119 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.12 面向对象编程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1_13 弱引用table.html" />
+    
+    
+    <link rel="prev" href="1_11 模块与包.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 Lua程序设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_1 类型与值.html">
+            
+                <a href="1_1 类型与值.html">
+            
+                    
+                    1.1 类型与值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1_2 表达式.html">
+            
+                <a href="1_2 表达式.html">
+            
+                    
+                    1.2 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1_3 语句.html">
+            
+                <a href="1_3 语句.html">
+            
+                    
+                    1.3 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1_4 函数.html">
+            
+                <a href="1_4 函数.html">
+            
+                    
+                    1.4 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1_5 迭代器与范型for.html">
+            
+                <a href="1_5 迭代器与范型for.html">
+            
+                    
+                    1.5 迭代器与范型for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="1_6 协同程序.html">
+            
+                <a href="1_6 协同程序.html">
+            
+                    
+                    1.6 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="1_7 数据结构.html">
+            
+                <a href="1_7 数据结构.html">
+            
+                    
+                    1.7 数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="1_8 数据文件与持久性.html">
+            
+                <a href="1_8 数据文件与持久性.html">
+            
+                    
+                    1.8 数据文件与持久性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="1_9 元表与元方法.html">
+            
+                <a href="1_9 元表与元方法.html">
+            
+                    
+                    1.9 元表与元方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="1_10 环境.html">
+            
+                <a href="1_10 环境.html">
+            
+                    
+                    1.10 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="1_11 模块与包.html">
+            
+                <a href="1_11 模块与包.html">
+            
+                    
+                    1.11 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.12" data-path="1_12 面向对象编程.html">
+            
+                <a href="1_12 面向对象编程.html">
+            
+                    
+                    1.12 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="1_13 弱引用table.html">
+            
+                <a href="1_13 弱引用table.html">
+            
+                    
+                    1.13 弱引用table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="1_14 数学库.html">
+            
+                <a href="1_14 数学库.html">
+            
+                    
+                    1.14 数学库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="1_15 table库.html">
+            
+                <a href="1_15 table库.html">
+            
+                    
+                    1.15 table库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="1_16 字符串库.html">
+            
+                <a href="1_16 字符串库.html">
+            
+                    
+                    1.16 字符串库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="1_17 I／O库.html">
+            
+                <a href="1_17 I／O库.html">
+            
+                    
+                    1.17 I／O库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="1_18 用户自定义类型.html">
+            
+                <a href="1_18 用户自定义类型.html">
+            
+                    
+                    1.18 用户自定义类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../第二章 LuaFramework/">
+            
+                <a href="../第二章 LuaFramework/">
+            
+                    
+                    第二章 LuaFramework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第二章 LuaFramework/2_1 HelloWorld.html">
+            
+                <a href="../第二章 LuaFramework/2_1 HelloWorld.html">
+            
+                    
+                    2.1 HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第二章 LuaFramework/2_2 ScriptsFromFile.html">
+            
+                <a href="../第二章 LuaFramework/2_2 ScriptsFromFile.html">
+            
+                    
+                    2.2 ScriptsFromFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第二章 LuaFramework/2_3 CallLuaFunction.html">
+            
+                <a href="../第二章 LuaFramework/2_3 CallLuaFunction.html">
+            
+                    
+                    2.3 CallLuaFunction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../第二章 LuaFramework/2_4 AccessingLuaVariables.html">
+            
+                <a href="../第二章 LuaFramework/2_4 AccessingLuaVariables.html">
+            
+                    
+                    2.4 AccessingLuaVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../第二章 LuaFramework/2_5 LuaCoroutine.html">
+            
+                <a href="../第二章 LuaFramework/2_5 LuaCoroutine.html">
+            
+                    
+                    2.5 LuaCoroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../第二章 LuaFramework/2_6 LuaCoroutine2.html">
+            
+                <a href="../第二章 LuaFramework/2_6 LuaCoroutine2.html">
+            
+                    
+                    2.6 LuaCoroutine2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../第二章 LuaFramework/2_7 LuaThread.html">
+            
+                <a href="../第二章 LuaFramework/2_7 LuaThread.html">
+            
+                    
+                    2.7 LuaThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../第二章 LuaFramework/2_8 AccessingArray.html">
+            
+                <a href="../第二章 LuaFramework/2_8 AccessingArray.html">
+            
+                    
+                    2.8 AccessingArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../第二章 LuaFramework/2_9 Dictionary.html">
+            
+                <a href="../第二章 LuaFramework/2_9 Dictionary.html">
+            
+                    
+                    2.9 Dictionary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../第二章 LuaFramework/2_10 Enum.html">
+            
+                <a href="../第二章 LuaFramework/2_10 Enum.html">
+            
+                    
+                    2.10 Enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../第二章 LuaFramework/2_11 Delegate.html">
+            
+                <a href="../第二章 LuaFramework/2_11 Delegate.html">
+            
+                    
+                    2.11 Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../第二章 LuaFramework/2_12 GameObject.html">
+            
+                <a href="../第二章 LuaFramework/2_12 GameObject.html">
+            
+                    
+                    2.12 GameObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../第二章 LuaFramework/2_13 CustomLoader.html">
+            
+                <a href="../第二章 LuaFramework/2_13 CustomLoader.html">
+            
+                    
+                    2.13 CustomLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../第二章 LuaFramework/2_14 Out.html">
+            
+                <a href="../第二章 LuaFramework/2_14 Out.html">
+            
+                    
+                    2.14 Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../第二章 LuaFramework/2_15 ProtoBuffer.html">
+            
+                <a href="../第二章 LuaFramework/2_15 ProtoBuffer.html">
+            
+                    
+                    2.15 ProtoBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../第二章 LuaFramework/2_16 Int64.html">
+            
+                <a href="../第二章 LuaFramework/2_16 Int64.html">
+            
+                    
+                    2.16 Int64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../第二章 LuaFramework/2_17 Inherit.html">
+            
+                <a href="../第二章 LuaFramework/2_17 Inherit.html">
+            
+                    
+                    2.17 Inherit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../第二章 LuaFramework/2_18 Bundle.html">
+            
+                <a href="../第二章 LuaFramework/2_18 Bundle.html">
+            
+                    
+                    2.18 Bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../第二章 LuaFramework/2_19 cjson.html">
+            
+                <a href="../第二章 LuaFramework/2_19 cjson.html">
+            
+                    
+                    2.19 cjson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../第二章 LuaFramework/2_20 utf8.html">
+            
+                <a href="../第二章 LuaFramework/2_20 utf8.html">
+            
+                    
+                    2.20 utf8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../第二章 LuaFramework/2_21 String.html">
+            
+                <a href="../第二章 LuaFramework/2_21 String.html">
+            
+                    
+                    2.21 String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../第二章 LuaFramework/2_22 Reflection.html">
+            
+                <a href="../第二章 LuaFramework/2_22 Reflection.html">
+            
+                    
+                    2.22 Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../第二章 LuaFramework/2_23 List.html">
+            
+                <a href="../第二章 LuaFramework/2_23 List.html">
+            
+                    
+                    2.23 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../第二章 LuaFramework/2_24 Performance.html">
+            
+                <a href="../第二章 LuaFramework/2_24 Performance.html">
+            
+                    
+                    2.24 Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="../第二章 LuaFramework/2_25 TestErrorStack.html">
+            
+                <a href="../第二章 LuaFramework/2_25 TestErrorStack.html">
+            
+                    
+                    2.25 TestErrorStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="../第二章 LuaFramework/2_26 TestOverload.html">
+            
+                <a href="../第二章 LuaFramework/2_26 TestOverload.html">
+            
+                    
+                    2.26 TestOverload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.12 面向对象编程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;">&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;</h2>
+<p>&#x2003;&#x2003;Lua&#x4E2D;&#x7684;<code>table</code>&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x53E5;&#x8BDD;&#x53EF;&#x4EE5;&#x4ECE;3&#x4E2A;&#x65B9;&#x9762;&#x6765;&#x8BC1;&#x5B9E;&#x3002;&#x9996;&#x5148;&#xFF0C;<code>table</code>&#x4E0E;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x53EF;&#x4EE5;&#x62E5;&#x6709;&#x72B6;&#x6001;&#x3002;&#x5176;&#x6B21;&#xFF0C;<code>table</code>&#x4E5F;&#x4E0E;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x4E8E;&#x5176;&#x503C;&#x7684;&#x6807;&#x8BC6;&#xFF08;&#x4E00;&#x4E2A;<code>self</code>&#xFF09;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E24;&#x4E2A;&#x5177;&#x6709;&#x76F8;&#x540C;&#x503C;&#x7684;&#x5BF9;&#x8C61;&#xFF08;<code>table</code>&#xFF09;&#x662F;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x6700;&#x540E;&#xFF0C;<code>table</code>&#x4E0E;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x5177;&#x6709;&#x72EC;&#x7ACB;&#x4E8E;&#x521B;&#x5EFA;&#x8005;&#x548C;&#x521B;&#x5EFA;&#x5730;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5BF9;&#x8C61;&#x6709;&#x5176;&#x81EA;&#x5DF1;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x540C;&#x6837;<code>table</code>&#x4E5F;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-lua">    Account = {balance = <span class="hljs-number">0</span>}
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Account.withdraw</span><span class="hljs-params">(v)</span></span>
+        Account.balance = Account.balance - v
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x5C06;&#x8BE5;&#x51FD;&#x6570;&#x5B58;&#x5165;<code>Account</code>&#x5BF9;&#x8C61;&#x7684;<code>withdraw</code>&#x5B57;&#x6BB5;&#x4E2D;&#x3002;&#x5219;&#x53EF;&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x8C03;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-lua">    Account.withdraw(<span class="hljs-number">100.00</span>)
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FD9;&#x79CD;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;&#x201C;&#x65B9;&#x6CD5;&#xFF08;Method&#xFF09;&#x201D;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x540D;&#x79F0;<code>Account</code>&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x597D;&#x7684;&#x7F16;&#x7A0B;&#x4E60;&#x60EF;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53EA;&#x80FD;&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5BF9;&#x5BF9;&#x8C61;&#x5DE5;&#x4F5C;&#xFF0C;&#x5E76;&#x4E14;&#xFF0C;&#x8FD9;&#x4E2A;&#x7279;&#x5B9A;&#x5BF9;&#x8C61;&#x8FD8;&#x5FC5;&#x987B;&#x5B58;&#x50A8;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x6539;&#x53D8;&#x4E86;&#x5BF9;&#x8C61;&#x7684;&#x540D;&#x79F0;&#xFF0C;<code>withdraw</code>&#x5C31;&#x518D;&#x4E5F;&#x4E0D;&#x80FD;&#x5DE5;&#x4F5C;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-lua">    a = Account;Account = <span class="hljs-keyword">nil</span>
+    a.withdraw(<span class="hljs-number">100.00</span>)        <span class="hljs-comment">-- &#x9519;&#x8BEF;&#xFF01;&#x274C;</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x8FDD;&#x53CD;&#x4E86;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;&#x5BF9;&#x8C61;&#x7279;&#x6027;&#xFF0C;&#x5373;&#x5BF9;&#x8C61;&#x62E5;&#x6709;&#x72EC;&#x7ACB;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x6709;&#x4E00;&#x79CD;&#x7075;&#x6D3B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5373;&#x6307;&#x5B9A;&#x4E00;&#x9879;&#x64CD;&#x4F5C;&#x6240;&#x4F5C;&#x7528;&#x7684;&#x201C;&#x63A5;&#x53D7;&#x8005;&#x201D;&#x3002;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#x6765;&#x8868;&#x793A;&#x8BE5;&#x63A5;&#x53D7;&#x8005;&#x3002;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x901A;&#x5E38;&#x79F0;&#x4E3A;<code>self</code>&#x6216;<code>this</code>&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Account.withdraw</span><span class="hljs-params">(self, v)</span></span>
+        self.balance = self.balance - v
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x6B64;&#x65F6;&#x5F53;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x5176;&#x4F5C;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-lua">    a1 = Account; Account = <span class="hljs-keyword">nil</span>
+    ...
+    a1.withdraw(a1, <span class="hljs-number">100.00</span>)        <span class="hljs-comment">-- OK</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x5BF9;<code>self</code>&#x53C2;&#x6570;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x4F7F;&#x7528;&#x540C;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-lua">    a2 = {balance=<span class="hljs-number">0</span>, withdraw=Account.withdraw}
+    ...
+    a2.withdraw(a2, <span class="hljs-number">260.00</span>)
+</code></pre>
+<p>&#x2003;&#x2003;&#x4F7F;&#x7528;<code>self</code>&#x53C2;&#x6570;&#x662F;&#x6240;&#x6709;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#x7684;&#x4E00;&#x4E2A;&#x6838;&#x5FC3;&#x3002;&#x5927;&#x591A;&#x6570;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#x90FD;&#x80FD;&#x5BF9;&#x7A0B;&#x5E8F;&#x5458;&#x9690;&#x85CF;&#x90E8;&#x5206;<code>self</code>&#x53C2;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x5F97;&#x7A0B;&#x5E8F;&#x5458;&#x4E0D;&#x5FC5;&#x663E;&#x5F0F;&#x5730;&#x58F0;&#x660E;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x3002;Lua&#x53EA;&#x9700;&#x4F7F;&#x7528;&#x5192;&#x53F7;&#xFF0C;&#x5219;&#x80FD;&#x9690;&#x85CF;&#x8BE5;&#x53C2;&#x6570;&#x3002;&#x5373;&#x53EF;&#x5C06;&#x4E0A;&#x4F8B;&#x91CD;&#x5199;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Account:withdraw</span><span class="hljs-params">(v)</span></span>
+        self.balance = self.balance - v
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x8C03;&#x7528;&#x65F6;&#x53EF;&#x5199;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-lua">    a:withdraw(<span class="hljs-number">100.00</span>)
+</code></pre>
+<p>&#x2003;&#x2003;&#x5192;&#x53F7;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x5728;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x9690;&#x85CF;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x53CA;&#x5728;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x5B9E;&#x53C2;&#x3002;&#x5192;&#x53F7;&#x53EA;&#x662F;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;&#x4FBF;&#x5229;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x5F15;&#x5165;&#x4EFB;&#x4F55;&#x65B0;&#x7684;&#x4E1C;&#x897F;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x7528;&#x70B9;&#x8BED;&#x6CD5;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x7528;&#x5192;&#x53F7;&#x8BED;&#x6CD5;&#x8C03;&#x7528;&#x5B83;&#x3002;&#x53CD;&#x4E4B;&#xFF0C;&#x53EA;&#x8981;&#x80FD;&#x6B63;&#x786E;&#x5730;&#x5904;&#x7406;&#x90A3;&#x4E2A;&#x989D;&#x5916;&#x53C2;&#x6570;&#x5373;&#x53EF;&#xFF1A;</p>
+<pre><code class="lang-lua">    Account = {balance=<span class="hljs-number">0</span>, 
+               withdraw=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(self, v)</span></span>
+                            self.balance = self.balance - v
+                        <span class="hljs-keyword">end</span>
+              }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Account:deposit</span><span class="hljs-params">(v)</span></span>
+        self.balance = self.balance + v
+    <span class="hljs-keyword">end</span>
+
+    Account.deposit(Account, <span class="hljs-number">200.00</span>)
+    Account:withdraw(<span class="hljs-number">100.00</span>)
+</code></pre>
+<p>&#x2003;&#x2003;&#x73B0;&#x5728;&#x7684;&#x5BF9;&#x8C61;&#x5DF2;&#x6709;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x3001;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x548C;&#x72B6;&#x6001;&#x4E4B;&#x4E0A;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x4E0D;&#x8FC7;&#x8FD8;&#x7F3A;&#x4E4F;&#x4E00;&#x4E2A;&#x7C7B;&#xFF08;class&#xFF09;&#x7CFB;&#x7EDF;&#x3001;&#x7EE7;&#x627F;&#x548C;&#x79C1;&#x5BC6;&#x6027;&#xFF08;privacy&#xFF09;&#x3002;&#x9996;&#x5148;&#x89E3;&#x51B3;&#x7B2C;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x5177;&#x6709;&#x7C7B;&#x4F3C;&#x884C;&#x4E3A;&#x7684;&#x5BF9;&#x8C61;&#xFF1F;&#x66F4;&#x51C6;&#x786E;&#x5730;&#x8BF4;&#xFF0C;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x591A;&#x4E2A;account&#x8D26;&#x6237;&#x5BF9;&#x8C61;&#xFF1F;</p>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x7C7B;">&#x7C7B;</h4>
+<p>&#x2003;&#x2003;&#x4E00;&#x4E2A;&#x7C7B;&#x5C31;&#x50CF;&#x662F;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x6A21;&#x5177;&#x3002;&#x6709;&#x4E9B;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#x4E86;&#x7C7B;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x5728;&#x8FD9;&#x4E9B;&#x8BED;&#x8A00;&#x4E2D;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;Lua&#x5219;&#x6CA1;&#x6709;&#x7C7B;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x53EA;&#x80FD;&#x81EA;&#x5B9A;&#x4E49;&#x884C;&#x4E3A;&#x548C;&#x5F62;&#x6001;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x8981;&#x5728;Lua&#x4E2D;&#x6A21;&#x62DF;&#x7C7B;&#x4E5F;&#x5E76;&#x4E0D;&#x56F0;&#x96BE;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x7167;&#x4E00;&#x4E9B;&#x57FA;&#x4E8E;&#x539F;&#x578B;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x4F8B;&#x5982;<code>Self</code>&#x548C;<code>NewtonScript</code>&#x3002;&#x5728;&#x8FD9;&#x4E9B;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61;&#x662F;&#x6CA1;&#x6709;&#x201C;&#x7C7B;&#x578B;&#x201D;&#x7684;&#xFF08;objects have no classes&#xFF09;&#x3002;&#x800C;&#x662F;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x539F;&#x578B;&#xFF08;prototype&#xFF09;&#x3002;&#x539F;&#x578B;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x5E38;&#x89C4;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5F53;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#xFF08;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF09;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x672A;&#x77E5;&#x64CD;&#x4F5C;&#x65F6;
+&#xFF0C;&#x539F;&#x578B;&#x4F1A;&#x5148;&#x67E5;&#x627E;&#x5B83;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x8BED;&#x8A00;&#x4E2D;&#x8981;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x53EA;&#x9700;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E13;&#x7528;&#x4F5C;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#xFF08;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF09;&#x7684;&#x539F;&#x578B;&#x3002;&#x7C7B;&#x548C;&#x539F;&#x578B;&#x90FD;&#x662F;&#x4E00;&#x79CD;&#x7EC4;&#x7EC7;&#x5BF9;&#x8C61;&#x95F4;&#x5171;&#x4EAB;&#x884C;&#x4E3A;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5728;Lua&#x4E2D;&#x5B9E;&#x73B0;&#x539F;&#x578B;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x4F7F;&#x7528;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x6240;&#x8FF0;&#x7684;&#x7EE7;&#x627F;&#x5373;&#x53EF;&#x3002;&#x66F4;&#x51C6;&#x786E;&#x5730;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;a&#x548C;b&#xFF0C;&#x8981;&#x8BA9;b&#x4F5C;&#x4E3A;a&#x7684;&#x4E00;&#x4E2A;&#x539F;&#x578B;&#xFF0C;&#x53EA;&#x9700;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x8BED;&#x53E5;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-built_in">setmetatable</span>(a, {__index = b})
+</code></pre>
+<p>&#x2003;&#x2003;&#x5728;&#x6B64;&#x4E4B;&#x540E;&#xFF0C;a&#x5C31;&#x4F1A;&#x5728;b&#x4E2D;&#x67E5;&#x627E;&#x6240;&#x6709;&#x5B83;&#x6CA1;&#x6709;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x82E5;&#x5C06;b&#x79F0;&#x4E3A;&#x662F;&#x5BF9;&#x8C61;a&#x7684;&#x7C7B;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x662F;&#x672F;&#x8BED;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x53D8;&#x5316;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x56DE;&#x5230;&#x5148;&#x524D;&#x94F6;&#x884C;&#x8D26;&#x53F7;&#x7684;&#x793A;&#x4F8B;&#x3002;&#x4E3A;&#x4E86;&#x521B;&#x5EFA;&#x66F4;&#x591A;&#x4E0E;<code>Account</code>&#x884C;&#x4E3A;&#x7C7B;&#x4F3C;&#x7684;&#x8D26;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x8FD9;&#x4E9B;&#x65B0;&#x5BF9;&#x8C61;&#x4ECE;<code>Account</code>&#x884C;&#x4E3A;&#x4E2D;&#x7EE7;&#x627F;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x3002;&#x5177;&#x4F53;&#x505A;&#x6CD5;&#x5C31;&#x662F;&#x4F7F;&#x7528;<code>__index</code>&#x5143;&#x65B9;&#x6CD5;&#x3002;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x4E00;&#x9879;&#x5C0F;&#x4F18;&#x5316;&#xFF0C;&#x5219;&#x65E0;&#x987B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;<code>table</code>&#x4F5C;&#x4E3A;&#x8D26;&#x6237;&#x5BF9;&#x8C61;&#x7684;&#x5143;&#x8868;&#x3002;&#x800C;&#x662F;&#x4F7F;&#x7528;<code>Account table</code>&#x81EA;&#x8EAB;&#x4F5C;&#x4E3A;&#x5143;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Account:new</span><span class="hljs-params">(o)</span></span>
+        o = o <span class="hljs-keyword">or</span> {}        <span class="hljs-comment">-- &#x5982;&#x679C;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;table&#xFF0C;&#x5219;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;</span>
+        <span class="hljs-built_in">setmetatable</span>(o, self)
+        self.__index = self
+        <span class="hljs-keyword">return</span> o
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x5F53;&#x8C03;&#x7528;<code>Account:new</code>&#x65F6;&#xFF0C;<code>self</code>&#x5C31;&#x7B49;&#x4E8E;<code>Account</code>&#x3002;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>Account</code>&#x6765;&#x4EE3;&#x66FF;<code>self</code>&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5F53;&#x5F15;&#x5165;&#x7C7B;&#x7EE7;&#x627F;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;<code>self</code>&#x5219;&#x4F1A;&#x66F4;&#x4E3A;&#x51C6;&#x786E;&#x3002;&#x5728;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4E4B;&#x540E;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x8D26;&#x6237;&#x6216;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x65F6;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;</p>
+<pre><code class="lang-lua">    a = Account:new{balance = <span class="hljs-number">0</span>}
+    a:deposit(<span class="hljs-number">100.00</span>)
+</code></pre>
+<p>&#x2003;&#x2003;&#x5F53;&#x521B;&#x5EFA;&#x65B0;&#x8D26;&#x6237;&#x65F6;&#xFF0C;a&#x4F1A;&#x5C06;<code>Account</code>(<code>Account:new</code>&#x8C03;&#x7528;&#x4E2D;&#x7684;<code>self</code>)&#x4F5C;&#x4E3A;&#x5176;&#x5143;&#x8868;&#x3002;&#x800C;&#x5F53;&#x8C03;&#x7528;<code>a:deposit(100.00)</code>&#x65F6;&#xFF0C;&#x5C31;&#x662F;&#x8C03;&#x7528;&#x4E86;<code>a.deposit(a, 100.00)</code>&#x3002;&#x56E0;&#x6B64;&#x5192;&#x53F7;&#x53EA;&#x4E0D;&#x8FC7;&#x662F;&#x4E00;&#x4E2A;&#x201C;&#x8BED;&#x6CD5;&#x7CD6;&#x201D;&#x3002;&#x5F53;Lua&#x65E0;&#x6CD5;&#x5728;<code>table a</code>&#x4E2D;&#x627E;&#x5230;&#x6761;&#x76EE;&#x201C;<code>deposit</code>&#x201D;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x8FDB;&#x4E00;&#x6B65;&#x641C;&#x7D22;&#x5143;&#x8868;&#x7684;<code>__index</code>&#x6761;&#x76EE;&#x3002;&#x6700;&#x7EC8;&#x7684;&#x8C03;&#x7528;&#x60C5;&#x51B5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-built_in">getmetatable</span>(a).__index.deposit(a, <span class="hljs-number">100.00</span>)
+</code></pre>
+<p>&#x2003;&#x2003;<code>a</code>&#x7684;&#x5143;&#x8868;&#x662F;<code>Account</code>&#xFF0C;<code>Account.__index</code>&#x4E5F;&#x662F;<code>Account</code>&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x7B80;&#x5316;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-lua">    Account.deposit(a, <span class="hljs-number">100.00</span>)
+</code></pre>
+<p>&#x2003;&#x2003;&#x7ED3;&#x679C;&#x4E3A;Lua&#x8C03;&#x7528;&#x4E86;&#x539F;&#x6765;&#x7684;<code>deposit</code>&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x4F20;&#x5165;<code>a</code>&#x4F5C;&#x4E3A;<code>self</code>&#x53C2;&#x6570;&#x3002;&#x56E0;&#x6B64;&#x65B0;&#x8D26;&#x6237;<code>a</code>&#x4ECE;<code>Account</code>&#x7EE7;&#x627F;&#x4E86;<code>deposit</code>&#x51FD;&#x6570;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x5B83;&#x8FD8;&#x80FD;&#x4ECE;<code>Account</code>&#x7EE7;&#x627F;&#x6240;&#x6709;&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x7EE7;&#x627F;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x5728;&#x65B0;&#x8D26;&#x6237;&#x4E2D;&#x6CA1;&#x6709;&#x7684;&#x5B57;&#x6BB5;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E00;&#x4E2A;&#x7C7B;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4E3A;&#x5B9E;&#x4F8B;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x56DE;&#x5FC6;&#x4E00;&#x4E0B;&#xFF0C;&#x5728;&#x7B2C;&#x4E00;&#x4E2A;<code>Account</code>&#x5B9A;&#x4E49;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;<code>balance</code>&#x5B57;&#x6BB5;&#x4E3A;0&#x3002;&#x5982;&#x679C;&#x5728;&#x521B;&#x5EFA;&#x65B0;&#x8D26;&#x6237;&#x65F6;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;<code>balance</code>&#x7684;&#x521D;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C31;&#x4F1A;&#x7EE7;&#x627F;&#x8FD9;&#x4E2A;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-lua">    b = Account:new()
+    <span class="hljs-built_in">print</span>(b.balance)            <span class="hljs-comment">--&gt; 0</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x5728;<code>b</code>&#x4E0A;&#x8C03;&#x7528;<code>deposit</code>&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;<code>self</code>&#x5C31;&#x662F;<code>b</code>&#xFF0C;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x6267;&#x884C;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-lua">    b.balance = b.balance + v
+</code></pre>
+<p>&#x2003;&#x2003;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;<code>deposit</code>&#x65F6;&#xFF0C;&#x5BF9;&#x8868;&#x8FBE;&#x5F0F;<code>b.balance</code>&#x7684;&#x6C42;&#x503C;&#x7ED3;&#x679C;&#x4E3A;0&#xFF0C;&#x7136;&#x540E;&#x4E00;&#x4E2A;&#x521D;&#x503C;&#x88AB;&#x8D4B;&#x4E88;&#x4E86;<code>b.balance</code>&#x3002;&#x540E;&#x7EED;&#x5BF9;<code>b.balance</code>&#x7684;&#x8BBF;&#x95EE;&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x6D89;&#x53CA;&#x5230;<code>__index</code>&#x5143;&#x65B9;&#x6CD5;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x6B64;&#x65F6;<code>b</code>&#x5DF2;&#x6709;&#x81EA;&#x5DF1;&#x7684;<code>balance</code>&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x7EE7;&#x627F;">&#x7EE7;&#x627F;</h4>
+<p>&#x2003;&#x2003;&#x7531;&#x4E8E;&#x7C7B;&#x4E5F;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4ECE;&#x5176;&#x4ED6;&#x7C7B;&#x83B7;&#x5F97;&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x7EE7;&#x627F;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x5728;Lua&#x4E2D;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;<code>Account</code>&#xFF1A;</p>
+<pre><code class="lang-lua">    Account = {}
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Account:new</span><span class="hljs-params">(o)</span></span>
+        o = o <span class="hljs-keyword">or</span> {}
+        <span class="hljs-built_in">setmetatable</span>(o, self)
+        self.__index = self
+        <span class="hljs-keyword">return</span> o
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Account:deposit</span><span class="hljs-params">(v)</span></span>
+        self.balance = self.balance + v
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Account:withdraw</span><span class="hljs-params">(v)</span></span>
+        <span class="hljs-keyword">if</span> v &gt; self.balance <span class="hljs-keyword">then</span> <span class="hljs-built_in">error</span> <span class="hljs-string">&quot;insufficient funds&quot;</span> <span class="hljs-keyword">end</span>
+        self.balance = self.balance - v
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x82E5;&#x60F3;&#x4ECE;&#x8FD9;&#x4E2A;&#x7C7B;&#x6D3E;&#x751F;&#x51FA;&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;<code>SpecialAccount</code>&#xFF0C;&#x4EE5;&#x4F7F;&#x5BA2;&#x6237;&#x80FD;&#x591F;&#x900F;&#x652F;&#x3002;&#x5219;&#x5148;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x7C7B;&#xFF0C;&#x4ECE;&#x57FA;&#x7C7B;&#x7EE7;&#x627F;&#x6240;&#x6709;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-lua">    SpecialAccount = Account:new()
+</code></pre>
+<p>&#x2003;&#x2003;&#x76F4;&#x5230;&#x73B0;&#x5728;&#xFF0C;<code>SpecialAccount</code>&#x8FD8;&#x53EA;&#x662F;<code>Account</code>&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-lua">    s = SpecialAccount:new{limit=<span class="hljs-number">1000.00</span>}
+</code></pre>
+<p>&#x2003;&#x2003;<code>SpecialAccount</code>&#x4ECE;<code>Account</code>&#x7EE7;&#x627F;&#x4E86;<code>new</code>&#xFF0C;&#x5C31;&#x50CF;&#x7EE7;&#x627F;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#x3002;&#x4E0D;&#x8FC7;&#x8FD9;&#x6B21;<code>new</code>&#x5728;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x5B83;&#x7684;<code>self</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x4E3A;<code>SpecialAccount</code>&#x3002;&#x56E0;&#x6B64;&#xFF0C;<code>s</code>&#x7684;&#x5143;&#x8868;&#x4E3A;<code>SpecialAccount</code>&#xFF0C;<code>SpecialAccount</code>&#x4E2D;&#x5B57;&#x6BB5;<code>__index</code>&#x7684;&#x503C;&#x4E5F;&#x662F;<code>SpecialAccount</code>&#x3002;<code>s</code>&#x7EE7;&#x627F;&#x81EA;<code>SpecialAccount</code>&#xFF0C;&#x800C;<code>SpecialAccount</code>&#x53C8;&#x7EE7;&#x627F;&#x81EA;<code>Account</code>&#x3002;&#x5F53;&#x6267;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-lua">    s:deposit(<span class="hljs-number">100.00</span>)
+</code></pre>
+<p>&#x2003;&#x2003;Lua&#x5728;<code>s</code>&#x4E2D;&#x627E;&#x4E0D;&#x5230;<code>deposit</code>&#x5B57;&#x6BB5;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x67E5;&#x627E;<code>SpecialAccount</code>&#x3002;&#x5982;&#x679C;&#x4ECD;&#x627E;&#x4E0D;&#x5230;<code>deposit</code>&#x5B57;&#x6BB5;&#xFF0C;&#x5C31;&#x67E5;&#x627E;<code>Account</code>&#x3002;&#x6700;&#x7EC8;&#x4F1A;&#x5728;&#x90A3;&#x91CC;&#x627E;&#x5230;<code>deposit</code>&#x7684;&#x539F;&#x59CB;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x2003;&#x2003;<code>SpecialAccount</code>&#x4E4B;&#x6240;&#x4EE5;&#x7279;&#x6B8A;&#x662F;&#x56E0;&#x4E3A;&#x53EF;&#x4EE5;&#x91CD;&#x5B9A;&#x4E49;&#x90A3;&#x4E9B;&#x4ECE;&#x57FA;&#x7C7B;&#x7EE7;&#x627F;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x65B0;&#x5B9E;&#x73B0;&#x53EA;&#x9700;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SpecialAccount:withdraw</span><span class="hljs-params">(v)</span></span>
+        <span class="hljs-keyword">if</span> v - self.balance &gt;= self:getLimit() <span class="hljs-keyword">then</span>
+            <span class="hljs-built_in">error</span> <span class="hljs-string">&quot;insufficient funds&quot;</span>
+        <span class="hljs-keyword">end</span>
+        self.balane = self.balance - v
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SpecialAccount:getLimit</span><span class="hljs-params">()</span></span>
+        <span class="hljs-keyword">return</span> self.limit <span class="hljs-keyword">or</span> <span class="hljs-number">0</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x73B0;&#x5728;&#xFF0C;&#x5F53;&#x8C03;&#x7528;<code>s:withdraw(200.00)</code>&#x65F6;&#xFF0C;Lua&#x5C31;&#x4E0D;&#x4F1A;&#x5728;<code>Account</code>&#x4E2D;&#x67E5;&#x627E;&#x4E86;&#x3002;&#x56E0;&#x4E3A;Lua&#x4F1A;&#x5728;<code>SpecialAccount</code>&#x4E2D;&#x5148;&#x627E;&#x5230;<code>withdraw</code>&#x65B9;&#x6CD5;&#x3002;&#x7531;&#x4E8E;<code>s.limit</code>&#x4E3A;1000.00&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x6267;&#x884C;&#x53D6;&#x6B3E;&#xFF0C;&#x5E76;&#x4F7F;<code>s</code>&#x53D8;&#x6210;&#x4E00;&#x4E2A;&#x8D1F;&#x7684;&#x4F59;&#x989D;&#x3002;</p>
+<p>&#x2003;&#x2003;Lua&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x6709;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x73B0;&#x8C61;&#xFF0C;&#x5C31;&#x662F;&#x65E0;&#x987B;&#x4E3A;&#x6307;&#x5B9A;&#x4E00;&#x79CD;&#x65B0;&#x884C;&#x4E3A;&#x800C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7C7B;&#x3002;&#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x9700;&#x8981;&#x67D0;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x8BE5;&#x5BF9;&#x8C61;&#x4E2D;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x884C;&#x4E3A;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8D26;&#x6237;<code>s</code>&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5BA2;&#x6237;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BA2;&#x6237;&#x7684;&#x900F;&#x652F;&#x989D;&#x5EA6;&#x603B;&#x662F;&#x5176;&#x4F59;&#x989D;&#x7684;10%&#x3002;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x53EA;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">s:getLimit</span><span class="hljs-params">()</span></span>
+        <span class="hljs-keyword">return</span> self.balance * <span class="hljs-number">0.10</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x5728;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x540E;&#xFF0C;&#x8C03;&#x7528;<code>s:withdraw(200.00)</code>&#x8FD8;&#x662F;&#x4F1A;&#x6267;&#x884C;<code>SpecialAccount</code>&#x7684;<code>withdraw</code>&#x3002;&#x4F46;<code>withdraw</code>&#x6240;&#x8C03;&#x7528;&#x7684;<code>self:getLimit</code>&#x5219;&#x662F;&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x591A;&#x91CD;&#x7EE7;&#x627F;">&#x591A;&#x91CD;&#x7EE7;&#x627F;</h4>
+<p>&#x2003;&#x2003;&#x7531;&#x4E8E;Lua&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x4E0D;&#x662F;&#x539F;&#x751F;&#x7684;&#xFF08;Primitive&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x5728;Lua&#x4E2D;&#x8FDB;&#x884C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x65F6;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x6CD5;&#x3002;&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x79CD;&#x4F7F;&#x7528;<code>__index</code>&#x5143;&#x65B9;&#x6CD5;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x8FD9;&#x662F;&#x96C6;&#x7B80;&#x6613;&#x3001;&#x6027;&#x80FD;&#x548C;&#x7075;&#x6D3B;&#x6027;&#x4E8E;&#x4E00;&#x4F53;&#x7684;&#x505A;&#x6CD5;&#x3002;&#x53E6;&#x5916;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x53EF;&#x80FD;&#x66F4;&#x9002;&#x7528;&#x4E8E;&#x67D0;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x5728;&#x6B64;&#x5C06;&#x4ECB;&#x7ECD;&#x53E6;&#x4E00;&#x79CD;&#x505A;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;Lua&#x4E2D;&#x5B9E;&#x73B0;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x7684;&#x5173;&#x952E;&#x5728;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;<code>__index</code>&#x5143;&#x5B57;&#x6BB5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x82E5;&#x5728;&#x4E00;&#x4E2A;<code>table</code>&#x7684;&#x5143;&#x8868;&#x4E2D;&#xFF0C;<code>__index</code>&#x5B57;&#x6BB5;&#x4E3A;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x90A3;&#x4E48;&#x53EA;&#x8981;Lua&#x5728;&#x539F;&#x6765;&#x7684;<code>table</code>&#x4E2D;&#x627E;&#x4E0D;&#x5230;&#x4E00;&#x4E2A;<code>key</code>&#xFF0C;&#x5C31;&#x4F1A;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x57FA;&#x4E8E;&#x8FD9;&#x70B9;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8BA9;<code>__index</code>&#x51FD;&#x6570;&#x5728;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x67E5;&#x627E;&#x7F3A;&#x5931;&#x7684;<code>key</code>&#x3002;</p>
+<p>&#x2003;&#x2003;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x610F;&#x5473;&#x7740;&#x4E00;&#x4E2A;&#x7C7B;&#x53EF;&#x4EE5;&#x5177;&#x6709;&#x591A;&#x4E2A;&#x57FA;&#x7C7B;&#x3002;&#x56E0;&#x6B64;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7C7B;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x5B50;&#x7C7B;&#xFF0C;&#x800C;&#x662F;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;&#x3002;&#x4E0B;&#x9762;&#x7684;<code>createClass</code>&#x5C31;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>table</code>&#x8868;&#x793A;&#x65B0;&#x7C7B;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x65B0;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x57FA;&#x7C7B;&#x3002;&#x521B;&#x5EFA;&#x65F6;&#x5B83;&#x4F1A;&#x8BBE;&#x7F6E;&#x5143;&#x8868;&#x4E2D;&#x7684;<code>__index</code>&#x5143;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x6B63;&#x662F;&#x5728;&#x8FD9;&#x4E2A;<code>__index</code>&#x5143;&#x65B9;&#x6CD5;&#x4E2D;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x867D;&#x7136;&#x662F;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF0C;&#x4F46;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x4ECD;&#x5C5E;&#x4E8E;&#x5355;&#x4E2A;&#x7C7B;&#xFF0C;&#x5E76;&#x4E14;&#x90FD;&#x5728;&#x8FD9;&#x4E2A;&#x7C7B;&#x4E2D;&#x67E5;&#x627E;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x7C7B;&#x548C;&#x57FA;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x4E0D;&#x540C;&#x4E8E;&#x7C7B;&#x548C;&#x5B9E;&#x4F8B;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x5C24;&#x5176;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x4F5C;&#x4E3A;&#x5176;&#x5B9E;&#x4F8B;&#x548C;&#x5B50;&#x7C7B;&#x7684;&#x5143;&#x8868;&#x3002;&#x5728;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5C06;&#x7C7B;&#x4F5C;&#x4E3A;&#x5176;&#x5B9E;&#x4F8B;&#x7684;&#x5143;&#x8868;&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;<code>table</code>&#x4F5C;&#x4E3A;&#x7C7B;&#x7684;&#x5143;&#x8868;&#x3002;</p>
+<pre><code class="lang-lua">    <span class="hljs-comment">-- &#x5728;table &apos;plist&apos;&#x4E2D;&#x67E5;&#x627E;&apos;k&apos;</span>
+    <span class="hljs-keyword">local</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">search</span><span class="hljs-params">(k, plist)</span></span>
+        <span class="hljs-keyword">for</span> i=<span class="hljs-number">1</span>, #plist <span class="hljs-keyword">do</span>
+            <span class="hljs-keyword">local</span> v = plist[i][k]        <span class="hljs-comment">-- &#x5C1D;&#x8BD5;&#x7B2C;i&#x4E2A;&#x57FA;&#x7C7B;</span>
+            <span class="hljs-keyword">if</span> v <span class="hljs-keyword">then</span> <span class="hljs-keyword">return</span> v <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createClass</span><span class="hljs-params">(...)</span></span>
+        <span class="hljs-keyword">local</span> c = {}                    <span class="hljs-comment">-- &#x65B0;&#x7C7B;</span>
+        <span class="hljs-keyword">local</span> parents = {...}
+
+        <span class="hljs-comment">-- &#x7C7B;&#x5728;&#x5176;&#x7236;&#x7C7B;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x641C;&#x7D22;&#x65B9;&#x6CD5;</span>
+        <span class="hljs-built_in">setmetatable</span>(c, {__index = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(t, k)</span></span>
+            <span class="hljs-keyword">return</span> search(k, parents)
+        <span class="hljs-keyword">end</span>})
+
+        <span class="hljs-comment">-- &#x5C06;&apos;c&apos;&#x4F5C;&#x4E3A;&#x5176;&#x5B9E;&#x4F8B;&#x7684;&#x5143;&#x8868;</span>
+        c.__index = c
+
+        <span class="hljs-comment">-- &#x4E3A;&#x8FD9;&#x4E2A;&#x65B0;&#x7C7B;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;construction&#xFF09;</span>
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">c:new</span><span class="hljs-params">(o)</span></span>
+            o = o <span class="hljs-keyword">or</span> {}
+            <span class="hljs-built_in">setmetatable</span>(o, c)
+            <span class="hljs-keyword">return</span> o
+        <span class="hljs-keyword">end</span>
+
+        <span class="hljs-keyword">return</span> c                 <span class="hljs-comment">-- &#x8FD4;&#x56DE;&#x65B0;&#x7C7B;</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x63A5;&#x4E0B;&#x6765;&#x662F;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;<code>createClass</code>&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x5047;&#x8BBE;&#x6709;&#x4E24;&#x4E2A;&#x7C7B;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;<code>Account</code>&#x7C7B;&#xFF1B;&#x53E6;&#x4E00;&#x4E2A;&#x662F;<code>Named</code>&#x7C7B;&#xFF0C;&#x5B83;&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;<code>setname</code>&#x548C;<code>getname</code>&#xFF1A;</p>
+<pre><code class="lang-lua">    Named = {}
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Named:getname</span><span class="hljs-params">()</span></span>
+        <span class="hljs-keyword">return</span> self.name
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Named:setname</span><span class="hljs-params">(n)</span></span>
+        self.name = n
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7C7B;<code>NamedAccount</code>&#xFF0C;&#x540C;&#x65F6;&#x4ECE;<code>Account</code>&#x548C;<code>Named</code>&#x6D3E;&#x751F;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x9700;&#x8C03;&#x7528;<code>createClass</code>&#xFF1A;</p>
+<pre><code class="lang-lua">    NamedAccount = createClass(Account, Named)
+</code></pre>
+<p>&#x2003;&#x2003;&#x5982;&#x4E0B;&#x8981;&#x521B;&#x5EFA;&#x5E76;&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-lua">    account = NamedAccount:new{name = <span class="hljs-string">&quot;Paul&quot;</span>}
+    <span class="hljs-built_in">print</span>(account:getname())        <span class="hljs-comment">--&gt; Paul</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x73B0;&#x5728;&#xFF0C;&#x6765;&#x7814;&#x7A76;&#x6700;&#x540E;&#x4EE3;&#x7801;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;&#x3002;&#x9996;&#x5148;&#xFF0C;Lua&#x5728;<code>account</code>&#x4E2D;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x5B57;&#x6BB5;&#x201C;<code>getname</code>&#x201D;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5C31;&#x67E5;&#x627E;<code>account</code>&#x5143;&#x8868;&#x4E2D;&#x7684;<code>__index</code>&#x5B57;&#x6BB5;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x4E3A;<code>NamedAccount</code>&#x3002;&#x7531;&#x4E8E;&#x5728;<code>NamedAccount</code>&#x4E5F;&#x65E0;&#x6CD5;&#x63D0;&#x4F9B;&#x5B57;&#x6BB5;&#x201C;<code>getname</code>&#x201D;&#x3002;&#x56E0;&#x6B64;&#xFF0C;Lua&#x67E5;&#x627E;<code>NamedAccount</code>&#x5143;&#x8868;&#x4E2D;&#x7684;<code>__index</code>&#x5B57;&#x6BB5;&#x3002;&#x7531;&#x4E8E;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;Lua&#x5C31;&#x8C03;&#x7528;&#x4E86;&#x5B83;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x5219;&#x5148;&#x5728;<code>Account</code>&#x4E2D;&#x67E5;&#x627E;&#x201C;<code>getname</code>&#x201D;&#x3002;&#x672A;&#x627E;&#x5230;&#x540E;&#xFF0C;&#x7EE7;&#x800C;&#x67E5;&#x627E;<code>Named</code>&#x3002;&#x6700;&#x7EC8;&#x5728;<code>Named</code>&#x4E2D;&#x627E;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x975E;<code>nil</code>&#x7684;&#x503C;&#xFF0C;&#x5373;&#x4E3A;&#x641C;&#x7D22;&#x7684;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x7531;&#x4E8E;&#x8FD9;&#x9879;&#x641C;&#x7D22;&#x5177;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x590D;&#x6742;&#x6027;&#xFF0C;&#x5219;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x6027;&#x80FD;&#x4E0D;&#x5982;&#x5355;&#x4E00;&#x7EE7;&#x627F;&#x3002;&#x6709;&#x4E00;&#x79CD;&#x6539;&#x8FDB;&#x6027;&#x80FD;&#x7684;&#x7B80;&#x5355;&#x505A;&#x6CD5;&#x662F;&#x5C06;&#x7EE7;&#x627F;&#x7684;&#x65B9;&#x6CD5;&#x590D;&#x5236;&#x5230;&#x5B50;&#x7C7B;&#x4E2D;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x6280;&#x672F;&#xFF0C;&#x7C7B;&#x7684;<code>__index</code>&#x5143;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-built_in">setmetatable</span>(c, {__index = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(t, k)</span></span>
+        <span class="hljs-keyword">local</span> v = search(k, parents)
+        t[k] = v                 <span class="hljs-comment">-- &#x4FDD;&#x5B58;&#x4E0B;&#x6765;&#xFF0C;&#x4EE5;&#x5907;&#x4E0B;&#x6B21;&#x8BBF;&#x95EE;</span>
+        <span class="hljs-keyword">return</span> v
+    <span class="hljs-keyword">end</span>})
+</code></pre>
+<p>&#x2003;&#x2003;&#x7528;&#x4E86;&#x8FD9;&#x79CD;&#x6280;&#x672F;&#x540E;&#xFF0C;&#x8BBF;&#x95EE;&#x7EE7;&#x627F;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x80FD;&#x50CF;&#x8BBF;&#x95EE;&#x5C40;&#x90E8;&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#x5FEB;&#x4E86;&#x3002;&#x4F46;&#x7F3A;&#x70B9;&#x662F;&#x5F53;&#x7CFB;&#x7EDF;&#x8FD0;&#x884C;&#x540E;&#x5C31;&#x8F83;&#x96BE;&#x4FEE;&#x6539;&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x4FEE;&#x6539;&#x4E0D;&#x4F1A;&#x6CBF;&#x7740;&#x7EE7;&#x627F;&#x4F53;&#x7CFB;&#x5411;&#x4E0B;&#x4F20;&#x64AD;&#x3002;</p>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x79C1;&#x5BC6;&#x6027;">&#x79C1;&#x5BC6;&#x6027;</h4>
+<p>&#x2003;&#x2003;&#x8BB8;&#x591A;&#x4EBA;&#x8BA4;&#x4E3A;&#x79C1;&#x5BC6;&#x6027;&#x5E94;&#x6210;&#x4E3A;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#x4E0D;&#x53EF;&#x6216;&#x7F3A;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x90FD;&#x5E94;&#x8BE5;&#x662F;&#x7531;&#x5B83;&#x81EA;&#x5DF1;&#x638C;&#x63E1;&#x3002;&#x5728;&#x4E00;&#x4E9B;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x4F8B;&#x5982;<code>C++</code>&#x548C;<code>Java</code>&#xFF0C;&#x80FD;&#x63A7;&#x5236;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x6216;&#x65B9;&#x6CD5;&#x662F;&#x5426;&#x5728;&#x5BF9;&#x8C61;&#x4E4B;&#x5916;&#x53EF;&#x89C1;&#x3002;&#x800C;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#xFF0C;&#x4F8B;&#x5982;<code>Smalltalk</code>&#xFF0C;&#x89C4;&#x5B9A;&#x6240;&#x6709;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x4F46;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x5374;&#x90FD;&#x662F;&#x516C;&#x6709;&#x7684;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;<code>Simula</code>&#x5219;&#x4E0D;&#x63D0;&#x4F9B;&#x4EFB;&#x4F55;&#x5F62;&#x5F0F;&#x7684;&#x79C1;&#x5BC6;&#x6027;&#x4FDD;&#x62A4;&#x3002;</p>
+<p>&#x2003;&#x2003;Lua&#x5728;&#x8BBE;&#x8BA1;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x79C1;&#x5BC6;&#x6027;&#x673A;&#x5236;&#xFF0C;&#x8FD9;&#x5177;&#x4F53;&#x7AE0;&#x8282;&#x5DF2;&#x770B;&#x5230;&#x4E86;&#x3002;&#x4E00;&#x65B9;&#x9762;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x4F7F;&#x7528;&#x4E86;&#x666E;&#x901A;&#x7684;&#x7ED3;&#x6784;&#xFF08;<code>table</code>&#xFF09;&#x6765;&#x8868;&#x793A;&#x5BF9;&#x8C61;&#xFF0C;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#x4E5F;&#x53CD;&#x6620;&#x4E86;Lua&#x67D0;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x8BBE;&#x8BA1;&#x51B3;&#x5B9A;&#x3002;Lua&#x5E76;&#x4E0D;&#x6253;&#x7B97;&#x6784;&#x5EFA;&#x9700;&#x8981;&#x8BB8;&#x591A;&#x7A0B;&#x5E8F;&#x5458;&#x957F;&#x671F;&#x6295;&#x5165;&#x7684;&#x5927;&#x578B;&#x7A0B;&#x5E8F;&#x3002;&#x76F8;&#x53CD;&#xFF0C;Lua&#x5B9A;&#x4F4D;&#x4E8E;&#x5F00;&#x53D1;&#x4E2D;&#x5C0F;&#x578B;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD9;&#x4E9B;&#x7A0B;&#x5E8F;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x5927;&#x7CFB;&#x7EDF;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x800C;&#x53C2;&#x4E0E;&#x7F16;&#x7A0B;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#x4E00;&#x822C;&#x53EA;&#x6709;&#x4E00;&#x540D;&#x6216;&#x51E0;&#x540D;&#xFF0C;&#x751A;&#x81F3;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x975E;&#x7A0B;&#x5E8F;&#x5458;&#x3002;&#x56E0;&#x6B64;&#xFF0C;Lua&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x8FC7;&#x591A;&#x5197;&#x4F59;&#x548C;&#x4EBA;&#x4E3A;&#x9650;&#x5236;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x60F3;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5219;&#x65E0;&#x987B;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x2003;&#x2003;Lua&#x7684;&#x53E6;&#x5916;&#x4E00;&#x9879;&#x8BBE;&#x8BA1;&#x76EE;&#x6807;&#x662F;&#x7075;&#x6D3B;&#x6027;&#x3002;Lua&#x63D0;&#x4F9B;&#x7ED9;&#x7A0B;&#x5E8F;&#x5458;&#x5404;&#x79CD;&#x5143;&#x673A;&#x5236;&#xFF0C;&#x4EE5;&#x4F7F;&#x4ED6;&#x4EEC;&#x80FD;&#x6A21;&#x62DF;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7684;&#x673A;&#x5236;&#x3002;&#x867D;&#x7136;&#x5728;Lua&#x5BF9;&#x8C61;&#x7684;&#x57FA;&#x7840;&#x8BBE;&#x8BA1;&#x4E2D;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x79C1;&#x5BC6;&#x6027;&#x673A;&#x5236;&#x3002;&#x4F46;&#x53EF;&#x4EE5;&#x7528;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x5BF9;&#x8C61;&#xFF0C;&#x4ECE;&#x800C;&#x83B7;&#x5F97;&#x5BF9;&#x8C61;&#x7684;&#x8BBF;&#x95EE;&#x9650;&#x5236;&#x3002;&#x8FD9;&#x79CD;&#x5B9E;&#x73B0;&#x4E0D;&#x5E38;&#x7528;&#xFF0C;&#x53EA;&#x505A;&#x57FA;&#x672C;&#x7684;&#x4E86;&#x89E3;&#xFF0C;&#x5B83;&#x65E2;&#x63A2;&#x7D22;&#x4E86;Lua&#x4E2D;&#x7684;&#x67D0;&#x4E9B;&#x77E5;&#x8BC6;&#x53C8;&#x53EF;&#x4EE5;&#x6210;&#x4E3A;&#x5176;&#x4ED6;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x601D;&#x60F3;&#x662F;&#xFF0C;&#x901A;&#x8FC7;&#x4E24;&#x4E2A;<code>table</code>&#x6765;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x4E00;&#x4E2A;<code>table</code>&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#xFF1B;&#x53E6;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6216;&#x79F0;&#x4E3A;&#x201C;&#x63A5;&#x53E3;&#x201D;&#x3002;&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#x662F;&#x901A;&#x8FC7;&#x7B2C;&#x4E8C;&#x4E2A;<code>table</code>&#x6765;&#x8BBF;&#x95EE;&#x7684;&#xFF0C;&#x5373;&#x901A;&#x8FC7;&#x5176;&#x63A5;&#x53E3;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x8BBF;&#x95EE;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x672A;&#x6388;&#x6743;&#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x8868;&#x793A;&#x72B6;&#x6001;&#x7684;<code>table</code>&#x4E0D;&#x4FDD;&#x5B58;&#x5728;&#x5176;&#x4ED6;<code>table</code>&#x4E2D;&#xFF0C;&#x800C;&#x53EA;&#x662F;&#x4FDD;&#x5B58;&#x5728;&#x65B9;&#x6CD5;&#x7684;<code>closure</code>&#x4E2D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x82E5;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x6765;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x94F6;&#x884C;&#x8D26;&#x6237;&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x5DE5;&#x5382;&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x8D26;&#x6237;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">newAccount</span><span class="hljs-params">(initialBalance)</span></span>
+        <span class="hljs-keyword">local</span> self = {balance = initialBalance}
+
+        <span class="hljs-keyword">local</span> withdraw = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(v)</span></span>
+            self.balance = self.balance - v
+        <span class="hljs-keyword">end</span>
+
+        <span class="hljs-keyword">local</span> deposit = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(v)</span></span>
+            self.balance = self.balance + v
+        <span class="hljs-keyword">end</span>
+
+        <span class="hljs-keyword">local</span> getBalance = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span> <span class="hljs-keyword">return</span> self.balance <span class="hljs-keyword">end</span>
+
+        <span class="hljs-keyword">return</span> {
+            withdraw = withdraw,
+            deposit = deposit,
+            getBalance = getBalance
+        }
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5148;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;<code>table</code>&#xFF0C;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x5BF9;&#x8C61;&#x7684;&#x5185;&#x90E8;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x5B58;&#x50A8;&#x5728;&#x5C40;&#x90E8;&#x53D8;&#x91CF;<code>self</code>&#x4E2D;&#x3002;&#x7136;&#x540E;&#x518D;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4F9B;&#x5916;&#x90E8;&#x4F7F;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4E2D;&#x5C06;&#x65B9;&#x6CD5;&#x540D;&#x4E0E;&#x771F;&#x6B63;&#x7684;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x5339;&#x914D;&#x8D77;&#x6765;&#x3002;&#x533A;&#x522B;&#x5173;&#x952E;&#x5728;&#x4E8E;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4E0D;&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;<code>self</code>&#x53C2;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;<code>self</code>&#x53D8;&#x91CF;&#x3002;&#x7531;&#x4E8E;&#x6CA1;&#x6709;&#x4E86;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4E5F;&#x5C31;&#x65E0;&#x987B;&#x4F7F;&#x7528;&#x5192;&#x53F7;&#x8BED;&#x6CD5;&#x6765;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x3002;&#x5219;&#x53EF;&#x4EE5;&#x50CF;&#x666E;&#x901A;&#x51FD;&#x6570;&#x90A3;&#x6837;&#x6765;&#x8C03;&#x7528;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-lua">    acc1 = newAccount(<span class="hljs-number">100.00</span>)
+    acc1.withdraw(<span class="hljs-number">40.00</span>)
+    <span class="hljs-built_in">print</span>(acc1.getBalance())        <span class="hljs-comment">--&gt; 60</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x7ED9;&#x4E88;&#x5B58;&#x50A8;&#x5728;<code>self table</code>&#x4E2D;&#x6240;&#x6709;&#x4E1C;&#x897F;&#x5B8C;&#x5168;&#x7684;&#x79C1;&#x5BC6;&#x6027;&#x3002;&#x5F53;<code>newAccount</code>&#x8FD4;&#x56DE;&#x540E;&#xFF0C;&#x5C31;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;<code>table</code>&#x4E86;&#x3002;&#x53EA;&#x80FD;&#x901A;&#x8FC7;<code>newAccount</code>&#x4E2D;&#x521B;&#x5EFA;&#x7684;&#x51FD;&#x6570;&#x6765;&#x8BBF;&#x95EE;&#x5B83;&#x3002;&#x4E0A;&#x4F8B;&#x53EA;&#x5C06;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x653E;&#x5230;&#x4E86;&#x79C1;&#x6709;<code>table</code>&#x4E2D;&#xFF0C;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x79C1;&#x6709;&#x90E8;&#x5206;&#x90FD;&#x5B58;&#x5165;&#x8FD9;&#x4E2A;<code>table</code>&#x3002;&#x53E6;&#x5916;&#x8FD8;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x79C1;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4EEC;&#x7C7B;&#x4F3C;&#x4E8E;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x4E0D;&#x653E;&#x5165;&#x63A5;&#x53E3;&#x4E2D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8BE5;&#x8D26;&#x6237;&#x53EF;&#x4EE5;&#x7ED9;&#x90A3;&#x4E9B;&#x4F59;&#x989D;&#x5927;&#x4E8E;&#x67D0;&#x4E2A;&#x503C;&#x7684;&#x7528;&#x6237;&#x989D;&#x5916;10%&#x7684;&#x4FE1;&#x7528;&#x989D;&#x5EA6;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x4E0D;&#x60F3;&#x8BA9;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x5230;&#x8FD9;&#x4E9B;&#x8BA1;&#x7B97;&#x7EC6;&#x8282;&#x3002;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x6309;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">newAccount</span><span class="hljs-params">(initialBalance)</span></span>
+        <span class="hljs-keyword">local</span> self = {
+            balance = initialBalance,
+            LIM = <span class="hljs-number">10000.00</span>
+        }
+
+        <span class="hljs-keyword">local</span> extra = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>
+            <span class="hljs-keyword">if</span> self.balance &gt; self.LIM <span class="hljs-keyword">then</span>
+                <span class="hljs-keyword">return</span> self.balance * <span class="hljs-number">0.10</span>
+            <span class="hljs-keyword">else</span>
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+            <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">end</span>
+
+        <span class="hljs-keyword">local</span> getBalance = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>
+            <span class="hljs-keyword">return</span> self.balance + extra()
+        <span class="hljs-keyword">end</span>
+
+        &lt;&#x5982;&#x524D;&gt;
+</code></pre>
+<p>&#x2003;&#x2003;&#x4E0E;&#x524D;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#x4E00;&#x6837;&#xFF0C;&#x4EFB;&#x4F55;&#x7528;&#x6237;&#x90FD;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;<code>extra</code>&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x5355;&#x4E00;&#x65B9;&#x6CD5;&#xFF08;single-method&#xFF09;&#x505A;&#x6CD5;">&#x5355;&#x4E00;&#x65B9;&#x6CD5;&#xFF08;single-method&#xFF09;&#x505A;&#x6CD5;</h4>
+<p>&#x2003;&#x2003;&#x4E0A;&#x8FF0;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7684;&#x505A;&#x6CD5;&#x6709;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x5C31;&#x662F;&#x5F53;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x521B;&#x5EFA;&#x63A5;&#x53E3;<code>table</code>&#xFF0C;&#x4F46;&#x8981;&#x5C06;&#x8FD9;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x65B9;&#x6CD5;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x8868;&#x793A;&#x6765;&#x8FD4;&#x56DE;&#x3002;&#x5982;&#x679C;&#x65E0;&#x6CD5;&#x7406;&#x89E3;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;&#x524D;&#x9762;&#x7AE0;&#x8282;&#x3002;&#x524D;&#x9762;&#x7AE0;&#x8282;&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;&#x5668;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E2A;&#x51FD;&#x6570;&#x5C06;&#x72B6;&#x6001;&#x4FDD;&#x5B58;&#x4E3A;<code>closure</code>&#x3002;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x72B6;&#x6001;&#x7684;&#x8FED;&#x4EE3;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x65B9;&#x6CD5;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5355;&#x4E00;&#x65B9;&#x6CD5;&#x5BF9;&#x8C61;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x82E5;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x4E2A;&#x8C03;&#x5EA6;&#xFF08;<code>dispatch</code>&#xFF09;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x6839;&#x636E;&#x67D0;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x5B8C;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x5219;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">newObject</span><span class="hljs-params">(value)</span></span>
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(action, v)</span></span>
+            <span class="hljs-keyword">if</span> action == <span class="hljs-string">&quot;get&quot;</span> <span class="hljs-keyword">then</span> <span class="hljs-keyword">return</span> value
+            <span class="hljs-keyword">elseif</span> action == <span class="hljs-string">&quot;set&quot;</span> <span class="hljs-keyword">then</span> value = v
+            <span class="hljs-keyword">else</span> <span class="hljs-built_in">error</span> <span class="hljs-string">&quot;invalid action&quot;</span>
+            <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-lua">    d = newObject(<span class="hljs-number">0</span>)
+    <span class="hljs-built_in">print</span>(d(<span class="hljs-string">&quot;get&quot;</span>))                <span class="hljs-comment">--&gt; 0</span>
+    d(<span class="hljs-string">&quot;set&quot;</span>, <span class="hljs-number">10</span>)
+    <span class="hljs-built_in">print</span>(d(<span class="hljs-string">&quot;get&quot;</span>))                <span class="hljs-comment">--&gt; 10</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FD9;&#x79CD;&#x975E;&#x4F20;&#x7EDF;&#x7684;&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x662F;&#x5F88;&#x9AD8;&#x6548;&#x7684;&#x3002;&#x8BED;&#x53E5;<code>d(&quot;set&quot;, 10)</code>&#x867D;&#x7136;&#x6709;&#x4E9B;&#x5947;&#x7279;&#xFF0C;&#x4F46;&#x53EA;&#x6BD4;&#x4F20;&#x7EDF;&#x7684;<code>d:set(10)</code>&#x591A;&#x51FA;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x7528;&#x4E00;&#x4E2A;<code>closure</code>&#xFF0C;&#x8FD9;&#x6BD4;&#x90FD;&#x7528;&#x4E00;&#x4E2A;<code>table</code>&#x66F4;&#x9AD8;&#x6548;&#x3002;&#x867D;&#x7136;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x7EE7;&#x627F;&#xFF0C;&#x5374;&#x62E5;&#x6709;&#x4E86;&#x5B8C;&#x5168;&#x7684;&#x79C1;&#x5BC6;&#x6027;&#x63A7;&#x5236;&#x3002;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x72B6;&#x6001;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x65B9;&#x5F0F;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x5B83;&#x7684;&#x5355;&#x4E00;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x2003;&#x2003;Tcl/Tk&#x5BF9;&#x5B83;&#x7684;&#x7A97;&#x53E3;&#x90E8;&#x4EF6;&#x4F7F;&#x7528;&#x4E86;&#x7C7B;&#x4F3C;&#x7684;&#x505A;&#x6CD5;&#x3002;&#x5728;Tk&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x90E8;&#x4EF6;&#x7684;&#x540D;&#x79F0;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x540D;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x6240;&#x6709;&#x9488;&#x5BF9;&#x8BE5;&#x90E8;&#x4EF6;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x1F51A;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1_11 模块与包.html" class="navigation navigation-prev " aria-label="Previous page: 1.11 模块与包">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1_13 弱引用table.html" class="navigation navigation-next " aria-label="Next page: 1.13 弱引用table">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.12 面向对象编程","level":"1.2.12","depth":2,"next":{"title":"1.13 弱引用table","level":"1.2.13","depth":2,"path":"第一章 Lua程序设计/1_13 弱引用table.md","ref":"第一章 Lua程序设计/1_13 弱引用table.md","articles":[]},"previous":{"title":"1.11 模块与包","level":"1.2.11","depth":2,"path":"第一章 Lua程序设计/1_11 模块与包.md","ref":"第一章 Lua程序设计/1_11 模块与包.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第一章 Lua程序设计/1_12 面向对象编程.md","mtime":"2017-11-04T13:33:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-04T14:06:07.623Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

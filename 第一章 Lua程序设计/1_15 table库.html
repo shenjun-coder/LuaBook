@@ -1,0 +1,908 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.15 table库 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1_16 字符串库.html" />
+    
+    
+    <link rel="prev" href="1_14 数学库.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 Lua程序设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_1 类型与值.html">
+            
+                <a href="1_1 类型与值.html">
+            
+                    
+                    1.1 类型与值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1_2 表达式.html">
+            
+                <a href="1_2 表达式.html">
+            
+                    
+                    1.2 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1_3 语句.html">
+            
+                <a href="1_3 语句.html">
+            
+                    
+                    1.3 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1_4 函数.html">
+            
+                <a href="1_4 函数.html">
+            
+                    
+                    1.4 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1_5 迭代器与范型for.html">
+            
+                <a href="1_5 迭代器与范型for.html">
+            
+                    
+                    1.5 迭代器与范型for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="1_6 协同程序.html">
+            
+                <a href="1_6 协同程序.html">
+            
+                    
+                    1.6 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="1_7 数据结构.html">
+            
+                <a href="1_7 数据结构.html">
+            
+                    
+                    1.7 数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="1_8 数据文件与持久性.html">
+            
+                <a href="1_8 数据文件与持久性.html">
+            
+                    
+                    1.8 数据文件与持久性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="1_9 元表与元方法.html">
+            
+                <a href="1_9 元表与元方法.html">
+            
+                    
+                    1.9 元表与元方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="1_10 环境.html">
+            
+                <a href="1_10 环境.html">
+            
+                    
+                    1.10 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="1_11 模块与包.html">
+            
+                <a href="1_11 模块与包.html">
+            
+                    
+                    1.11 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="1_12 面向对象编程.html">
+            
+                <a href="1_12 面向对象编程.html">
+            
+                    
+                    1.12 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="1_13 弱引用table.html">
+            
+                <a href="1_13 弱引用table.html">
+            
+                    
+                    1.13 弱引用table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="1_14 数学库.html">
+            
+                <a href="1_14 数学库.html">
+            
+                    
+                    1.14 数学库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.15" data-path="1_15 table库.html">
+            
+                <a href="1_15 table库.html">
+            
+                    
+                    1.15 table库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="1_16 字符串库.html">
+            
+                <a href="1_16 字符串库.html">
+            
+                    
+                    1.16 字符串库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="1_17 I／O库.html">
+            
+                <a href="1_17 I／O库.html">
+            
+                    
+                    1.17 I／O库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="1_18 用户自定义类型.html">
+            
+                <a href="1_18 用户自定义类型.html">
+            
+                    
+                    1.18 用户自定义类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../第二章 LuaFramework/">
+            
+                <a href="../第二章 LuaFramework/">
+            
+                    
+                    第二章 LuaFramework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第二章 LuaFramework/2_1 HelloWorld.html">
+            
+                <a href="../第二章 LuaFramework/2_1 HelloWorld.html">
+            
+                    
+                    2.1 HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第二章 LuaFramework/2_2 ScriptsFromFile.html">
+            
+                <a href="../第二章 LuaFramework/2_2 ScriptsFromFile.html">
+            
+                    
+                    2.2 ScriptsFromFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第二章 LuaFramework/2_3 CallLuaFunction.html">
+            
+                <a href="../第二章 LuaFramework/2_3 CallLuaFunction.html">
+            
+                    
+                    2.3 CallLuaFunction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../第二章 LuaFramework/2_4 AccessingLuaVariables.html">
+            
+                <a href="../第二章 LuaFramework/2_4 AccessingLuaVariables.html">
+            
+                    
+                    2.4 AccessingLuaVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../第二章 LuaFramework/2_5 LuaCoroutine.html">
+            
+                <a href="../第二章 LuaFramework/2_5 LuaCoroutine.html">
+            
+                    
+                    2.5 LuaCoroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../第二章 LuaFramework/2_6 LuaCoroutine2.html">
+            
+                <a href="../第二章 LuaFramework/2_6 LuaCoroutine2.html">
+            
+                    
+                    2.6 LuaCoroutine2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../第二章 LuaFramework/2_7 LuaThread.html">
+            
+                <a href="../第二章 LuaFramework/2_7 LuaThread.html">
+            
+                    
+                    2.7 LuaThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../第二章 LuaFramework/2_8 AccessingArray.html">
+            
+                <a href="../第二章 LuaFramework/2_8 AccessingArray.html">
+            
+                    
+                    2.8 AccessingArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../第二章 LuaFramework/2_9 Dictionary.html">
+            
+                <a href="../第二章 LuaFramework/2_9 Dictionary.html">
+            
+                    
+                    2.9 Dictionary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../第二章 LuaFramework/2_10 Enum.html">
+            
+                <a href="../第二章 LuaFramework/2_10 Enum.html">
+            
+                    
+                    2.10 Enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../第二章 LuaFramework/2_11 Delegate.html">
+            
+                <a href="../第二章 LuaFramework/2_11 Delegate.html">
+            
+                    
+                    2.11 Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../第二章 LuaFramework/2_12 GameObject.html">
+            
+                <a href="../第二章 LuaFramework/2_12 GameObject.html">
+            
+                    
+                    2.12 GameObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../第二章 LuaFramework/2_13 CustomLoader.html">
+            
+                <a href="../第二章 LuaFramework/2_13 CustomLoader.html">
+            
+                    
+                    2.13 CustomLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../第二章 LuaFramework/2_14 Out.html">
+            
+                <a href="../第二章 LuaFramework/2_14 Out.html">
+            
+                    
+                    2.14 Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../第二章 LuaFramework/2_15 ProtoBuffer.html">
+            
+                <a href="../第二章 LuaFramework/2_15 ProtoBuffer.html">
+            
+                    
+                    2.15 ProtoBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../第二章 LuaFramework/2_16 Int64.html">
+            
+                <a href="../第二章 LuaFramework/2_16 Int64.html">
+            
+                    
+                    2.16 Int64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../第二章 LuaFramework/2_17 Inherit.html">
+            
+                <a href="../第二章 LuaFramework/2_17 Inherit.html">
+            
+                    
+                    2.17 Inherit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../第二章 LuaFramework/2_18 Bundle.html">
+            
+                <a href="../第二章 LuaFramework/2_18 Bundle.html">
+            
+                    
+                    2.18 Bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../第二章 LuaFramework/2_19 cjson.html">
+            
+                <a href="../第二章 LuaFramework/2_19 cjson.html">
+            
+                    
+                    2.19 cjson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../第二章 LuaFramework/2_20 utf8.html">
+            
+                <a href="../第二章 LuaFramework/2_20 utf8.html">
+            
+                    
+                    2.20 utf8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../第二章 LuaFramework/2_21 String.html">
+            
+                <a href="../第二章 LuaFramework/2_21 String.html">
+            
+                    
+                    2.21 String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../第二章 LuaFramework/2_22 Reflection.html">
+            
+                <a href="../第二章 LuaFramework/2_22 Reflection.html">
+            
+                    
+                    2.22 Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../第二章 LuaFramework/2_23 List.html">
+            
+                <a href="../第二章 LuaFramework/2_23 List.html">
+            
+                    
+                    2.23 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../第二章 LuaFramework/2_24 Performance.html">
+            
+                <a href="../第二章 LuaFramework/2_24 Performance.html">
+            
+                    
+                    2.24 Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="../第二章 LuaFramework/2_25 TestErrorStack.html">
+            
+                <a href="../第二章 LuaFramework/2_25 TestErrorStack.html">
+            
+                    
+                    2.25 TestErrorStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="../第二章 LuaFramework/2_26 TestOverload.html">
+            
+                <a href="../第二章 LuaFramework/2_26 TestOverload.html">
+            
+                    
+                    2.26 TestOverload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.15 table库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="table&#x5E93;">table&#x5E93;</h2>
+<p>&#x2003;&#x2003;<code>table</code>&#x5E93;&#x662F;&#x7531;&#x4E00;&#x4E9B;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#x6784;&#x6210;&#x7684;&#xFF0C;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x5C06;<code>table</code>&#x4F5C;&#x4E3A;&#x6570;&#x7EC4;&#x6765;&#x64CD;&#x4F5C;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x6709;&#x7528;&#x4E8E;&#x5728;&#x5217;&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x5143;&#x7D20;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x6709;&#x5BF9;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FD8;&#x6709;&#x8FDE;&#x63A5;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;">&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;</h4>
+<p>&#x2003;&#x2003;&#x51FD;&#x6570;table.insert&#x7528;&#x4E8E;&#x5C06;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x5230;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#xFF0C;&#x5B83;&#x4F1A;&#x79FB;&#x52A8;&#x540E;&#x7EED;&#x5143;&#x7D20;&#x4EE5;&#x7A7A;&#x51FA;&#x7A7A;&#x95F4;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;<code>t</code>&#x662F;&#x6570;&#x7EC4;<code>{10, 20, 30}</code>&#xFF0C;&#x5F53;&#x8C03;&#x7528;<code>table.insert(t, 1, 15)</code>&#x540E;&#xFF0C;<code>t</code>&#x4F1A;&#x53D8;&#x4E3A;<code>{15, 10, 20, 30}</code>&#x3002;&#x4F46;&#x6709;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x8C03;&#x7528;<code>insert</code>&#x65F6;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x4F1A;&#x5C06;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5230;&#x6570;&#x7EC4;&#x672B;&#x5C3E;&#x3002;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x9010;&#x884C;&#x5730;&#x8BFB;&#x53D6;&#x4E86;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x5165;&#xFF0C;&#x5E76;&#x5C06;&#x6240;&#x6709;&#x7684;&#x884C;&#x4FDD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-lua">    t = {}
+    <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> <span class="hljs-built_in">io</span>.lines() <span class="hljs-keyword">do</span>
+        <span class="hljs-built_in">table</span>.insert(t, line)
+    <span class="hljs-keyword">end</span>
+    <span class="hljs-built_in">print</span>(#t)            <span class="hljs-comment">--&gt;(&#x8BFB;&#x5165;&#x7684;&#x884C;&#x6570;)</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x51FD;&#x6570;<code>table.remove</code>&#x4F1A;&#x5220;&#x9664;&#xFF08;&#x5E76;&#x8FD4;&#x56DE;&#xFF09;&#x6570;&#x7EC4;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x4E0A;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x5C06;&#x8BE5;&#x4F4D;&#x7F6E;&#x4E4B;&#x540E;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x524D;&#x79FB;&#xFF0C;&#x4EE5;&#x586B;&#x8865;&#x7A7A;&#x9699;&#x3002;&#x5982;&#x679C;&#x5728;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x65F6;&#x4E0D;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x5220;&#x9664;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x6709;&#x4E86;&#x8FD9;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x5B9E;&#x73B0;&#x6808;&#x3001;&#x961F;&#x5217;&#x548C;&#x53CC;&#x5411;&#x961F;&#x5217;&#x3002;&#x53EF;&#x4EE5;&#x7528;<code>t={}</code>&#x6765;&#x521D;&#x59CB;&#x5316;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#xFF0C;<code>table.insert(t, x)</code>&#x7B49;&#x4EF7;&#x4E8E;&#x538B;&#x5165;&#x64CD;&#x4F5C;&#xFF0C;<code>table.remove(t)</code>&#x7B49;&#x4EF7;&#x4E8E;&#x5F39;&#x51FA;&#x64CD;&#x4F5C;&#x3002;<code>table.insert(t,1,x)</code>&#x4F1A;&#x5728;&#x7ED3;&#x6784;&#x7684;&#x53E6;&#x4E00;&#x7AEF;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x8D77;&#x59CB;&#x5904;&#xFF09;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x65B0;&#x5143;&#x7D20;&#xFF0C;&#x800C;<code>table.remove(t,1)</code>&#x4F1A;&#x4ECE;&#x8FD9;&#x4E00;&#x7AEF;&#x5220;&#x9664;&#x5143;&#x7D20;&#x3002;&#x540E;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x4E0D;&#x662F;&#x5F88;&#x9AD8;&#x6548;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x5FC5;&#x987B;&#x79FB;&#x52A8;&#x5143;&#x7D20;&#x3002;&#x4E0D;&#x8FC7;&#x7531;&#x4E8E;<code>table</code>&#x5E93;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x90FD;&#x662F;&#x7528;C&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E9B;&#x5FAA;&#x73AF;&#x7684;&#x82B1;&#x9500;&#x5E76;&#x4E0D;&#x9AD8;&#xFF0C;&#x5BF9;&#x4E8E;&#x8F83;&#x5C0F;&#x7684;&#x6570;&#x7EC4;&#x6765;&#x8BF4;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x5B9E;&#x73B0;&#x8F83;&#x597D;&#x3002;</p>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x6392;&#x5E8F;">&#x6392;&#x5E8F;</h4>
+<p>&#x2003;&#x2003;&#x53E6;&#x4E00;&#x4E2A;&#x6709;&#x7528;&#x7684;&#x6570;&#x7EC4;&#x51FD;&#x6570;&#x662F;<code>table.sort</code>&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x6B64;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x7528;&#x5230;&#x8FC7;&#x5B83;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x5BF9;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x6B21;&#x5E8F;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x6B21;&#x5E8F;&#x51FD;&#x6570;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5728;&#x6392;&#x5E8F;&#x7ED3;&#x679C;&#x4E2D;&#x4F4D;&#x4E8E;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x503C;&#x524D;&#xFF0C;&#x5C31;&#x5E94;&#x5F53;&#x8FD4;&#x56DE;<code>true</code>&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;<code>sort</code>&#x5C31;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x5C0F;&#x4E8E;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E00;&#x4E2A;&#x5E38;&#x89C1;&#x7684;&#x9519;&#x8BEF;&#x662F;&#x8BD5;&#x56FE;&#x5BF9;&#x4E00;&#x4E2A;<code>table</code>&#x7684;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;&#x5728;<code>table</code>&#x4E2D;&#xFF0C;&#x7D22;&#x5F15;&#x662F;&#x4E00;&#x4E2A;&#x65E0;&#x5E8F;&#x7684;&#x96C6;&#x5408;&#x3002;&#x5982;&#x679C;&#x5BF9;&#x5B83;&#x4EEC;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x5C06;&#x5B83;&#x4EEC;&#x590D;&#x5236;&#x5230;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;&#x4E0B;&#x9762;&#x6F14;&#x793A;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#xFF0C;&#x5047;&#x8BBE;&#x8981;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6E90;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;<code>table</code>&#x8BB0;&#x5F55;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x5E76;&#x5B9A;&#x4E49;&#x5B83;&#x7684;&#x884C;&#x53F7;&#xFF1A;</p>
+<pre><code class="lang-lua">    lines = {
+        luaH_set = <span class="hljs-number">10</span>,
+        luaH_get = <span class="hljs-number">24</span>,
+        luaH_present = <span class="hljs-number">48</span>,
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x73B0;&#x5728;&#x8981;&#x6C42;&#x6309;&#x5B57;&#x6BCD;&#x6B21;&#x5E8F;&#x6253;&#x5370;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x540D;&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;<code>pairs</code>&#x6765;&#x904D;&#x5386;&#x8FD9;&#x4E2A;<code>table</code>&#xFF0C;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x904D;&#x5386;&#x6240;&#x5F97;&#x7684;&#x540D;&#x79F0;&#x662F;&#x65E0;&#x5E8F;&#x7684;&#x3002;&#x7531;&#x4E8E;&#x8FD9;&#x4E9B;&#x540D;&#x79F0;&#x662F;<code>table</code>&#x7684;<code>key</code>&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x80FD;&#x5BF9;&#x5B83;&#x4EEC;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x6392;&#x5E8F;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x4EEC;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;&#x6B63;&#x786E;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x5148;&#x7528;&#x8FD9;&#x4E9B;&#x540D;&#x79F0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x6570;&#x7EC4;&#x6392;&#x5E8F;&#xFF0C;&#x6700;&#x540E;&#x6253;&#x5370;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-lua">    a = {}
+    <span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> <span class="hljs-built_in">pairs</span>(lines) <span class="hljs-keyword">do</span> a[#a+<span class="hljs-number">1</span>] = n <span class="hljs-keyword">end</span>
+    <span class="hljs-built_in">table</span>.sort(a)
+    <span class="hljs-keyword">for</span> i,n <span class="hljs-keyword">in</span> <span class="hljs-built_in">ipairs</span>(a) <span class="hljs-keyword">do</span> <span class="hljs-built_in">print</span>(n) <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x6CE8;&#x610F;&#xFF0C;&#x5BF9;&#x4E8E;Lua&#x6765;&#x8BF4;&#xFF0C;&#x6570;&#x7EC4;&#x4E5F;&#x662F;&#x65E0;&#x5E8F;&#x7684;&#xFF0C;&#x5B83;&#x4EEC;&#x672C;&#x8D28;&#x4E0A;&#x662F;<code>table</code>&#x3002;&#x7136;&#x800C;&#x7531;&#x4E8E;&#x7528;&#x6237;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x7D22;&#x5F15;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x8BBF;&#x95EE;&#x6570;&#x7EC4;&#x65F6;&#xFF0C;&#x53EA;&#x8981;&#x4F7F;&#x7528;&#x6709;&#x5E8F;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x987A;&#x5E8F;&#x5730;&#x8BBF;&#x95EE;&#x6570;&#x7EC4;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x5FC5;&#x987B;&#x7528;<code>ipairs</code>&#x800C;&#x4E0D;&#x662F;<code>pairs</code>&#x6765;&#x904D;&#x5386;&#x6570;&#x7EC4;&#x7684;&#x539F;&#x56E0;&#x3002;&#x524D;&#x8005;&#x4F7F;<code>key</code>&#x4E3A;<code>1&#x3001;2&#x3001;......</code>&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x800C;&#x540E;&#x8005;&#x91C7;&#x7528;<code>table</code>&#x7684;&#x539F;&#x59CB;&#x987A;&#x5E8F;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x53E6;&#x5916;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x662F;&#x5199;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;&#x5668;&#xFF0C;&#x4F7F;&#x5B83;&#x6839;&#x636E;<code>table key</code>&#x7684;&#x6B21;&#x5E8F;&#x6765;&#x8FDB;&#x884C;&#x904D;&#x5386;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x53C2;&#x6570;<code>f</code>&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x67D0;&#x79CD;&#x7279;&#x6B8A;&#x6B21;&#x5E8F;&#x3002;&#x4EE5;&#x4E0B;&#x51FD;&#x6570;&#x5148;&#x5C06;<code>key</code>&#x6392;&#x5E8F;&#x5230;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x8FED;&#x4EE3;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x4E14;&#x6BCF;&#x6B65;&#x90FD;&#x8FD4;&#x56DE;&#x539F;<code>table</code>&#x4E2D;<code>key</code>&#x548C;<code>value</code>&#x3002;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pairsByKeys</span><span class="hljs-params">(t, f)</span></span>
+        <span class="hljs-keyword">local</span> a = {}
+        <span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> <span class="hljs-built_in">pairs</span>(t) <span class="hljs-keyword">do</span> a[#a+<span class="hljs-number">1</span>] = n <span class="hljs-keyword">end</span>
+        <span class="hljs-built_in">table</span>.sort(a, f)
+        <span class="hljs-keyword">local</span> i = <span class="hljs-number">0</span>          <span class="hljs-comment">-- &#x8FED;&#x4EE3;&#x5668;&#x53D8;&#x91CF;</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>    <span class="hljs-comment">-- &#x8FED;&#x4EE3;&#x5668;&#x51FD;&#x6570;</span>
+            i = i + <span class="hljs-number">1</span>
+            <span class="hljs-keyword">return</span> a[i], t[a[i]]
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x6309;&#x5B57;&#x6BCD;&#x6B21;&#x5E8F;&#x6765;&#x6253;&#x5370;&#x90A3;&#x4E9B;&#x51FD;&#x6570;&#x540D;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-keyword">for</span> name, line <span class="hljs-keyword">in</span> pairsByKeys(line) <span class="hljs-keyword">do</span>
+        <span class="hljs-built_in">print</span>(name, line)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x8FDE;&#x63A5;">&#x8FDE;&#x63A5;</h4>
+<p>&#x2003;&#x2003;&#x5728;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7AE0;&#x8282;&#x4E2D;&#x5DF2;&#x7ECF;&#x770B;&#x5230;&#x8FC7;<code>table.concat</code>&#x3002;&#x5B83;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x5B83;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x63D2;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x95F4;&#x7684;&#x5206;&#x9694;&#x7B26;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53E6;&#x5916;&#x8FD8;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x7B2C;&#x4E00;&#x4E2A;&#x548C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8981;&#x8FDE;&#x63A5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7D22;&#x5F15;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;<code>table.concat</code>&#x7684;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#xFF0C;&#x5B83;&#x80FD;&#x5904;&#x7406;&#x5D4C;&#x5957;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rconcat</span><span class="hljs-params">(l)</span></span>
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">type</span>(l) ~= <span class="hljs-string">&quot;table&quot;</span> <span class="hljs-keyword">then</span> <span class="hljs-keyword">return</span> l <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">local</span> res = {}
+        <span class="hljs-keyword">for</span> i=<span class="hljs-number">1</span>, #l <span class="hljs-keyword">do</span>
+            res[i] = rconcat(l[i])
+        <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">table</span>.concat(res)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x5BF9;&#x4E8E;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;<code>rconcat</code>&#x90FD;&#x9012;&#x5F52;&#x5730;&#x8C03;&#x7528;&#x81EA;&#x5DF1;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x8FDE;&#x63A5;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x5D4C;&#x5957;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x5B83;&#x8C03;&#x7528;<code>table.concat</code>&#x6765;&#x8FDE;&#x63A5;&#x8FD9;&#x4E9B;&#x7ED3;&#x679C;&#x90E8;&#x5206;&#x3002;</p>
+<pre><code class="lang-lua">    <span class="hljs-built_in">print</span>(rconcat{{<span class="hljs-string">&quot;a&quot;</span>, {<span class="hljs-string">&quot; nice&quot;</span>}}, <span class="hljs-string">&quot; and&quot;</span>, {{<span class="hljs-string">&quot; long&quot;</span>}, {<span class="hljs-string">&quot; list&quot;</span>}}})
+    <span class="hljs-comment">--&gt; a nice and long list</span>
+</code></pre>
+<p>&#x1F51A;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1_14 数学库.html" class="navigation navigation-prev " aria-label="Previous page: 1.14 数学库">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1_16 字符串库.html" class="navigation navigation-next " aria-label="Next page: 1.16 字符串库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.15 table库","level":"1.2.15","depth":2,"next":{"title":"1.16 字符串库","level":"1.2.16","depth":2,"path":"第一章 Lua程序设计/1_16 字符串库.md","ref":"第一章 Lua程序设计/1_16 字符串库.md","articles":[]},"previous":{"title":"1.14 数学库","level":"1.2.14","depth":2,"path":"第一章 Lua程序设计/1_14 数学库.md","ref":"第一章 Lua程序设计/1_14 数学库.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第一章 Lua程序设计/1_15 table库.md","mtime":"2017-11-04T13:34:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-04T14:06:07.623Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1135 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.18 用户自定义类型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../第二章 LuaFramework/" />
+    
+    
+    <link rel="prev" href="1_17 I／O库.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 Lua程序设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_1 类型与值.html">
+            
+                <a href="1_1 类型与值.html">
+            
+                    
+                    1.1 类型与值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1_2 表达式.html">
+            
+                <a href="1_2 表达式.html">
+            
+                    
+                    1.2 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1_3 语句.html">
+            
+                <a href="1_3 语句.html">
+            
+                    
+                    1.3 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1_4 函数.html">
+            
+                <a href="1_4 函数.html">
+            
+                    
+                    1.4 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1_5 迭代器与范型for.html">
+            
+                <a href="1_5 迭代器与范型for.html">
+            
+                    
+                    1.5 迭代器与范型for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="1_6 协同程序.html">
+            
+                <a href="1_6 协同程序.html">
+            
+                    
+                    1.6 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="1_7 数据结构.html">
+            
+                <a href="1_7 数据结构.html">
+            
+                    
+                    1.7 数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="1_8 数据文件与持久性.html">
+            
+                <a href="1_8 数据文件与持久性.html">
+            
+                    
+                    1.8 数据文件与持久性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="1_9 元表与元方法.html">
+            
+                <a href="1_9 元表与元方法.html">
+            
+                    
+                    1.9 元表与元方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="1_10 环境.html">
+            
+                <a href="1_10 环境.html">
+            
+                    
+                    1.10 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="1_11 模块与包.html">
+            
+                <a href="1_11 模块与包.html">
+            
+                    
+                    1.11 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="1_12 面向对象编程.html">
+            
+                <a href="1_12 面向对象编程.html">
+            
+                    
+                    1.12 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="1_13 弱引用table.html">
+            
+                <a href="1_13 弱引用table.html">
+            
+                    
+                    1.13 弱引用table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="1_14 数学库.html">
+            
+                <a href="1_14 数学库.html">
+            
+                    
+                    1.14 数学库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="1_15 table库.html">
+            
+                <a href="1_15 table库.html">
+            
+                    
+                    1.15 table库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="1_16 字符串库.html">
+            
+                <a href="1_16 字符串库.html">
+            
+                    
+                    1.16 字符串库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="1_17 I／O库.html">
+            
+                <a href="1_17 I／O库.html">
+            
+                    
+                    1.17 I／O库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.18" data-path="1_18 用户自定义类型.html">
+            
+                <a href="1_18 用户自定义类型.html">
+            
+                    
+                    1.18 用户自定义类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../第二章 LuaFramework/">
+            
+                <a href="../第二章 LuaFramework/">
+            
+                    
+                    第二章 LuaFramework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第二章 LuaFramework/2_1 HelloWorld.html">
+            
+                <a href="../第二章 LuaFramework/2_1 HelloWorld.html">
+            
+                    
+                    2.1 HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第二章 LuaFramework/2_2 ScriptsFromFile.html">
+            
+                <a href="../第二章 LuaFramework/2_2 ScriptsFromFile.html">
+            
+                    
+                    2.2 ScriptsFromFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第二章 LuaFramework/2_3 CallLuaFunction.html">
+            
+                <a href="../第二章 LuaFramework/2_3 CallLuaFunction.html">
+            
+                    
+                    2.3 CallLuaFunction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../第二章 LuaFramework/2_4 AccessingLuaVariables.html">
+            
+                <a href="../第二章 LuaFramework/2_4 AccessingLuaVariables.html">
+            
+                    
+                    2.4 AccessingLuaVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../第二章 LuaFramework/2_5 LuaCoroutine.html">
+            
+                <a href="../第二章 LuaFramework/2_5 LuaCoroutine.html">
+            
+                    
+                    2.5 LuaCoroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../第二章 LuaFramework/2_6 LuaCoroutine2.html">
+            
+                <a href="../第二章 LuaFramework/2_6 LuaCoroutine2.html">
+            
+                    
+                    2.6 LuaCoroutine2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../第二章 LuaFramework/2_7 LuaThread.html">
+            
+                <a href="../第二章 LuaFramework/2_7 LuaThread.html">
+            
+                    
+                    2.7 LuaThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../第二章 LuaFramework/2_8 AccessingArray.html">
+            
+                <a href="../第二章 LuaFramework/2_8 AccessingArray.html">
+            
+                    
+                    2.8 AccessingArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../第二章 LuaFramework/2_9 Dictionary.html">
+            
+                <a href="../第二章 LuaFramework/2_9 Dictionary.html">
+            
+                    
+                    2.9 Dictionary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../第二章 LuaFramework/2_10 Enum.html">
+            
+                <a href="../第二章 LuaFramework/2_10 Enum.html">
+            
+                    
+                    2.10 Enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../第二章 LuaFramework/2_11 Delegate.html">
+            
+                <a href="../第二章 LuaFramework/2_11 Delegate.html">
+            
+                    
+                    2.11 Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../第二章 LuaFramework/2_12 GameObject.html">
+            
+                <a href="../第二章 LuaFramework/2_12 GameObject.html">
+            
+                    
+                    2.12 GameObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../第二章 LuaFramework/2_13 CustomLoader.html">
+            
+                <a href="../第二章 LuaFramework/2_13 CustomLoader.html">
+            
+                    
+                    2.13 CustomLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../第二章 LuaFramework/2_14 Out.html">
+            
+                <a href="../第二章 LuaFramework/2_14 Out.html">
+            
+                    
+                    2.14 Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../第二章 LuaFramework/2_15 ProtoBuffer.html">
+            
+                <a href="../第二章 LuaFramework/2_15 ProtoBuffer.html">
+            
+                    
+                    2.15 ProtoBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../第二章 LuaFramework/2_16 Int64.html">
+            
+                <a href="../第二章 LuaFramework/2_16 Int64.html">
+            
+                    
+                    2.16 Int64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../第二章 LuaFramework/2_17 Inherit.html">
+            
+                <a href="../第二章 LuaFramework/2_17 Inherit.html">
+            
+                    
+                    2.17 Inherit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../第二章 LuaFramework/2_18 Bundle.html">
+            
+                <a href="../第二章 LuaFramework/2_18 Bundle.html">
+            
+                    
+                    2.18 Bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../第二章 LuaFramework/2_19 cjson.html">
+            
+                <a href="../第二章 LuaFramework/2_19 cjson.html">
+            
+                    
+                    2.19 cjson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../第二章 LuaFramework/2_20 utf8.html">
+            
+                <a href="../第二章 LuaFramework/2_20 utf8.html">
+            
+                    
+                    2.20 utf8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../第二章 LuaFramework/2_21 String.html">
+            
+                <a href="../第二章 LuaFramework/2_21 String.html">
+            
+                    
+                    2.21 String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../第二章 LuaFramework/2_22 Reflection.html">
+            
+                <a href="../第二章 LuaFramework/2_22 Reflection.html">
+            
+                    
+                    2.22 Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../第二章 LuaFramework/2_23 List.html">
+            
+                <a href="../第二章 LuaFramework/2_23 List.html">
+            
+                    
+                    2.23 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../第二章 LuaFramework/2_24 Performance.html">
+            
+                <a href="../第二章 LuaFramework/2_24 Performance.html">
+            
+                    
+                    2.24 Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="../第二章 LuaFramework/2_25 TestErrorStack.html">
+            
+                <a href="../第二章 LuaFramework/2_25 TestErrorStack.html">
+            
+                    
+                    2.25 TestErrorStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="../第二章 LuaFramework/2_26 TestOverload.html">
+            
+                <a href="../第二章 LuaFramework/2_26 TestOverload.html">
+            
+                    
+                    2.26 TestOverload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.18 用户自定义类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;">&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;</h2>
+<p>&#x2003;&#x2003;&#x672C;&#x7AE0;&#x5C06;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x7528;C&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x65B0;&#x7684;&#x7C7B;&#x578B;&#x6765;&#x6269;&#x5C55;Lua&#x3002;&#x4E0B;&#x9762;&#x5C06;&#x4ECE;&#x4E00;&#x4E2A;&#x5C0F;&#x793A;&#x4F8B;&#x5165;&#x624B;&#xFF0C;&#x4F7F;&#x7528;&#x5143;&#x8868;&#x548C;&#x5176;&#x4ED6;&#x673A;&#x5236;&#x6765;&#x6269;&#x5C55;&#x5B83;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x79CD;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x7C7B;&#x578B;--&#x5E03;&#x5C14;&#x6570;&#x7EC4;&#x3002;&#x9009;&#x7528;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x4E0D;&#x6D89;&#x53CA;&#x5230;&#x590D;&#x6742;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x4F7F;&#x8BFB;&#x8005;&#x4E13;&#x6CE8;&#x4E8E;API&#x7684;&#x95EE;&#x9898;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x672C;&#x8EAB;&#x8FD8;&#x662F;&#x5177;&#x6709;&#x5B9E;&#x7528;&#x4EF7;&#x503C;&#x7684;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;Lua&#x4E2D;&#x7528;<code>table</code>&#x6765;&#x5B9E;&#x73B0;&#x5E03;&#x5C14;&#x6570;&#x7EC4;&#x3002;&#x4F46;C&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x5C06;&#x6BCF;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E2A;<code>bit</code>&#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x5C06;&#x5185;&#x5B58;&#x7528;&#x91CF;&#x51CF;&#x5C11;&#x5230;&#x4E0D;&#x8DB3;<code>table</code>&#x65B9;&#x6CD5;&#x7684;<code>3%</code>&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8FD9;&#x4E2A;&#x5B9E;&#x73B0;&#x9700;&#x8981;&#x4EE5;&#x4E0B;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code class="lang-lua">    #include &lt;limits.h&gt;
+
+    #define BITS_PER_WORD (CHAR_BIT* sizeof(unsigned int))
+    #define I_WORD(i)    ((unsigned int)(i)/BITS_PER_WORD)
+    #define I_BIT(i)    (<span class="hljs-number">1</span> &lt;&lt; ((unsigned int)(i) % BITS_PER_WORD))
+</code></pre>
+<p>&#x2003;&#x2003;<code>BITS_PER_WORD</code>&#x662F;&#x4E00;&#x4E2A;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x578B;&#x7684;<code>bit</code>&#x6570;&#x91CF;&#x3002;&#x5B8F;<code>I_WORD</code>&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x7D22;&#x5F15;&#x6765;&#x8BA1;&#x7B97;&#x5BF9;&#x5E94;&#x7684;<code>bit</code>&#x4F4D;&#x6240;&#x5B58;&#x653E;&#x7684;<code>word</code>&#xFF08;&#x5B57;&#xFF09;&#xFF0C;<code>I_BIT</code>&#x8BA1;&#x7B97;&#x51FA;&#x4E00;&#x4E2A;&#x63A9;&#x7801;&#xFF0C;&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;<code>word</code>&#x4E2D;&#x7684;&#x6B63;&#x786E;<code>bit</code>&#x3002;</p>
+<p>&#x2003;&#x2003;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x7ED3;&#x6784;&#x6765;&#x8868;&#x793A;&#x6570;&#x7EC4;&#xFF1A;</p>
+<pre><code class="lang-lua">    typedef struct NumArray {
+        int size;
+        unsigned int values[<span class="hljs-number">1</span>];    /* &#x53EF;&#x53D8;&#x90E8;&#x5206; */
+    } NumArray
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FD9;&#x91CC;&#x3002;&#x7531;&#x4E8E;C89&#x6807;&#x51C6;&#x4E0D;&#x5141;&#x8BB8;&#x5206;&#x914D;0&#x957F;&#x5EA6;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6240;&#x4EE5;&#x58F0;&#x660E;&#x4E86;&#x6570;&#x7EC4;<code>values</code>&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x6765;&#x4F5C;&#x4E3A;&#x5360;&#x4F4D;&#x7B26;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x4F1A;&#x5728;&#x5206;&#x914D;&#x6570;&#x7EC4;&#x65F6;&#x5B9A;&#x4E49;&#x5B9E;&#x9645;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x51FA;&#x5177;&#x6709;<code>n</code>&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6570;&#x7EC4;&#x5927;&#x5C0F;&#xFF1A;</p>
+<pre><code class="lang-lua">    sizeof(NumArray) + I_WORD(n - <span class="hljs-number">1</span>)*sizeof(unsigned int)
+</code></pre>
+<p>&#x2003;&#x2003;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x65E0;&#x987B;&#x5BF9;<code>I_WORD</code>&#x52A0;1&#xFF0C;&#x56E0;&#x4E3A;&#x539F;&#x6765;&#x7684;&#x7ED3;&#x6784;&#x4E2D;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x7A7A;&#x95F4;&#x3002;</p>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x2003;&#x2003;userdata">&#x2003;&#x2003;userdata</h4>
+<p>&#x2003;&#x2003;&#x9996;&#x5148;&#x8981;&#x9762;&#x4E34;&#x7684;&#x95EE;&#x9898;&#x662F;&#x5982;&#x4F55;&#x5728;Lua&#x4E2D;&#x8868;&#x793A;&#x8FD9;&#x4E2A;NumArray&#x7ED3;&#x6784;&#x3002;Lua&#x4E3A;&#x6B64;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x57FA;&#x672C;&#x7C7B;&#x578B;<code>userdata</code>&#x3002;<code>userdata</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x5757;&#x539F;&#x59CB;&#x7684;&#x5185;&#x5B58;&#x533A;&#x57DF;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#x3002;&#x5E76;&#x4E14;&#xFF0C;&#x5728;Lua&#x4E2D;<code>userdata</code>&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x51FD;&#x6570;<code>lua_newuserdata</code>&#x4F1A;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x5927;&#x5C0F;&#x5206;&#x914D;&#x4E00;&#x5757;&#x5185;&#x5B58;&#xFF0C;&#x5E76;&#x5C06;&#x5BF9;&#x5E94;&#x7684;userdata&#x538B;&#x5165;&#x6808;&#x4E2D;&#xFF0C;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5185;&#x5B58;&#x5757;&#x7684;&#x5730;&#x5740;&#xFF1A;</p>
+<pre><code class="lang-lua">    void *lua_newuserdata(lua_State *L, size_t size);
+</code></pre>
+<p>&#x2003;&#x2003;&#x5982;&#x679C;&#x7531;&#x4E8E;&#x67D0;&#x4E9B;&#x539F;&#x56E0;&#xFF0C;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x673A;&#x5236;&#x6765;&#x5206;&#x914D;&#x5185;&#x5B58;&#x3002;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x5927;&#x5C0F;&#x7684;<code>userdata</code>&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x6307;&#x5411;&#x771F;&#x6B63;&#x5185;&#x5B58;&#x5757;&#x7684;&#x6307;&#x9488;&#x5B58;&#x5165;&#x5176;&#x4E2D;&#x3002;&#x5728;&#x4E0B;&#x4E00;&#x7AE0;&#x4E2D;&#x5C31;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4EE5;&#x4E0B;&#x51FD;&#x6570;&#x5C31;&#x7528;<code>lua_newuserdata</code>&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5E03;&#x5C14;&#x6570;&#x7EC4;&#xFF1A;</p>
+<pre><code class="lang-lua">    static int newarray(lua_State *L) {
+        int i, n;
+        size_t nbytes;
+        NumArray *a;
+
+        n = luaL_checkint(L, <span class="hljs-number">1</span>);
+        luaL_argcheck(L, n &gt;= <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-string">&quot;invalid size&quot;</span>)
+        nbytes = sizeof(NumArray) + I_WORD(n - <span class="hljs-number">1</span>)*sizeof(unsigned int);
+        a = (NumArray *)lua_newuserdata(L, nbytes);
+
+        a-&gt;size = n;
+        <span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i &lt;= I_WORD(n<span class="hljs-number">-1</span>); i++)
+            a-&gt;values[i] = <span class="hljs-number">0</span>;        /* &#x521D;&#x59CB;&#x5316;&#x6570;&#x7EC4; */
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;        /* &#x65B0;&#x7684;userdata&#x5DF2;&#x5728;&#x6808;&#x4E0A; */
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x5176;&#x4E2D;&#xFF0C;&#x5B8F;<code>luaL_checkint</code>&#x53EA;&#x662F;&#x5728;&#x8C03;&#x7528;<code>luaL_checkinteger</code>&#x540E;&#x8FDB;&#x884C;&#x4E86;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;&#x53EA;&#x8981;&#x5728;Lua&#x4E2D;&#x6CE8;&#x518C;&#x597D;<code>newarray</code>&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BED;&#x53E5;<code>a=array.new(1000)</code>&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x6837;&#x7684;&#x8C03;&#x7528;<code>array.set(array, index, value)</code>&#xFF0C;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x5B58;&#x50A8;&#x5143;&#x7D20;&#x3002;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x5143;&#x8868;&#x6765;&#x5B9E;&#x73B0;&#x66F4;&#x4F20;&#x7EDF;&#x7684;&#x8BED;&#x6CD5;<code>array[index]=value</code>&#x3002;&#x65E0;&#x8BBA;&#x54EA;&#x79CD;&#x5199;&#x6CD5;&#xFF0C;&#x5E95;&#x5C42;&#x51FD;&#x6570;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x5C06;&#x9075;&#x5FAA;Lua&#x60EF;&#x4F8B;&#xFF0C;&#x5047;&#x8BBE;&#x7D22;&#x5F15;&#x4ECE;1&#x5F00;&#x59CB;&#x3002;</p>
+<pre><code class="lang-lua">    static int setarray(lua_State *L)
+        NumArray *a = (NumArray *)lua_touserdata(L, <span class="hljs-number">1</span>);
+        int index = luaL_checkint(L, <span class="hljs-number">2</span>) - <span class="hljs-number">1</span>;
+        luaL_checkany(L, <span class="hljs-number">3</span>);
+
+        luaL_argcheck(L, a != NULL, <span class="hljs-number">1</span>, <span class="hljs-string">&quot;&apos;array&apos; expected&quot;</span>);
+
+        luaL_argcheck(L, <span class="hljs-number">0</span> &lt;= index &amp;&amp; index &lt; a-&gt;size, <span class="hljs-number">2</span>, <span class="hljs-string">&quot;index out of range&quot;</span>);
+
+        <span class="hljs-keyword">if</span>(lua_toboolean(L, <span class="hljs-number">3</span>))
+            a-&gt;values[I_WORD(index)] |= I_BIT(index);    /* &#x8BBE;&#x7F6E;bit */
+        <span class="hljs-keyword">else</span>
+            a-&gt;values[I_WORD(index)] &amp;= ~I_BIT(index);    /* &#x91CD;&#x7F6E;bit */
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+</code></pre>
+<p>&#x2003;&#x2003;&#x7531;&#x4E8E;Lua&#x4E2D;&#x4EFB;&#x4F55;&#x503C;&#x90FD;&#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x4E3A;&#x5E03;&#x5C14;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x5BF9;&#x7B2C;3&#x4E2A;&#x53C2;&#x6570;&#x4F7F;&#x7528;<code>luaL_checkany</code>&#xFF0C;&#x5B83;&#x53EA;&#x786E;&#x4FDD;&#x4E86;&#x5728;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x4F4D;&#x7F6E;&#x4E0A;&#x6709;&#x4E00;&#x4E2A;&#x503C;&#x3002;&#x5982;&#x679C;&#x7528;&#x9519;&#x8BEF;&#x7684;&#x53C2;&#x6570;&#x8C03;&#x7528;&#x4E86;<code>setarray</code>&#xFF0C;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-lua">    array.set(<span class="hljs-number">0</span>, <span class="hljs-number">11</span>, <span class="hljs-number">0</span>)
+    <span class="hljs-comment">--&gt; stdin:1: bad argument #1 to &apos;set&apos; (&apos;array&apos; expected)</span>
+    array.set(a, <span class="hljs-number">0</span>)
+    <span class="hljs-comment">--&gt; stdin:1: bad argument #3 to &apos;set&apos; (value expected)</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x4E0B;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x68C0;&#x7D22;&#x5143;&#x7D20;&#xFF1A;</p>
+<pre><code class="lang-lua">    static int getarray(lua_State *L) {
+        NumArray *a = (NumArray *)lua_touserdata(L, <span class="hljs-number">1</span>);
+        int index = luaL_checkint(L, <span class="hljs-number">2</span>) - <span class="hljs-number">1</span>;
+
+        luaL_argcheck(L, a != NULL, <span class="hljs-number">1</span>, <span class="hljs-string">&quot;&apos;array&apos; expected&quot;</span>);
+
+        lua_pushboolean(L, a-&gt;values[I_WORD(index)] &amp; I_BIT(index));
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x8FD8;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x68C0;&#x7D22;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5927;&#x5C0F;&#xFF1A;</p>
+<pre><code class="lang-lua">    static int getsize(lua_State *L) {
+        NumArray *a = (NumArray *)lua_touserdata(L, <span class="hljs-number">1</span>);
+        luaL_argcheck(L, a != NULL, <span class="hljs-number">1</span>, <span class="hljs-string">&quot;&apos;array&apos; expected&quot;</span>);
+        lua_pushinteger(L, a-&gt;size);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x6700;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x4EE3;&#x7801;&#x6765;&#x521D;&#x59CB;&#x5316;&#x8FD9;&#x4E2A;&#x5E93;&#xFF1A;</p>
+<pre><code class="lang-lua">    static const struct luaL_Reg arraylib [] = {
+        {<span class="hljs-string">&quot;new&quot;</span>, newarray},
+        {<span class="hljs-string">&quot;set&quot;</span>, setarray},
+        {<span class="hljs-string">&quot;get&quot;</span>, getarray},
+        {<span class="hljs-string">&quot;size&quot;</span>, getsize},
+        {NULL, NULL}
+    };
+
+    int luaopen_array(lua_State *L) {
+        luaL_register(L, <span class="hljs-string">&quot;array&quot;</span>, arraylib);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x540C;&#x6837;&#x5176;&#x4E2D;&#x7528;&#x5230;&#x4E86;&#x8F85;&#x52A9;&#x5E93;&#x7684;<code>luaL_register</code>&#xFF0C;&#x5B83;&#x4F1A;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x540D;&#x79F0;&#xFF08;&#x672C;&#x4F8B;&#x4E2D;&#x4E3A;&#x201C;<code>array</code>&#x201D;&#xFF09;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>table</code>&#xFF0C;&#x5E76;&#x7528;&#x6570;&#x7EC4;<code>arraylib</code>&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x540D;&#x79F0;/&#x51FD;&#x6570;&#x5BF9;&#x6765;&#x586B;&#x5145;&#x5B83;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5728;&#x6253;&#x5F00;&#x5E93;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;Lua&#x4E2D;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B0;&#x7C7B;&#x578B;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-lua">    a = array.new(<span class="hljs-number">1000</span>)
+    <span class="hljs-built_in">print</span>(a)                <span class="hljs-comment">--&gt; userdata: 0x8064d48</span>
+    <span class="hljs-built_in">print</span>(array.size(a))    <span class="hljs-comment">--&gt; 1000</span>
+    <span class="hljs-keyword">for</span> i = <span class="hljs-number">1</span>, <span class="hljs-number">1000</span> <span class="hljs-keyword">do</span>
+        array.set(a, i, i%<span class="hljs-number">5</span> == <span class="hljs-number">0</span>)
+    <span class="hljs-keyword">end</span>
+    <span class="hljs-built_in">print</span>(array.get(a, <span class="hljs-number">10</span>))        <span class="hljs-comment">--&gt; true</span>
+</code></pre>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x2003;&#x2003;&#x5143;&#x8868;">&#x2003;&#x2003;&#x5143;&#x8868;</h4>
+<p>&#x2003;&#x2003;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#x6709;&#x4E00;&#x4E2A;&#x91CD;&#x5927;&#x7684;&#x5B89;&#x5168;&#x6F0F;&#x6D1E;&#xFF0C;&#x5047;&#x5B9A;&#x7528;&#x6237;&#x5199;&#x4E86;&#x8FD9;&#x6837;&#x7684;&#x8BED;&#x53E5;<code>array.set(io.stdin, 1, false)</code>&#x3002;<code>io.stdin</code>&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A;<code>userdata</code>&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6D41;&#x6307;&#x9488;&#xFF08;FILE *&#xFF09;&#x3002;&#x7531;&#x4E8E;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;<code>userdata</code>&#xFF0C;<code>array.set</code>&#x4F1A;&#x8BA4;&#x4E3A;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x7ED3;&#x679C;&#x5C31;&#x4F7F;&#x5185;&#x5B58;&#x906D;&#x5230;&#x7834;&#x574F;&#xFF08;&#x5982;&#x679C;&#x5E78;&#x8FD0;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#x8D85;&#x51FA;&#x8303;&#x56F4;&#x7684;&#x9519;&#x8BEF;&#xFF09;&#x3002;&#x4F46;&#x5BF9;&#x4E8E;&#x6709;&#x4E9B;Lua&#x5E93;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x662F;&#x4E0D;&#x53EF;&#x63A5;&#x53D7;&#x7684;&#x3002;&#x95EE;&#x9898;&#x7684;&#x539F;&#x56E0;&#x4E0D;&#x5728;&#x4E8E;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;C&#x7A0B;&#x5E8F;&#x5E93;&#xFF0C;&#x800C;&#x5728;&#x4E8E;&#x7A0B;&#x5E8F;&#x5E93;&#x4E0D;&#x5E94;&#x7834;&#x574F;C&#x6570;&#x636E;&#x6216;&#x5728;Lua&#x4E2D;&#x5BFC;&#x81F4;&#x6838;&#x5FC3;&#x8F6C;&#x50A8;&#xFF08;Core Dump&#xFF09;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E00;&#x79CD;&#x8FA8;&#x522B;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;<code>userdata</code>&#x7684;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x4E3A;&#x6BCF;&#x79CD;&#x7C7B;&#x578B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x5143;&#x8868;&#x3002;&#x6BCF;&#x5F53;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;<code>userdata</code>&#x540E;&#xFF0C;&#x5C31;&#x7528;&#x76F8;&#x5E94;&#x7684;&#x5143;&#x8868;&#x6765;&#x6807;&#x8BB0;&#x5B83;&#x3002;&#x800C;&#x6BCF;&#x5F53;&#x5F97;&#x5230;&#x4E00;&#x4E2A;<code>userdata</code>&#x540E;&#xFF0C;&#x5C31;&#x68C0;&#x67E5;&#x5B83;&#x662F;&#x5426;&#x62E5;&#x6709;&#x6B63;&#x786E;&#x7684;&#x5143;&#x8868;&#x3002;&#x7531;&#x4E8E;Lua&#x4EE3;&#x7801;&#x4E0D;&#x80FD;&#x6539;&#x53D8;<code>userdata</code>&#x7684;&#x5143;&#x8868;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x5C31;&#x65E0;&#x6CD5;&#x6B3A;&#x9A97;&#x4EE3;&#x7801;&#x4E86;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x53E6;&#x5916;&#x8FD8;&#x9700;&#x8981;&#x6709;&#x4E2A;&#x5730;&#x65B9;&#x6765;&#x5B58;&#x50A8;&#x8FD9;&#x4E2A;&#x65B0;&#x7684;&#x5143;&#x8868;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x80FD;&#x7528;&#x5B83;&#x6765;&#x521B;&#x5EFA;&#x65B0;&#x7684;<code>userdata</code>&#xFF0C;&#x5E76;&#x68C0;&#x67E5;&#x7ED9;&#x5B9A;&#x7684;<code>userdata</code>&#x662F;&#x5426;&#x5177;&#x6709;&#x6B63;&#x786E;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x5728;&#x524D;&#x9762;&#x5DF2;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;&#x6709;&#x4E09;&#x4E2A;&#x5019;&#x9009;&#x5730;&#x53EF;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x5143;&#x8868;&#xFF1A;&#x6CE8;&#x518C;&#x8868;&#x3001;&#x73AF;&#x5883;&#x6216;&#x7A0B;&#x5E8F;&#x5E93;&#x4E2D;&#x51FD;&#x6570;&#x7684;<code>upvalue</code>&#x3002;&#x5728;Lua&#x4E2D;&#xFF0C;&#x901A;&#x5E38;&#x4E60;&#x60EF;&#x662F;&#x5C06;&#x6240;&#x6709;&#x65B0;&#x7684;C&#x7C7B;&#x578B;&#x6CE8;&#x518C;&#x5230;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#xFF0C;&#x4EE5;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x540D;&#x4F5C;&#x4E3A;<code>key</code>&#xFF0C;&#x5143;&#x8868;&#x4F5C;&#x4E3A;<code>value</code>&#x3002;&#x7531;&#x4E8E;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6240;&#x4EE5;&#x5FC5;&#x987B;&#x5C0F;&#x5FC3;&#x5730;&#x9009;&#x62E9;&#x7C7B;&#x578B;&#x540D;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x4E0E;<code>key</code>&#x51B2;&#x7A81;&#x3002;&#x5728;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5C06;&#x4F7F;&#x7528;&#x201C;<code>LuaBook.array</code>&#x201D;&#x4F5C;&#x4E3A;&#x5176;&#x65B0;&#x7C7B;&#x578B;&#x7684;&#x540D;&#x79F0;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x901A;&#x5E38;&#xFF0C;&#x8F85;&#x52A9;&#x5E93;&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#x6765;&#x5E2E;&#x52A9;&#x5B9E;&#x73B0;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#x8F85;&#x52A9;&#x5E93;&#x51FD;&#x6570;&#x6709;&#xFF1A;</p>
+<pre><code class="lang-lua">    int luaL_newmetatable(lua_State *L, const char *tname);
+    void luaL_getmetatable(lua_State *L, const char *tname);
+    void *luaL_checkudata(lua_State *L, int index, const char *tname);
+</code></pre>
+<p>&#x2003;&#x2003;<code>luaL_newmetatable</code>&#x51FD;&#x6570;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;table&#x7528;&#x4F5C;&#x5143;&#x8868;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x538B;&#x5165;&#x6808;&#x9876;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8FD9;&#x4E2A;<code>table</code>&#x4E0E;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x7684;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x5173;&#x8054;&#x8D77;&#x6765;&#x3002;<code>luaL_getmetatable</code>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5728;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x68C0;&#x7D22;&#x4E0E;<code>tname</code>&#x5173;&#x8054;&#x7684;&#x5143;&#x8868;&#x3002;<code>luaL_checkudata</code>&#x53EF;&#x4EE5;&#x68C0;&#x67E5;&#x6808;&#x4E2D;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x4E0A;&#x662F;&#x5426;&#x4E3A;&#x4E00;&#x4E2A;<code>userdata</code>&#xFF0C;&#x5E76;&#x4E14;&#x662F;&#x5426;&#x5177;&#x6709;&#x4E0E;&#x7ED9;&#x5B9A;&#x540D;&#x79F0;&#x76F8;&#x5339;&#x914D;&#x7684;&#x5143;&#x8868;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x5BF9;&#x8C61;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;<code>userdata</code>&#xFF0C;&#x6216;&#x8005;&#x5B83;&#x4E0D;&#x5177;&#x6709;&#x6B63;&#x786E;&#x7684;&#x5143;&#x8868;&#xFF0C;&#x5C31;&#x4F1A;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF1B;&#x5426;&#x5219;&#xFF0C;&#x5B83;&#x5C31;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;<code>userdata</code>&#x7684;&#x5730;&#x5740;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x524D;&#x9762;&#x7684;&#x5B9E;&#x73B0;&#x4E86;&#x3002;&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x4FEE;&#x6539;&#x6253;&#x5F00;&#x5E93;&#x7684;&#x51FD;&#x6570;&#x3002;&#x65B0;&#x7248;&#x672C;&#x5FC5;&#x987B;&#x4E3A;&#x6570;&#x7EC4;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5143;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-lua">    int luaopen_array(lua_State *L) {
+        luaL_newmetatable(L, <span class="hljs-string">&quot;LuaBook.array&quot;</span>);
+        luaL_register(L, <span class="hljs-string">&quot;array&quot;</span>, arraylib);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x4E0B;&#x4E00;&#x6B65;&#x662F;&#x4FEE;&#x6539;<code>newarray</code>&#xFF0C;&#x4F7F;&#x5176;&#x80FD;&#x4E3A;&#x6240;&#x6709;&#x65B0;&#x5EFA;&#x7684;&#x6570;&#x7EC4;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x5143;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-lua">    static int newarray(lua_State *L) {
+        &lt;&#x5982;&#x524D;&gt;
+
+        luaL_getmetatable(L, <span class="hljs-string">&quot;LuaBook.array&quot;</span>);
+        lua_setmetatable(L, <span class="hljs-number">-2</span>);
+
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;         /* &#x65B0;&#x7684;userdata&#x5DF2;&#x5728;&#x6808;&#x4E2D; */
+    }
+</code></pre>
+<p>&#x2003;&#x2003;<code>lua_setmetatable</code>&#x51FD;&#x6570;&#x4F1A;&#x4ECE;&#x6808;&#x4E2D;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;<code>table</code>&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8BBE;&#x4E3A;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x4E0A;&#x5BF9;&#x8C61;&#x7684;&#x5143;&#x8868;&#x3002;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x5EFA;&#x7684;<code>userdata</code>&#x3002;</p>
+<p>&#x2003;&#x2003;&#x6700;&#x540E;&#xFF0C;<code>setarray</code>&#x3001;<code>getarray</code>&#x548C;<code>getsize</code>&#x5FC5;&#x987B;&#x68C0;&#x67E5;&#x5176;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5426;&#x4E3A;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x4E3A;&#x4E86;&#x7B80;&#x5316;&#x8FD9;&#x6837;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x4EE5;&#x4E0B;&#x5B8F;&#xFF1A;</p>
+<pre><code class="lang-lua">    #define checkarray(L) \
+        (NumArray *)luaL_checkudata(L, <span class="hljs-number">1</span>, <span class="hljs-string">&quot;LuaBook.array&quot;</span>)
+</code></pre>
+<p>&#x2003;&#x2003;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5B8F;<code>getsize</code>&#x540C;&#x6837;&#x7B80;&#x5355;&#xFF1A;</p>
+<pre><code class="lang-lua">    static int getsize(lua_State *L)
+        NumArray *a = checkarray(L);
+        lua_pushinteger(L, a-&gt;size);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+</code></pre>
+<p>&#x2003;&#x2003;&#x7531;&#x4E8E;<code>setarray</code>&#x548C;<code>getarray</code>&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x6BB5;&#x76F8;&#x540C;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x68C0;&#x67E5;&#x7B2C;&#x4E8C;&#x4E2A;&#x7D22;&#x5F15;&#x53C2;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x5C06;&#x8FD9;&#x6BB5;&#x516C;&#x5171;&#x90E8;&#x5206;&#x5355;&#x72EC;&#x7EC4;&#x6210;&#x4EE5;&#x4E0B;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-lua">    static unsigned int *getindex(lua_State *L, unsigned int *mask)
+    {
+        NumArray *a = checkarray(L);
+        int index = luaL_checkint(L, <span class="hljs-number">2</span>) - <span class="hljs-number">1</span>;
+
+        luaL_argcheck(L, <span class="hljs-number">0</span> &lt;= index &amp;&amp; index &lt; a-&gt;size, <span class="hljs-number">2</span>, 
+                 <span class="hljs-string">&quot;index out of range&quot;</span>);
+
+        /* &#x8FD4;&#x56DE;&#x5143;&#x7D20;&#x5730;&#x5740; */
+        *mask = I_BIT(index);
+        <span class="hljs-keyword">return</span> &amp;a-&gt;values[I_WORD(index)];
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x4F7F;&#x7528;&#x4E86;<code>getindex</code>&#x7684;<code>setarray</code>&#x548C;<code>getarray</code>&#x4E5F;&#x540C;&#x6837;&#x7B80;&#x5355;&#x660E;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-lua">    static int getarray(lua_State *L) {
+        unsigned int mask;
+        unsigned int *entry = getindex(L, &amp;mask);
+        luaL_checkany(L, <span class="hljs-number">3</span>);
+        <span class="hljs-keyword">if</span>(lua_toboolean(L, <span class="hljs-number">3</span>))
+            *entry |= mask;
+        <span class="hljs-keyword">else</span>
+            *entry &amp;= ~mask;
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+
+    static int getarray(lua_State *L) {
+        unsigned int mask;
+        unsigned int *entry = getindex(L, &amp;mask);
+        lua_pushboolean(L, *entry &amp; mask);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x73B0;&#x5728;&#xFF0C;&#x5982;&#x679C;&#x8BD5;&#x56FE;&#x8FD9;&#x6837;&#x8C03;&#x7528;<code>array.get(io.stdin, 10)</code>&#xFF0C;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x6B63;&#x786E;&#x7684;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-built_in">error</span>: bad argument #<span class="hljs-number">1</span> to <span class="hljs-string">&apos;get&apos;</span> (<span class="hljs-string">&apos;array&apos;</span> expected)
+</code></pre>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x2003;&#x2003;-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8BBF;&#x95EE;">&#x2003;&#x2003; &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8BBF;&#x95EE;</h4>
+<p>&#x2003;&#x2003;&#x4E0B;&#x4E00;&#x6B65;&#x662F;&#x5C06;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x53D8;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x666E;&#x901A;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x6CD5;&#x6765;&#x64CD;&#x4F5C;&#x5B83;&#x7684;&#x5B9E;&#x4F8B;&#x4E86;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-lua">    a = array.new(<span class="hljs-number">1000</span>)
+    <span class="hljs-built_in">print</span>(a:size())          <span class="hljs-comment">--&gt; 1000</span>
+    a:set(<span class="hljs-number">10</span>, <span class="hljs-keyword">true</span>)
+    <span class="hljs-built_in">print</span>(a:get(<span class="hljs-number">10</span>))        <span class="hljs-comment">--&gt; true</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x6CE8;&#x610F;&#xFF0C;<code>a:size()</code>&#x7B49;&#x4EF7;&#x4E8E;<code>a.size(a)</code>&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x8868;&#x8FBE;&#x5F0F;<code>a.size</code>&#x8FD4;&#x56DE;&#x524D;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;<code>getsize</code>&#x3002;&#x5B9E;&#x73B0;&#x8FD9;&#x70B9;&#x7684;&#x5173;&#x952E;&#x662F;&#x4F7F;&#x7528;<code>__index</code>&#x5143;&#x65B9;&#x6CD5;&#x3002;&#x5BF9;&#x4E8E;<code>table</code>&#x800C;&#x8A00;&#xFF0C;Lua&#x4F1A;&#x5728;&#x627E;&#x4E0D;&#x5230;&#x6307;&#x5B9A;<code>key</code>&#x65F6;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x5143;&#x65B9;&#x6CD5;&#x3002;&#x5BF9;&#x4E8E;<code>userdata</code>&#xFF0C;&#x5219;&#x4F1A;&#x5728;&#x6BCF;&#x6B21;&#x8BBF;&#x95EE;&#x65F6;&#x90FD;&#x8C03;&#x7528;&#x5B83;&#xFF0C;&#x56E0;&#x4E3A;<code>userdata</code>&#x6839;&#x672C;&#x6CA1;&#x6709;<code>key</code>&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5047;&#x8BBE;&#xFF0C;&#x8FD0;&#x884C;&#x4E86;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-keyword">local</span> metaarray = <span class="hljs-built_in">getmetatable</span>(array.new(<span class="hljs-number">1</span>))
+    metaarray.__index = metaarray
+    metaarray.set = array.set
+    metaarray.get = array.get
+    metaarray.size = array.size
+</code></pre>
+<p>&#x2003;&#x2003;&#x7B2C;&#x4E00;&#x884C;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x7684;&#x5143;&#x8868;&#x8D4B;&#x4E88;&#x4E86;<code>metaarray</code>&#x3002;&#x7136;&#x540E;&#x5C06;<code>metaarray.__index</code>&#x8BBE;&#x4E3A;<code>metaarray</code>&#x3002;&#x5F53;&#x5BF9;<code>a.size</code>&#x6C42;&#x503C;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;<code>a</code>&#x662F;&#x4E00;&#x4E2A;<code>userdata</code>&#xFF0C;&#x6240;&#x4EE5;Lua&#x65E0;&#x6CD5;&#x5728;&#x5BF9;&#x8C61;<code>a</code>&#x4E2D;&#x627E;&#x5230;<code>key &quot;size&quot;</code>&#x3002;&#x56E0;&#x6B64;&#xFF0C;Lua&#x4F1A;&#x5C1D;&#x8BD5;&#x901A;&#x8FC7;<code>a</code>&#x7684;&#x5143;&#x8868;&#x7684;<code>__index</code>&#x5B57;&#x6BB5;&#x6765;&#x67E5;&#x627E;&#x8FD9;&#x4E2A;&#x503C;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x4E5F;&#x5C31;&#x662F;<code>metaarray</code>&#x81EA;&#x8EAB;&#x3002;&#x7531;&#x4E8E;<code>metaarray.size</code>&#x4E3A;<code>array.size</code>&#xFF0C;&#x56E0;&#x6B64;<code>a.size(a)</code>&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;<code>array.size(a)</code>&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5176;&#x5B9E;&#xFF0C;&#x5728;C&#x4E2D;&#x4E5F;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x76F8;&#x540C;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x751A;&#x81F3;&#x8FD8;&#x53EF;&#x4EE5;&#x505A;&#x5F97;&#x66F4;&#x597D;&#x3002;&#x73B0;&#x5728;&#x7684;&#x6570;&#x7EC4;&#x662F;&#x4E00;&#x79CD;&#x5177;&#x6709;&#x64CD;&#x4F5C;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x65E0;&#x987B;&#x5728;<code>table array</code>&#x4E2D;&#x4FDD;&#x5B58;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x3002;&#x7A0B;&#x5E8F;&#x5E93;&#x53EA;&#x8981;&#x5BFC;&#x51FA;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x65B0;&#x6570;&#x7EC4;&#x7684;&#x51FD;&#x6570;new&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x90FD;&#x53EF;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;C&#x4EE3;&#x7801;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6CE8;&#x518C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x64CD;&#x4F5C;<code>getsize</code>&#x3001;<code>getarray</code>&#x548C;<code>setarray</code>&#x65E0;&#x987B;&#x4F5C;&#x4EFB;&#x4F55;&#x6539;&#x53D8;&#xFF0C;&#x552F;&#x4E00;&#x9700;&#x8981;&#x6539;&#x53D8;&#x7684;&#x662F;&#x6CE8;&#x518C;&#x5B83;&#x4EEC;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x73B0;&#x5728;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x6253;&#x5F00;&#x7A0B;&#x5E8F;&#x5E93;&#x7684;&#x51FD;&#x6570;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x4E24;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x51FD;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5E38;&#x89C4;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-lua">    static const struct luaL_Reg arraylib_f[] = {
+        {<span class="hljs-string">&quot;new&quot;</span>, newarray},
+        {NULL, NULL}
+    };
+
+    static const struct luaL_Reg arraylib_m[] = {
+        {<span class="hljs-string">&quot;set&quot;</span>, setarray},
+        {<span class="hljs-string">&quot;get&quot;</span>, getarray},
+        {<span class="hljs-string">&quot;size&quot;</span>, getsize},
+        {NULL, NULL}
+    };
+</code></pre>
+<p>&#x2003;&#x2003;&#x65B0;&#x7684;&#x6253;&#x5F00;&#x51FD;&#x6570;<code>luaopen_array</code>&#x5FC5;&#x987B;&#x521B;&#x5EFA;&#x5143;&#x8868;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x8D4B;&#x4E88;<code>__index</code>&#x5B57;&#x6BB5;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5143;&#x8868;&#x4E2D;&#x6CE8;&#x518C;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6700;&#x540E;&#x521B;&#x5EFA;&#x5E76;&#x586B;&#x5145;<code>array table</code>&#xFF1A;</p>
+<pre><code class="lang-lua">    int luaopen_array(lua_State *L) {
+        luaL_newmetatable(L, <span class="hljs-string">&quot;LuaBook.array&quot;</span>);
+
+        /* &#x5143;&#x8868;.__index = &#x5143;&#x8868; */
+        lua_pushvalue(L, <span class="hljs-number">-1</span>);    /* &#x590D;&#x5236;&#x5143;&#x8868; */
+
+        luaL_register(L, NULL, arraylib_m);
+
+        luaL_register(L, <span class="hljs-string">&quot;array&quot;</span>, arraylib_f);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x5176;&#x4E2D;&#x7528;&#x5230;&#x4E86;<code>luaL_register</code>&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x3002;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x4E2D;&#xFF0C;&#x4EE5;<code>NULL</code>&#x4F5C;&#x4E3A;&#x5E93;&#x540D;&#xFF0C;<code>luaL_register</code>&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;&#x4EFB;&#x4F55;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x51FD;&#x6570;&#x7684;<code>table</code>&#xFF0C;&#x800C;&#x662F;&#x4EE5;&#x6808;&#x9876;&#x7684;<code>table</code>&#x4F5C;&#x4E3A;&#x5B58;&#x50A8;&#x51FD;&#x6570;&#x7684;<code>table</code>&#x3002;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x6808;&#x9876;<code>table</code>&#x5C31;&#x662F;&#x5143;&#x8868;&#x672C;&#x8EAB;&#xFF0C;&#x56E0;&#x6B64;<code>luaL_register</code>&#x4F1A;&#x5C06;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x653E;&#x5165;&#x5176;&#x4E2D;&#x3002;&#x7B2C;&#x4E8C;&#x6B21;&#x8C03;&#x7528;<code>luaL_register</code>&#x5219;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5E93;&#x540D;&#xFF0C;&#x5B83;&#x5C31;&#x6839;&#x636E;&#x6B64;&#x540D;&#xFF08;<code>array</code>&#xFF09;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;<code>table</code>&#xFF0C;&#x5E76;&#x5C06;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x6CE8;&#x518C;&#x5728;&#x8FD9;&#x4E2A;<code>table</code>&#x4E2D;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x672C;&#x4F8B;&#x4E2D;&#x552F;&#x4E00;&#x7684;<code>new</code>&#x51FD;&#x6570;&#xFF09;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x6700;&#x540E;&#xFF0C;&#x7ED9;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x7C7B;&#x578B;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;<code>__tostring</code>&#x65B9;&#x6CD5;&#x3002;&#x4F7F;<code>print(a)</code>&#x53EF;&#x4EE5;&#x6253;&#x5370;&#x51FA;&#x201C;<code>array</code>&#x201D;&#x4EE5;&#x53CA;&#x6570;&#x7EC4;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x5C31;&#x50CF;&#x201C;<code>array(1000)</code>&#x201D;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-lua">    int array2string(lua_State *L) {
+        NumArray *a = checkarray(L);
+        lua_pushfstring(L, <span class="hljs-string">&quot;array(%d)&quot;</span>, a-&gt;size);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+</code></pre>
+<p>&#x2003;&#x2003;<code>lua_pushfstring</code>&#x53EF;&#x4EE5;&#x5728;&#x6808;&#x9876;&#x521B;&#x5EFA;&#x5E76;&#x683C;&#x5F0F;&#x5316;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x5C06;<code>array2string</code>&#x52A0;&#x5230;&#x5217;&#x8868;<code>arraylib_m</code>&#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x5C06;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x52A0;&#x5165;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x7684;&#x5143;&#x8868;&#x3002;</p>
+<pre><code class="lang-lua">    static const struct luaL_Reg arraylib_m[] = {
+        {<span class="hljs-string">&quot;__tostring&quot;</span>, array2string},
+        &lt;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&gt;
+    };
+</code></pre>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x2003;&#x2003;&#x6570;&#x7EC4;&#x8BBF;&#x95EE;">&#x2003;&#x2003;&#x6570;&#x7EC4;&#x8BBF;&#x95EE;</h4>
+<p>&#x2003;&#x2003;&#x53E6;&#x4E00;&#x79CD;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x5199;&#x6CD5;&#x662F;&#x4F7F;&#x7528;&#x5E38;&#x89C4;&#x7684;&#x6570;&#x7EC4;&#x8BBF;&#x95EE;&#x5199;&#x6CD5;&#x3002;&#x76F8;&#x5BF9;&#x4E8E;<code>a:get(i)</code>&#xFF0C;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x5199;&#x4E3A;<code>a[i]</code>&#x3002;&#x5BF9;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x8FD9;&#x70B9;&#x3002;&#x7531;&#x4E8E;&#x51FD;&#x6570;<code>setarray</code>&#x548C;<code>getarray</code>&#x6240;&#x63A5;&#x53D7;&#x7684;&#x53C2;&#x6570;&#x6B21;&#x5E8F;&#x6697;&#x5408;&#x76F8;&#x5173;&#x5143;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x6B21;&#x5E8F;&#xFF0C;&#x56E0;&#x6B64;&#x5728;Lua&#x4EE3;&#x7801;&#x4E2D;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x5730;&#x5C06;&#x8FD9;&#x4E9B;&#x5143;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-lua">    <span class="hljs-keyword">local</span> metaarray = <span class="hljs-built_in">getmetatable</span>(array.new(<span class="hljs-number">1</span>))
+    metaarray.__index = array.get
+    metaarray.__newindex = array.set
+    metaarray.__len = array.size
+</code></pre>
+<p>&#x5FC5;&#x987B;&#x5728;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5B9E;&#x73B0;&#x4E0A;&#x8FD0;&#x884C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x5E94;&#x7528;&#x4E8E;&#x90A3;&#x4E2A;&#x4E3A;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BBF;&#x95EE;&#x800C;&#x4FEE;&#x6539;&#x7684;&#x7248;&#x672C;&#x3002;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6807;&#x51C6;&#x8BED;&#x6CD5;&#x5F88;&#x7B80;&#x5355;&#xFF1A;</p>
+<pre><code class="lang-lua">    a = array.new(<span class="hljs-number">1000</span>)
+    a[<span class="hljs-number">10</span>] = <span class="hljs-keyword">true</span>            <span class="hljs-comment">-- setarray</span>
+    <span class="hljs-built_in">print</span>(a[<span class="hljs-number">10</span>])            <span class="hljs-comment">-- getarray        --&gt; true</span>
+    <span class="hljs-built_in">print</span>(#a)                <span class="hljs-comment">-- getsize        --&gt; 1000</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x5982;&#x679C;&#x8FD8;&#x8981;&#x66F4;&#x5B8C;&#x7F8E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;C&#x4EE3;&#x7801;&#x4E2D;&#x6CE8;&#x518C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;&#x9700;&#x8981;&#x518D;&#x6B21;&#x4FEE;&#x6539;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-lua">    static const struct luaL_Reg arraylib_f [] = {
+        {<span class="hljs-string">&quot;new&quot;</span>, newarray},
+        {NULL, NULL}
+    };
+
+    static const struct luaL_Reg arraylib_m [] = {
+        {<span class="hljs-string">&quot;__newindex&quot;</span>, setarray},
+        {<span class="hljs-string">&quot;__index&quot;</span>, getarray},
+        {<span class="hljs-string">&quot;__len&quot;</span>, getsize},
+        {<span class="hljs-string">&quot;__tostring&quot;</span>, array2string},
+        {NULL, NULL}
+    };
+
+    int luaopen_array(lua_State *L) {
+        luaL_newmetatable(L, <span class="hljs-string">&quot;LuaBook.array&quot;</span>);
+        luaL_register(L NULL, arraylib_m);
+        luaL_register(L, <span class="hljs-string">&quot;array&quot;</span>, arraylib_f);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x5728;&#x8FD9;&#x4E2A;&#x65B0;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x4ECD;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x51FD;&#x6570;<code>new</code>&#x3002;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x90FD;&#x4F5C;&#x4E3A;&#x7279;&#x5B9A;&#x64CD;&#x4F5C;&#x7684;&#x5143;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x2003;&#x2003;</p>
+<h4 id="&#x2003;&#x2003;-&#x8F7B;&#x91CF;&#x7EA7;userdata&#xFF08;light-userdata&#xFF09;">&#x2003;&#x2003; &#x8F7B;&#x91CF;&#x7EA7;userdata&#xFF08;light userdata&#xFF09;</h4>
+<p>&#x2003;&#x2003;&#x5230;&#x73B0;&#x5728;&#x4E3A;&#x6B62;&#x6240;&#x4F7F;&#x7528;&#x7684;<code>userdata</code>&#x90FD;&#x79F0;&#x4E3A;&#x201C;&#x5B8C;&#x5168;<code>userdata(full userdata)</code>&#x201D;&#x3002;Lua&#x8FD8;&#x63D0;&#x4F9B;&#x53E6;&#x4E00;&#x79CD;&#x201C;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata(light userdata)</code>&#x201D;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x662F;&#x4E00;&#x79CD;&#x8868;&#x793A;C&#x6307;&#x9488;&#x7684;&#x503C;&#xFF08;&#x5373;<code>void *</code>&#xFF09;&#x3002;&#x7531;&#x4E8E;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x7528;&#x521B;&#x5EFA;&#x5B83;&#x3002;&#x8981;&#x5C06;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x653E;&#x5165;&#x6808;&#x4E2D;&#xFF0C;&#x53EA;&#x9700;&#x8C03;&#x7528;<code>lua_pushlightuserdata</code>&#x5373;&#x53EF;&#xFF1A;</p>
+<pre><code class="lang-lua">    void lua_pushlightuserdata(lua_State *L, void *p);
+</code></pre>
+<p>&#x2003;&#x2003;&#x5C3D;&#x7BA1;&#x4E24;&#x79CD;<code>userdata</code>&#x5728;&#x540D;&#x79F0;&#x4E0A;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x8FD8;&#x662F;&#x5B58;&#x5728;&#x5F88;&#x5927;&#x4E0D;&#x540C;&#x7684;&#x3002;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x4E0D;&#x662F;&#x7F13;&#x51B2;&#xFF0C;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x800C;&#x5DF2;&#x3002;&#x5B83;&#x4E5F;&#x6CA1;&#x6709;&#x5143;&#x8868;&#xFF0C;&#x5C31;&#x50CF;&#x6570;&#x5B57;&#x4E00;&#x6837;&#xFF0C;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x65E0;&#x987B;&#x53D7;&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;&#x7684;&#x7BA1;&#x7406;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x6709;&#x65F6;&#x4F1A;&#x5C06;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x5F53;&#x4F5C;&#x4E00;&#x79CD;&#x5EC9;&#x4EF7;&#x7684;&#x5B8C;&#x5168;<code>userdata</code>&#x6765;&#x4F7F;&#x7528;&#x3002;&#x4F46;&#x8FD9;&#x79CD;&#x7528;&#x6CD5;&#x5E76;&#x6CA1;&#x6709;&#x592A;&#x5927;&#x610F;&#x4E49;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x4F7F;&#x7528;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x65F6;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x81EA;&#x5DF1;&#x7BA1;&#x7406;&#x5185;&#x5B58;&#xFF0C;&#x56E0;&#x4E3A;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x4E0D;&#x5C5E;&#x4E8E;&#x5783;&#x573E;&#x6536;&#x96C6;&#x7684;&#x8303;&#x7574;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x4E0D;&#x8981;&#x88AB;&#x201C;&#x5B8C;&#x5168;&#x201D;&#x4E8C;&#x5B57;&#x6240;&#x8FF7;&#x60D1;&#xFF0C;&#x5B8C;&#x5168;<code>userdata</code>&#x7684;&#x5F00;&#x9500;&#x5E76;&#x4E0D;&#x6BD4;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x5927;&#x591A;&#x5C11;&#x3002;&#x5B83;&#x4EEC;&#x53EA;&#x4E3A;&#x5206;&#x914D;&#x5185;&#x5B58;&#x589E;&#x52A0;&#x4E86;&#x4E00;&#x4E9B;<code>malloc</code>&#x7684;&#x5F00;&#x9500;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x7684;&#x771F;&#x6B63;&#x7528;&#x9014;&#x662F;&#x76F8;&#x7B49;&#x6027;&#x5224;&#x65AD;&#x3002;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;<code>userdata</code>&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x53EA;&#x4E0E;&#x81EA;&#x8EAB;&#x76F8;&#x7B49;&#x3002;&#x800C;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x5219;&#x8868;&#x793A;&#x4E86;&#x4E00;&#x4E2A;C&#x6307;&#x9488;&#x7684;&#x503C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5B83;&#x4E0E;&#x6240;&#x6709;&#x8868;&#x793A;&#x540C;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x76F8;&#x7B49;&#x3002;&#x53EF;&#x4EE5;&#x5C06;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x7528;&#x4E8E;&#x67E5;&#x627E;Lua&#x4E2D;&#x7684;C&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x79CD;&#x6BD4;&#x8F83;&#x5178;&#x578B;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5047;&#x8BBE;&#x6B63;&#x5728;&#x5B9E;&#x73B0;&#x4E00;&#x79CD;Lua&#x4E0E;&#x67D0;&#x4E2A;&#x7A97;&#x53E3;&#x7CFB;&#x7EDF;&#x7684;&#x7ED1;&#x5B9A;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x7ED1;&#x5B9A;&#x4E2D;&#xFF0C;&#x7528;&#x5B8C;&#x5168;<code>userdata</code>&#x8868;&#x793A;&#x7A97;&#x53E3;&#x3002;&#x6BCF;&#x4E2A;<code>userdata</code>&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x6574;&#x4E2A;&#x7A97;&#x53E3;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x7CFB;&#x7EDF;&#x6240;&#x521B;&#x5EFA;&#x7A97;&#x53E3;&#x7684;&#x6307;&#x9488;&#x3002;&#x5F53;&#x5728;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x4E2D;&#x53D1;&#x751F;&#x4E86;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x65F6;&#xFF08;&#x4F8B;&#x5982;&#x5355;&#x51FB;&#x9F20;&#x6807;&#xFF09;&#xFF0C;&#x7CFB;&#x7EDF;&#x8981;&#x8C03;&#x7528;&#x5BF9;&#x5E94;&#x4E8E;&#x8BE5;&#x7A97;&#x53E3;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x800C;&#x7A97;&#x53E3;&#x662F;&#x901A;&#x8FC7;&#x5176;&#x5730;&#x5740;&#x6765;&#x8BC6;&#x522B;&#x7684;&#x3002;&#x4E3A;&#x4E86;&#x8C03;&#x7528;Lua&#x4E2D;&#x5B9E;&#x73B0;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x627E;&#x5230;&#x8868;&#x793A;&#x6307;&#x5B9A;&#x7A97;&#x53E3;&#x7684;<code>userdata</code>&#x3002;&#x82E5;&#x8981;&#x5BFB;&#x627E;&#x8FD9;&#x4E2A;<code>userdata</code>&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;<code>table</code>&#x6765;&#x4FDD;&#x5B58;&#x7A97;&#x53E3;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5B83;&#x7684;<code>key</code>&#x662F;&#x8868;&#x793A;&#x7A97;&#x53E3;&#x5730;&#x5740;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#xFF0C;&#x800C;<code>value</code>&#x5219;&#x662F;&#x8868;&#x793A;&#x7A97;&#x53E3;&#x672C;&#x8EAB;&#x7684;&#x5B8C;&#x5168;<code>userdata</code>&#x3002;&#x5F53;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x5730;&#x5740;&#x65F6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;<code>userdata</code>&#x538B;&#x5165;&#x6808;&#x4E2D;&#xFF0C;&#x5E76;&#x7528;&#x8FD9;&#x4E2A;<code>userdata</code>&#x6765;&#x7D22;&#x5F15;<code>table</code>&#x3002;&#x4ECE;&#x800C;&#x5F97;&#x5230;&#x90A3;&#x4E2A;&#x8868;&#x793A;&#x7A97;&#x53E3;&#x672C;&#x8EAB;&#x7684;&#x5B8C;&#x5168;<code>userdata</code>&#xFF0C;&#x5E76;&#x7531;&#x6B64;&#x8C03;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x1F51A;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1_17 I／O库.html" class="navigation navigation-prev " aria-label="Previous page: 1.17 I／O库">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../第二章 LuaFramework/" class="navigation navigation-next " aria-label="Next page: 第二章 LuaFramework">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.18 用户自定义类型","level":"1.2.18","depth":2,"next":{"title":"第二章 LuaFramework","level":"1.3","depth":1,"path":"第二章 LuaFramework/README.md","ref":"第二章 LuaFramework/README.md","articles":[{"title":"2.1 HelloWorld","level":"1.3.1","depth":2,"path":"第二章 LuaFramework/2_1 HelloWorld.md","ref":"第二章 LuaFramework/2_1 HelloWorld.md","articles":[]},{"title":"2.2 ScriptsFromFile","level":"1.3.2","depth":2,"path":"第二章 LuaFramework/2_2 ScriptsFromFile.md","ref":"第二章 LuaFramework/2_2 ScriptsFromFile.md","articles":[]},{"title":"2.3 CallLuaFunction","level":"1.3.3","depth":2,"path":"第二章 LuaFramework/2_3 CallLuaFunction.md","ref":"第二章 LuaFramework/2_3 CallLuaFunction.md","articles":[]},{"title":"2.4 AccessingLuaVariables","level":"1.3.4","depth":2,"path":"第二章 LuaFramework/2_4 AccessingLuaVariables.md","ref":"第二章 LuaFramework/2_4 AccessingLuaVariables.md","articles":[]},{"title":"2.5 LuaCoroutine","level":"1.3.5","depth":2,"path":"第二章 LuaFramework/2_5 LuaCoroutine.md","ref":"第二章 LuaFramework/2_5 LuaCoroutine.md","articles":[]},{"title":"2.6 LuaCoroutine2","level":"1.3.6","depth":2,"path":"第二章 LuaFramework/2_6 LuaCoroutine2.md","ref":"第二章 LuaFramework/2_6 LuaCoroutine2.md","articles":[]},{"title":"2.7 LuaThread","level":"1.3.7","depth":2,"path":"第二章 LuaFramework/2_7 LuaThread.md","ref":"第二章 LuaFramework/2_7 LuaThread.md","articles":[]},{"title":"2.8 AccessingArray","level":"1.3.8","depth":2,"path":"第二章 LuaFramework/2_8 AccessingArray.md","ref":"第二章 LuaFramework/2_8 AccessingArray.md","articles":[]},{"title":"2.9 Dictionary","level":"1.3.9","depth":2,"path":"第二章 LuaFramework/2_9 Dictionary.md","ref":"第二章 LuaFramework/2_9 Dictionary.md","articles":[]},{"title":"2.10 Enum","level":"1.3.10","depth":2,"path":"第二章 LuaFramework/2_10 Enum.md","ref":"第二章 LuaFramework/2_10 Enum.md","articles":[]},{"title":"2.11 Delegate","level":"1.3.11","depth":2,"path":"第二章 LuaFramework/2_11 Delegate.md","ref":"第二章 LuaFramework/2_11 Delegate.md","articles":[]},{"title":"2.12 GameObject","level":"1.3.12","depth":2,"path":"第二章 LuaFramework/2_12 GameObject.md","ref":"第二章 LuaFramework/2_12 GameObject.md","articles":[]},{"title":"2.13 CustomLoader","level":"1.3.13","depth":2,"path":"第二章 LuaFramework/2_13 CustomLoader.md","ref":"第二章 LuaFramework/2_13 CustomLoader.md","articles":[]},{"title":"2.14 Out","level":"1.3.14","depth":2,"path":"第二章 LuaFramework/2_14 Out.md","ref":"第二章 LuaFramework/2_14 Out.md","articles":[]},{"title":"2.15 ProtoBuffer","level":"1.3.15","depth":2,"path":"第二章 LuaFramework/2_15 ProtoBuffer.md","ref":"第二章 LuaFramework/2_15 ProtoBuffer.md","articles":[]},{"title":"2.16 Int64","level":"1.3.16","depth":2,"path":"第二章 LuaFramework/2_16 Int64.md","ref":"第二章 LuaFramework/2_16 Int64.md","articles":[]},{"title":"2.17 Inherit","level":"1.3.17","depth":2,"path":"第二章 LuaFramework/2_17 Inherit.md","ref":"第二章 LuaFramework/2_17 Inherit.md","articles":[]},{"title":"2.18 Bundle","level":"1.3.18","depth":2,"path":"第二章 LuaFramework/2_18 Bundle.md","ref":"第二章 LuaFramework/2_18 Bundle.md","articles":[]},{"title":"2.19 cjson","level":"1.3.19","depth":2,"path":"第二章 LuaFramework/2_19 cjson.md","ref":"第二章 LuaFramework/2_19 cjson.md","articles":[]},{"title":"2.20 utf8","level":"1.3.20","depth":2,"path":"第二章 LuaFramework/2_20 utf8.md","ref":"第二章 LuaFramework/2_20 utf8.md","articles":[]},{"title":"2.21 String","level":"1.3.21","depth":2,"path":"第二章 LuaFramework/2_21 String.md","ref":"第二章 LuaFramework/2_21 String.md","articles":[]},{"title":"2.22 Reflection","level":"1.3.22","depth":2,"path":"第二章 LuaFramework/2_22 Reflection.md","ref":"第二章 LuaFramework/2_22 Reflection.md","articles":[]},{"title":"2.23 List","level":"1.3.23","depth":2,"path":"第二章 LuaFramework/2_23 List.md","ref":"第二章 LuaFramework/2_23 List.md","articles":[]},{"title":"2.24 Performance","level":"1.3.24","depth":2,"path":"第二章 LuaFramework/2_24 Performance.md","ref":"第二章 LuaFramework/2_24 Performance.md","articles":[]},{"title":"2.25 TestErrorStack","level":"1.3.25","depth":2,"path":"第二章 LuaFramework/2_25 TestErrorStack.md","ref":"第二章 LuaFramework/2_25 TestErrorStack.md","articles":[]},{"title":"2.26 TestOverload","level":"1.3.26","depth":2,"path":"第二章 LuaFramework/2_26 TestOverload.md","ref":"第二章 LuaFramework/2_26 TestOverload.md","articles":[]}]},"previous":{"title":"1.17 I／O库","level":"1.2.17","depth":2,"path":"第一章 Lua程序设计/1_17 I／O库.md","ref":"第一章 Lua程序设计/1_17 I／O库.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第一章 Lua程序设计/1_18 用户自定义类型.md","mtime":"2017-11-04T13:35:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-04T14:06:07.623Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

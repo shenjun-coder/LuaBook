@@ -1,0 +1,864 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第二章 LuaFramework · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2_1 HelloWorld.html" />
+    
+    
+    <link rel="prev" href="../第一章 Lua程序设计/1_18 用户自定义类型.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../第一章 Lua程序设计/">
+            
+                <a href="../第一章 Lua程序设计/">
+            
+                    
+                    第一章 Lua程序设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第一章 Lua程序设计/1_1 类型与值.html">
+            
+                <a href="../第一章 Lua程序设计/1_1 类型与值.html">
+            
+                    
+                    1.1 类型与值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../第一章 Lua程序设计/1_2 表达式.html">
+            
+                <a href="../第一章 Lua程序设计/1_2 表达式.html">
+            
+                    
+                    1.2 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../第一章 Lua程序设计/1_3 语句.html">
+            
+                <a href="../第一章 Lua程序设计/1_3 语句.html">
+            
+                    
+                    1.3 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../第一章 Lua程序设计/1_4 函数.html">
+            
+                <a href="../第一章 Lua程序设计/1_4 函数.html">
+            
+                    
+                    1.4 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../第一章 Lua程序设计/1_5 迭代器与范型for.html">
+            
+                <a href="../第一章 Lua程序设计/1_5 迭代器与范型for.html">
+            
+                    
+                    1.5 迭代器与范型for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../第一章 Lua程序设计/1_6 协同程序.html">
+            
+                <a href="../第一章 Lua程序设计/1_6 协同程序.html">
+            
+                    
+                    1.6 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../第一章 Lua程序设计/1_7 数据结构.html">
+            
+                <a href="../第一章 Lua程序设计/1_7 数据结构.html">
+            
+                    
+                    1.7 数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../第一章 Lua程序设计/1_8 数据文件与持久性.html">
+            
+                <a href="../第一章 Lua程序设计/1_8 数据文件与持久性.html">
+            
+                    
+                    1.8 数据文件与持久性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../第一章 Lua程序设计/1_9 元表与元方法.html">
+            
+                <a href="../第一章 Lua程序设计/1_9 元表与元方法.html">
+            
+                    
+                    1.9 元表与元方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../第一章 Lua程序设计/1_10 环境.html">
+            
+                <a href="../第一章 Lua程序设计/1_10 环境.html">
+            
+                    
+                    1.10 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../第一章 Lua程序设计/1_11 模块与包.html">
+            
+                <a href="../第一章 Lua程序设计/1_11 模块与包.html">
+            
+                    
+                    1.11 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../第一章 Lua程序设计/1_12 面向对象编程.html">
+            
+                <a href="../第一章 Lua程序设计/1_12 面向对象编程.html">
+            
+                    
+                    1.12 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../第一章 Lua程序设计/1_13 弱引用table.html">
+            
+                <a href="../第一章 Lua程序设计/1_13 弱引用table.html">
+            
+                    
+                    1.13 弱引用table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../第一章 Lua程序设计/1_14 数学库.html">
+            
+                <a href="../第一章 Lua程序设计/1_14 数学库.html">
+            
+                    
+                    1.14 数学库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../第一章 Lua程序设计/1_15 table库.html">
+            
+                <a href="../第一章 Lua程序设计/1_15 table库.html">
+            
+                    
+                    1.15 table库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../第一章 Lua程序设计/1_16 字符串库.html">
+            
+                <a href="../第一章 Lua程序设计/1_16 字符串库.html">
+            
+                    
+                    1.16 字符串库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../第一章 Lua程序设计/1_17 I／O库.html">
+            
+                <a href="../第一章 Lua程序设计/1_17 I／O库.html">
+            
+                    
+                    1.17 I／O库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../第一章 Lua程序设计/1_18 用户自定义类型.html">
+            
+                <a href="../第一章 Lua程序设计/1_18 用户自定义类型.html">
+            
+                    
+                    1.18 用户自定义类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第二章 LuaFramework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2_1 HelloWorld.html">
+            
+                <a href="2_1 HelloWorld.html">
+            
+                    
+                    2.1 HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2_2 ScriptsFromFile.html">
+            
+                <a href="2_2 ScriptsFromFile.html">
+            
+                    
+                    2.2 ScriptsFromFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2_3 CallLuaFunction.html">
+            
+                <a href="2_3 CallLuaFunction.html">
+            
+                    
+                    2.3 CallLuaFunction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="2_4 AccessingLuaVariables.html">
+            
+                <a href="2_4 AccessingLuaVariables.html">
+            
+                    
+                    2.4 AccessingLuaVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="2_5 LuaCoroutine.html">
+            
+                <a href="2_5 LuaCoroutine.html">
+            
+                    
+                    2.5 LuaCoroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="2_6 LuaCoroutine2.html">
+            
+                <a href="2_6 LuaCoroutine2.html">
+            
+                    
+                    2.6 LuaCoroutine2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="2_7 LuaThread.html">
+            
+                <a href="2_7 LuaThread.html">
+            
+                    
+                    2.7 LuaThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="2_8 AccessingArray.html">
+            
+                <a href="2_8 AccessingArray.html">
+            
+                    
+                    2.8 AccessingArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="2_9 Dictionary.html">
+            
+                <a href="2_9 Dictionary.html">
+            
+                    
+                    2.9 Dictionary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="2_10 Enum.html">
+            
+                <a href="2_10 Enum.html">
+            
+                    
+                    2.10 Enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="2_11 Delegate.html">
+            
+                <a href="2_11 Delegate.html">
+            
+                    
+                    2.11 Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="2_12 GameObject.html">
+            
+                <a href="2_12 GameObject.html">
+            
+                    
+                    2.12 GameObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="2_13 CustomLoader.html">
+            
+                <a href="2_13 CustomLoader.html">
+            
+                    
+                    2.13 CustomLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="2_14 Out.html">
+            
+                <a href="2_14 Out.html">
+            
+                    
+                    2.14 Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="2_15 ProtoBuffer.html">
+            
+                <a href="2_15 ProtoBuffer.html">
+            
+                    
+                    2.15 ProtoBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="2_16 Int64.html">
+            
+                <a href="2_16 Int64.html">
+            
+                    
+                    2.16 Int64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="2_17 Inherit.html">
+            
+                <a href="2_17 Inherit.html">
+            
+                    
+                    2.17 Inherit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="2_18 Bundle.html">
+            
+                <a href="2_18 Bundle.html">
+            
+                    
+                    2.18 Bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="2_19 cjson.html">
+            
+                <a href="2_19 cjson.html">
+            
+                    
+                    2.19 cjson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="2_20 utf8.html">
+            
+                <a href="2_20 utf8.html">
+            
+                    
+                    2.20 utf8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="2_21 String.html">
+            
+                <a href="2_21 String.html">
+            
+                    
+                    2.21 String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="2_22 Reflection.html">
+            
+                <a href="2_22 Reflection.html">
+            
+                    
+                    2.22 Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="2_23 List.html">
+            
+                <a href="2_23 List.html">
+            
+                    
+                    2.23 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="2_24 Performance.html">
+            
+                <a href="2_24 Performance.html">
+            
+                    
+                    2.24 Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="2_25 TestErrorStack.html">
+            
+                <a href="2_25 TestErrorStack.html">
+            
+                    
+                    2.25 TestErrorStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="2_26 TestOverload.html">
+            
+                <a href="2_26 TestOverload.html">
+            
+                    
+                    2.26 TestOverload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第二章 LuaFramework</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="luaframework">LuaFramework</h2>
+<p>&#x2003;</p>
+<h4 id="lua&#x6E90;&#x7801;&#x76EE;&#x5F55;&#x4ECB;&#x7ECD;&#xFF1A;">Lua&#x6E90;&#x7801;&#x76EE;&#x5F55;&#x4ECB;&#x7ECD;&#xFF1A;</h4>
+<p>&#x2003;&#x2003;<strong>&#x25CF; 3rd</strong>&#xFF1A;&#x91CC;&#x9762;&#x662F;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x4E00;&#x4E9B;&#x63D2;&#x4EF6;lua&#x3001;&#x5B9E;&#x4F8B;&#x6E90;&#x7801;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<code>cjson</code>&#x3001;<code>pbc</code>&#x3001;<code>pblua</code>&#x3001;<code>sproto</code>&#x7B49;&#x3002;</p>
+<p>&#x2003;&#x2003;<strong>&#x25CF; Common</strong>&#xFF1A;&#x516C;&#x7528;&#x7684;<code>lua</code>&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x5982;<code>define.lua</code>&#x6587;&#x4EF6;&#xFF0C;&#x4E00;&#x4E9B;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#xFF0C;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x7B49;&#xFF0C;<code>functions.lua</code>&#x5E38;&#x7528;&#x51FD;&#x6570;&#x5E93;&#xFF0C;&#x901A;&#x8BAF;&#x7684;<code>protocal.lua</code>&#x534F;&#x8BAE;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x2003;&#x2003;<strong>&#x25CF; Controller</strong>&#xFF1A;&#x63A7;&#x5236;&#x5668;&#x76EE;&#x5F55;&#xFF0C;&#x5B83;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x67D0;&#x4E00;&#x4E2A;<code>Lua</code>&#x9762;&#x677F;&#xFF0C;&#x5B83;&#x662F;&#x72EC;&#x7ACB;&#x5B58;&#x6D3B;&#x5728;<code>Luavm</code>&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x7C7B;&#xFF0C;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x3001;&#x63A7;&#x5236;&#x9762;&#x677F;&#x663E;&#x793A;&#x800C;&#x5DF2;&#x3002;</p>
+<p>&#x2003;&#x2003;<strong>&#x25CF; Logic</strong>&#xFF1A;&#x76EE;&#x5F55;&#x91CC;&#x9762;&#x5B58;&#x653E;&#x7684;&#x662F;&#x4E00;&#x4E9B;&#x7BA1;&#x7406;&#x5668;&#x7C7B;&#xFF0C;&#x6BD4;&#x5982;<code>GameManager</code>&#x6E38;&#x620F;&#x7BA1;&#x7406;&#x5668;&#x3001;<code>NetworkManager</code>&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6709;&#x65B0;&#x7684;&#x7BA1;&#x7406;&#x5668;&#x53EF;&#x4EE5;&#x653E;&#x5230;&#x91CC;&#x9762;&#x3002;</p>
+<p>&#x2003;&#x2003;<strong>&#x25CF; System</strong>&#xFF1A;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x662F;<code>cstolua</code>&#x7684;&#x7CFB;&#x7EDF;&#x76EE;&#x5F55;&#xFF0C;&#x91CC;&#x9762;&#x5B58;&#x653E;&#x90FD;&#x662F;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;<code>lua</code>&#x7C7B;&#xFF0C;&#x4E3A;&#x4E86;&#x4F18;&#x5316;<code>lua</code>&#x8C03;&#x7528;&#x901F;&#x5EA6;&#xFF0C;&#x7528;<code>lua</code>&#x91CD;&#x5199;&#x7684;<code>unity</code>&#x5E38;&#x7528;&#x7C7B;&#x3002;</p>
+<p>&#x2003;&#x2003;<strong>&#x25CF; View</strong>&#xFF1A;&#x8FD9;&#x662F;&#x9762;&#x677F;&#x7684;&#x89C6;&#x56FE;&#x5C42;&#xFF0C;&#x91CC;&#x9762;&#x90FD;&#x662F;&#x4E00;&#x4E9B;&#x88AB;<code>Unity</code>&#x8C03;&#x7528;&#x7684;&#x9762;&#x677F;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x8D70;&#x7684;&#x662F;<code>Unity</code> <code>GameObject</code>&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x4E8B;&#x4EF6;&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="lua&#x548C;c&#x7684;&#x4EA4;&#x4E92;&#x4E24;&#x4E2A;&#x5DE5;&#x5177;&#x7C7B;&#xFF1A;">lua&#x548C;C#&#x7684;&#x4EA4;&#x4E92;&#x4E24;&#x4E2A;&#x5DE5;&#x5177;&#x7C7B;&#xFF1A;</h4>
+<pre><code class="lang-csharp">    LuaHelper.cs&#x9759;&#x6001;&#x7C7B;    <span class="hljs-comment">//lua&#x8C03;&#x7528;C#</span>
+    Util.cs              <span class="hljs-comment">//&#x9759;&#x6001;&#x65B9;&#x6CD5;CallMethod C#&#x8C03;&#x7528;lua</span>
+</code></pre>
+<p>&#x2003;</p>
+<h4 id="&#x5206;&#x6790;&#x56FE;&#xFF1A;">&#x5206;&#x6790;&#x56FE;&#xFF1A;</h4>
+<p><img src="../assets/20160506154319148" alt="">)</p>
+<h4 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;">&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</h4>
+<p><img src="../assets/20160506154351680" alt=""></p>
+<h4 id="&#x542F;&#x52A8;&#x6D41;&#x7A0B;&#xFF1A;">&#x542F;&#x52A8;&#x6D41;&#x7A0B;&#xFF1A;</h4>
+<p><img src="../assets/20160506154414941" alt=""></p>
+<p>&#x1F51A;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../第一章 Lua程序设计/1_18 用户自定义类型.html" class="navigation navigation-prev " aria-label="Previous page: 1.18 用户自定义类型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2_1 HelloWorld.html" class="navigation navigation-next " aria-label="Next page: 2.1 HelloWorld">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二章 LuaFramework","level":"1.3","depth":1,"next":{"title":"2.1 HelloWorld","level":"1.3.1","depth":2,"path":"第二章 LuaFramework/2_1 HelloWorld.md","ref":"第二章 LuaFramework/2_1 HelloWorld.md","articles":[]},"previous":{"title":"1.18 用户自定义类型","level":"1.2.18","depth":2,"path":"第一章 Lua程序设计/1_18 用户自定义类型.md","ref":"第一章 Lua程序设计/1_18 用户自定义类型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第二章 LuaFramework/README.md","mtime":"2017-11-04T13:38:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-04T14:06:07.623Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

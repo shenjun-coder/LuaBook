@@ -1,0 +1,1452 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.11 Delegate · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2_12 GameObject.html" />
+    
+    
+    <link rel="prev" href="2_10 Enum.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../第一章 Lua程序设计/">
+            
+                <a href="../第一章 Lua程序设计/">
+            
+                    
+                    第一章 Lua程序设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第一章 Lua程序设计/1_1 类型与值.html">
+            
+                <a href="../第一章 Lua程序设计/1_1 类型与值.html">
+            
+                    
+                    1.1 类型与值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../第一章 Lua程序设计/1_2 表达式.html">
+            
+                <a href="../第一章 Lua程序设计/1_2 表达式.html">
+            
+                    
+                    1.2 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../第一章 Lua程序设计/1_3 语句.html">
+            
+                <a href="../第一章 Lua程序设计/1_3 语句.html">
+            
+                    
+                    1.3 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../第一章 Lua程序设计/1_4 函数.html">
+            
+                <a href="../第一章 Lua程序设计/1_4 函数.html">
+            
+                    
+                    1.4 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../第一章 Lua程序设计/1_5 迭代器与范型for.html">
+            
+                <a href="../第一章 Lua程序设计/1_5 迭代器与范型for.html">
+            
+                    
+                    1.5 迭代器与范型for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../第一章 Lua程序设计/1_6 协同程序.html">
+            
+                <a href="../第一章 Lua程序设计/1_6 协同程序.html">
+            
+                    
+                    1.6 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../第一章 Lua程序设计/1_7 数据结构.html">
+            
+                <a href="../第一章 Lua程序设计/1_7 数据结构.html">
+            
+                    
+                    1.7 数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../第一章 Lua程序设计/1_8 数据文件与持久性.html">
+            
+                <a href="../第一章 Lua程序设计/1_8 数据文件与持久性.html">
+            
+                    
+                    1.8 数据文件与持久性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../第一章 Lua程序设计/1_9 元表与元方法.html">
+            
+                <a href="../第一章 Lua程序设计/1_9 元表与元方法.html">
+            
+                    
+                    1.9 元表与元方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../第一章 Lua程序设计/1_10 环境.html">
+            
+                <a href="../第一章 Lua程序设计/1_10 环境.html">
+            
+                    
+                    1.10 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../第一章 Lua程序设计/1_11 模块与包.html">
+            
+                <a href="../第一章 Lua程序设计/1_11 模块与包.html">
+            
+                    
+                    1.11 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../第一章 Lua程序设计/1_12 面向对象编程.html">
+            
+                <a href="../第一章 Lua程序设计/1_12 面向对象编程.html">
+            
+                    
+                    1.12 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../第一章 Lua程序设计/1_13 弱引用table.html">
+            
+                <a href="../第一章 Lua程序设计/1_13 弱引用table.html">
+            
+                    
+                    1.13 弱引用table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../第一章 Lua程序设计/1_14 数学库.html">
+            
+                <a href="../第一章 Lua程序设计/1_14 数学库.html">
+            
+                    
+                    1.14 数学库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../第一章 Lua程序设计/1_15 table库.html">
+            
+                <a href="../第一章 Lua程序设计/1_15 table库.html">
+            
+                    
+                    1.15 table库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../第一章 Lua程序设计/1_16 字符串库.html">
+            
+                <a href="../第一章 Lua程序设计/1_16 字符串库.html">
+            
+                    
+                    1.16 字符串库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../第一章 Lua程序设计/1_17 I／O库.html">
+            
+                <a href="../第一章 Lua程序设计/1_17 I／O库.html">
+            
+                    
+                    1.17 I／O库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../第一章 Lua程序设计/1_18 用户自定义类型.html">
+            
+                <a href="../第一章 Lua程序设计/1_18 用户自定义类型.html">
+            
+                    
+                    1.18 用户自定义类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第二章 LuaFramework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2_1 HelloWorld.html">
+            
+                <a href="2_1 HelloWorld.html">
+            
+                    
+                    2.1 HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2_2 ScriptsFromFile.html">
+            
+                <a href="2_2 ScriptsFromFile.html">
+            
+                    
+                    2.2 ScriptsFromFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2_3 CallLuaFunction.html">
+            
+                <a href="2_3 CallLuaFunction.html">
+            
+                    
+                    2.3 CallLuaFunction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="2_4 AccessingLuaVariables.html">
+            
+                <a href="2_4 AccessingLuaVariables.html">
+            
+                    
+                    2.4 AccessingLuaVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="2_5 LuaCoroutine.html">
+            
+                <a href="2_5 LuaCoroutine.html">
+            
+                    
+                    2.5 LuaCoroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="2_6 LuaCoroutine2.html">
+            
+                <a href="2_6 LuaCoroutine2.html">
+            
+                    
+                    2.6 LuaCoroutine2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="2_7 LuaThread.html">
+            
+                <a href="2_7 LuaThread.html">
+            
+                    
+                    2.7 LuaThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="2_8 AccessingArray.html">
+            
+                <a href="2_8 AccessingArray.html">
+            
+                    
+                    2.8 AccessingArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="2_9 Dictionary.html">
+            
+                <a href="2_9 Dictionary.html">
+            
+                    
+                    2.9 Dictionary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="2_10 Enum.html">
+            
+                <a href="2_10 Enum.html">
+            
+                    
+                    2.10 Enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.11" data-path="2_11 Delegate.html">
+            
+                <a href="2_11 Delegate.html">
+            
+                    
+                    2.11 Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="2_12 GameObject.html">
+            
+                <a href="2_12 GameObject.html">
+            
+                    
+                    2.12 GameObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="2_13 CustomLoader.html">
+            
+                <a href="2_13 CustomLoader.html">
+            
+                    
+                    2.13 CustomLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="2_14 Out.html">
+            
+                <a href="2_14 Out.html">
+            
+                    
+                    2.14 Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="2_15 ProtoBuffer.html">
+            
+                <a href="2_15 ProtoBuffer.html">
+            
+                    
+                    2.15 ProtoBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="2_16 Int64.html">
+            
+                <a href="2_16 Int64.html">
+            
+                    
+                    2.16 Int64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="2_17 Inherit.html">
+            
+                <a href="2_17 Inherit.html">
+            
+                    
+                    2.17 Inherit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="2_18 Bundle.html">
+            
+                <a href="2_18 Bundle.html">
+            
+                    
+                    2.18 Bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="2_19 cjson.html">
+            
+                <a href="2_19 cjson.html">
+            
+                    
+                    2.19 cjson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="2_20 utf8.html">
+            
+                <a href="2_20 utf8.html">
+            
+                    
+                    2.20 utf8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="2_21 String.html">
+            
+                <a href="2_21 String.html">
+            
+                    
+                    2.21 String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="2_22 Reflection.html">
+            
+                <a href="2_22 Reflection.html">
+            
+                    
+                    2.22 Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="2_23 List.html">
+            
+                <a href="2_23 List.html">
+            
+                    
+                    2.23 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="2_24 Performance.html">
+            
+                <a href="2_24 Performance.html">
+            
+                    
+                    2.24 Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="2_25 TestErrorStack.html">
+            
+                <a href="2_25 TestErrorStack.html">
+            
+                    
+                    2.25 TestErrorStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="2_26 TestOverload.html">
+            
+                <a href="2_26 TestOverload.html">
+            
+                    
+                    2.26 TestOverload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.11 Delegate</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="lua&#x59D4;&#x6258;">Lua&#x59D4;&#x6258;</h2>
+<h4 id="testdelegatecs">TestDelegate.cs</h4>
+<pre><code class="lang-csharp">    <span class="hljs-keyword">using</span> UnityEngine;
+    <span class="hljs-keyword">using</span> System;
+    <span class="hljs-keyword">using</span> System.Collections.Generic;
+    <span class="hljs-keyword">using</span> LuaInterface;
+
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestDelegate</span>: <span class="hljs-title">MonoBehaviour</span>
+    {
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">string</span> script =
+        <span class="hljs-string">@&quot;                              
+                function DoClick1(go)                
+                    print(&apos;click1 gameObject is &apos;..go.name)                    
+                end
+
+                function DoClick2(go)                
+                    print(&apos;click2 gameObject is &apos;..go.name)                              
+                end                       
+
+                function AddClick1(listener)       
+                    if listener.onClick then
+                        listener.onClick = listener.onClick + DoClick1                                                    
+                    else
+                        listener.onClick = DoClick1                      
+                    end                
+                end
+
+                function AddClick2(listener)
+                    if listener.onClick then
+                        listener.onClick = listener.onClick + DoClick2                      
+                    else
+                        listener.onClick = DoClick2
+                    end                
+                end
+
+                function SetClick1(listener)
+                    if listener.onClick then
+                        listener.onClick:Destroy()
+                    end
+
+                    listener.onClick = DoClick1         
+                end
+
+                function RemoveClick1(listener)
+                    if listener.onClick then
+                        listener.onClick = listener.onClick - DoClick1      
+                    else
+                        print(&apos;empty delegate&apos;)
+                    end
+                end
+
+                function RemoveClick2(listener)
+                    if listener.onClick then
+                        listener.onClick = listener.onClick - DoClick2    
+                    else
+                        print(&apos;empty delegate&apos;)                                
+                    end
+                end
+
+                --&#x6D4B;&#x8BD5;&#x91CD;&#x8F7D;&#x95EE;&#x9898;
+                function TestOverride(listener)
+                    listener:SetOnFinished(TestEventListener.OnClick(DoClick1))
+                    listener:SetOnFinished(TestEventListener.VoidDelegate(DoClick2))
+                end
+
+                function TestEvent()
+                    print(&apos;this is a event&apos;)
+                end
+
+                function AddEvent(listener)
+                    listener.onClickEvent = listener.onClickEvent + TestEvent
+                end
+
+                function RemoveEvent(listener)
+                    listener.onClickEvent = listener.onClickEvent - TestEvent
+                end
+
+                local t = {name = &apos;byself&apos;}
+
+                function t:TestSelffunc()
+                    print(&apos;callback with self: &apos;..self.name)
+                end       
+
+                function AddSelfClick(listener)
+                    if listener.onClick then
+                        listener.onClick = listener.onClick + TestEventListener.OnClick(t.TestSelffunc, t)
+                    else
+                        listener.onClick = TestEventListener.OnClick(t.TestSelffunc, t)
+                    end   
+                end     
+
+                function RemoveSelfClick(listener)
+                    if listener.onClick then
+                        listener.onClick = listener.onClick - TestEventListener.OnClick(t.TestSelffunc, t)
+                    else
+                        print(&apos;empty delegate&apos;)
+                    end   
+                end
+        &quot;</span>;
+
+        LuaState state = <span class="hljs-keyword">null</span>;
+        TestEventListener listener = <span class="hljs-keyword">null</span>;
+
+        LuaFunction SetClick1 = <span class="hljs-keyword">null</span>;
+        LuaFunction AddClick1 = <span class="hljs-keyword">null</span>;
+        LuaFunction AddClick2 = <span class="hljs-keyword">null</span>;
+        LuaFunction RemoveClick1 = <span class="hljs-keyword">null</span>;
+        LuaFunction RemoveClick2 = <span class="hljs-keyword">null</span>;
+        LuaFunction TestOverride = <span class="hljs-keyword">null</span>;
+        LuaFunction RemoveEvent = <span class="hljs-keyword">null</span>;
+        LuaFunction AddEvent = <span class="hljs-keyword">null</span>;
+        LuaFunction AddSelfClick = <span class="hljs-keyword">null</span>;
+        LuaFunction RemoveSelfClick = <span class="hljs-keyword">null</span>;
+
+        <span class="hljs-comment">//&#x9700;&#x8981;&#x5220;&#x9664;&#x7684;&#x8F6C;LuaFunction&#x4E3A;&#x59D4;&#x6258;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5220;&#x9664;&#x7684;&#x76F4;&#x63A5;&#x52A0;&#x6216;&#x8005;&#x7B49;&#x4E8E;&#x5373;&#x53EF;</span>
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Awake</span>(<span class="hljs-params"></span>)
+        </span>{               
+            state = <span class="hljs-keyword">new</span> LuaState();
+            state.Start();
+            LuaBinder.Bind(state);
+            Bind(state);
+
+            state.LogGC = <span class="hljs-keyword">true</span>;
+            state.DoString(script);
+            GameObject go = <span class="hljs-keyword">new</span> GameObject(<span class="hljs-string">&quot;TestGo&quot;</span>);
+            listener = (TestEventListener)go.AddComponent(<span class="hljs-keyword">typeof</span>(TestEventListener));
+
+            SetClick1 = state.GetFunction(<span class="hljs-string">&quot;SetClick1&quot;</span>);
+            AddClick1 = state.GetFunction(<span class="hljs-string">&quot;AddClick1&quot;</span>);
+            AddClick2 = state.GetFunction(<span class="hljs-string">&quot;AddClick2&quot;</span>);
+            RemoveClick1 = state.GetFunction(<span class="hljs-string">&quot;RemoveClick1&quot;</span>);
+            RemoveClick2 = state.GetFunction(<span class="hljs-string">&quot;RemoveClick2&quot;</span>);
+            TestOverride = state.GetFunction(<span class="hljs-string">&quot;TestOverride&quot;</span>);
+            AddEvent = state.GetFunction(<span class="hljs-string">&quot;AddEvent&quot;</span>);
+            RemoveEvent = state.GetFunction(<span class="hljs-string">&quot;RemoveEvent&quot;</span>);
+
+            AddSelfClick = state.GetFunction(<span class="hljs-string">&quot;AddSelfClick&quot;</span>);
+            RemoveSelfClick = state.GetFunction(<span class="hljs-string">&quot;RemoveSelfClick&quot;</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Bind</span>(<span class="hljs-params">LuaState L</span>)
+        </span>{
+            L.BeginModule(<span class="hljs-keyword">null</span>);
+            TestEventListenerWrap.Register(state);
+            L.EndModule();
+
+            DelegateFactory.dict.Add(<span class="hljs-keyword">typeof</span>(TestEventListener.OnClick), TestEventListener_OnClick);
+            DelegateFactory.dict.Add(<span class="hljs-keyword">typeof</span>(TestEventListener.VoidDelegate), TestEventListener_VoidDelegate);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">CallLuaFunction</span>(<span class="hljs-params">LuaFunction func</span>)
+        </span>{        
+            func.BeginPCall();
+            func.Push(listener);
+            func.PCall();
+            func.EndPCall();                
+        }
+
+        <span class="hljs-comment">//&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4EE3;&#x7801;&#x540E;&#x62F7;&#x8D1D;&#x8FC7;&#x6765;</span>
+        <span class="hljs-keyword">class</span> <span class="hljs-title">TestEventListener_OnClick_Event</span> : <span class="hljs-title">LuaDelegate</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TestEventListener_OnClick_Event</span>(<span class="hljs-params">LuaFunction func</span>) : <span class="hljs-title">base</span>(<span class="hljs-params">func</span>) </span>{ }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Call</span>(<span class="hljs-params">UnityEngine.GameObject param0</span>)
+            </span>{
+                func.BeginPCall();
+                func.Push(param0);
+                func.PCall();
+                func.EndPCall();
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Delegate <span class="hljs-title">TestEventListener_OnClick</span>(<span class="hljs-params">LuaFunction func, LuaTable self, <span class="hljs-keyword">bool</span> flag</span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (func == <span class="hljs-keyword">null</span>)
+            {
+                TestEventListener.OnClick fn = <span class="hljs-keyword">delegate</span> { };
+                <span class="hljs-keyword">return</span> fn;
+            }
+
+            TestEventListener_OnClick_Event target = <span class="hljs-keyword">new</span> TestEventListener_OnClick_Event(func);
+            TestEventListener.OnClick d = target.Call;
+            target.method = d.Method;
+            <span class="hljs-keyword">return</span> d;
+        }
+
+        <span class="hljs-keyword">class</span> <span class="hljs-title">TestEventListener_VoidDelegate_Event</span> : <span class="hljs-title">LuaDelegate</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TestEventListener_VoidDelegate_Event</span>(<span class="hljs-params">LuaFunction func</span>) : <span class="hljs-title">base</span>(<span class="hljs-params">func</span>) </span>{ }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Call</span>(<span class="hljs-params">UnityEngine.GameObject param0</span>)
+            </span>{
+                func.BeginPCall();
+                func.Push(param0);
+                func.PCall();
+                func.EndPCall();
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Delegate <span class="hljs-title">TestEventListener_VoidDelegate</span>(<span class="hljs-params">LuaFunction func, LuaTable self, <span class="hljs-keyword">bool</span> flag</span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (func == <span class="hljs-keyword">null</span>)
+            {
+                TestEventListener.VoidDelegate fn = <span class="hljs-keyword">delegate</span> { };
+                <span class="hljs-keyword">return</span> fn;
+            }
+
+            TestEventListener_VoidDelegate_Event target = <span class="hljs-keyword">new</span> TestEventListener_VoidDelegate_Event(func);
+            TestEventListener.VoidDelegate d = target.Call;
+            target.method = d.Method;
+            <span class="hljs-keyword">return</span> d;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnGUI</span>(<span class="hljs-params"></span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (GUI.Button(<span class="hljs-keyword">new</span> Rect(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span>), <span class="hljs-string">&quot; = OnClick1&quot;</span>))
+            {
+                CallLuaFunction(SetClick1);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">60</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot; + Click1&quot;))
+            </span>{
+                CallLuaFunction(AddClick1);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">110</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot; + Click2&quot;))
+            </span>{
+                CallLuaFunction(AddClick2);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">160</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot; - Click1&quot;))
+            </span>{
+                CallLuaFunction(RemoveClick1);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">210</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot; - Click2&quot;))
+            </span>{
+                CallLuaFunction(RemoveClick2);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">260</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot;+ Click1 <span class="hljs-keyword">in</span> C#&quot;))
+            </span>{
+                LuaFunction func = state.GetFunction(<span class="hljs-string">&quot;DoClick1&quot;</span>);
+                TestEventListener.OnClick onClick = (TestEventListener.OnClick)DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestEventListener.OnClick), func);
+                listener.onClick += onClick;
+            }        
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">310</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot; - Click1 <span class="hljs-keyword">in</span> C#&quot;))
+            </span>{
+                LuaFunction func = state.GetFunction(<span class="hljs-string">&quot;DoClick1&quot;</span>);
+                listener.onClick = (TestEventListener.OnClick)DelegateFactory.RemoveDelegate(listener.onClick, func);
+                func.Dispose();
+                func = <span class="hljs-keyword">null</span>;
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">360</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot;OnClick&quot;))
+            </span>{
+                <span class="hljs-keyword">if</span> (listener.onClick != <span class="hljs-keyword">null</span>)
+                {
+                    listener.onClick(gameObject);
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    Debug.Log(<span class="hljs-string">&quot;empty delegate!!&quot;</span>);
+                }
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">410</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot;Override&quot;))
+            </span>{
+                CallLuaFunction(TestOverride);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">460</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot;Force GC&quot;))
+            </span>{
+                <span class="hljs-comment">//&#x81EA;&#x52A8;gc log: collect lua reference name , id xxx in thread </span>
+                state.LuaGC(LuaGCOptions.LUA_GCCOLLECT, <span class="hljs-number">0</span>);
+                GC.Collect();
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">510</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot;<span class="hljs-keyword">event</span> +&quot;))
+            </span>{
+                CallLuaFunction(AddEvent);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">560</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot;<span class="hljs-keyword">event</span> -&quot;))
+            </span>{
+                CallLuaFunction(RemoveEvent);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">10</span>, <span class="hljs-number">610</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot;<span class="hljs-keyword">event</span> call&quot;))
+            </span>{
+                listener.OnClickEvent(gameObject);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">200</span>, <span class="hljs-number">10</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot;+self call&quot;))
+            </span>{
+                CallLuaFunction(AddSelfClick);
+            }
+            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">GUI.Button(new Rect(<span class="hljs-number">200</span>, <span class="hljs-number">60</span>, <span class="hljs-number">120</span>, <span class="hljs-number">40</span></span>), &quot;-self call&quot;))
+            </span>{
+                CallLuaFunction(RemoveSelfClick);
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span>(<span class="hljs-params"></span>)
+        </span>{
+            state.Collect();
+            state.CheckTop();        
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">SafeRelease</span>(<span class="hljs-params"><span class="hljs-keyword">ref</span> LuaFunction luaRef</span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (luaRef != <span class="hljs-keyword">null</span>)
+            {
+                luaRef.Dispose();
+                luaRef = <span class="hljs-keyword">null</span>;
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnDestroy</span>(<span class="hljs-params"></span>)
+        </span>{
+            SafeRelease(<span class="hljs-keyword">ref</span> AddClick1);
+            SafeRelease(<span class="hljs-keyword">ref</span> AddClick2);
+            SafeRelease(<span class="hljs-keyword">ref</span> RemoveClick1);
+            SafeRelease(<span class="hljs-keyword">ref</span> RemoveClick2);
+            SafeRelease(<span class="hljs-keyword">ref</span> SetClick1);
+            SafeRelease(<span class="hljs-keyword">ref</span> TestOverride);
+            state.Dispose();
+            state = <span class="hljs-keyword">null</span>;
+        }
+    }
+</code></pre>
+<p>&#x2003;</p>
+<h4 id="testeventlistenercs">TestEventListener.cs</h4>
+<pre><code class="lang-csharp">    <span class="hljs-keyword">using</span> UnityEngine;
+    <span class="hljs-keyword">using</span> System;
+    <span class="hljs-keyword">using</span> System.Collections;
+    <span class="hljs-keyword">using</span> LuaInterface;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestEventListener</span> : <span class="hljs-title">MonoBehaviour</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">delegate</span> <span class="hljs-keyword">void</span> <span class="hljs-title">VoidDelegate</span>(<span class="hljs-params">GameObject go</span>)</span>;
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">delegate</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnClick</span>(<span class="hljs-params">GameObject go</span>)</span>;    
+        <span class="hljs-keyword">public</span> OnClick onClick = <span class="hljs-keyword">delegate</span> { };
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">event</span> OnClick onClickEvent = <span class="hljs-keyword">delegate</span> { };
+
+        <span class="hljs-keyword">public</span> Func&lt;<span class="hljs-keyword">bool</span>&gt; TestFunc = <span class="hljs-keyword">null</span>;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">SetOnFinished</span>(<span class="hljs-params">OnClick click</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;SetOnFinished OnClick&quot;</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">SetOnFinished</span>(<span class="hljs-params">VoidDelegate click</span>)
+        </span>{
+            Debugger.Log(<span class="hljs-string">&quot;SetOnFinished VoidDelegate&quot;</span>);
+        }
+
+        [NoToLuaAttribute]
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnClickEvent</span>(<span class="hljs-params">GameObject go</span>)
+        </span>{
+            onClickEvent(go);
+        }
+    }
+</code></pre>
+<p>&#x2003;</p>
+<h4 id="testeventlistenerwrapcs">TestEventListenerWrap.cs</h4>
+<pre><code class="lang-csharp">    <span class="hljs-comment">//this source code was auto-generated by tolua#, do not modify it</span>
+    <span class="hljs-keyword">using</span> System;
+    <span class="hljs-keyword">using</span> LuaInterface;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TestEventListenerWrap</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Register</span>(<span class="hljs-params">LuaState L</span>)
+        </span>{
+            L.BeginClass(<span class="hljs-keyword">typeof</span>(TestEventListener), <span class="hljs-keyword">typeof</span>(UnityEngine.MonoBehaviour));
+            L.RegFunction(<span class="hljs-string">&quot;SetOnFinished&quot;</span>, SetOnFinished);
+            L.RegFunction(<span class="hljs-string">&quot;__eq&quot;</span>, op_Equality);
+            L.RegFunction(<span class="hljs-string">&quot;__tostring&quot;</span>, Lua_ToString);
+            L.RegVar(<span class="hljs-string">&quot;onClick&quot;</span>, get_onClick, set_onClick);
+            L.RegVar(<span class="hljs-string">&quot;onClickEvent&quot;</span>, get_onClickEvent, set_onClickEvent);
+            L.RegFunction(<span class="hljs-string">&quot;OnClick&quot;</span>, TestEventListener_OnClick);
+            L.RegFunction(<span class="hljs-string">&quot;VoidDelegate&quot;</span>, TestEventListener_VoidDelegate);
+            L.EndClass();
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">SetOnFinished</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">int</span> count = LuaDLL.lua_gettop(L);
+
+                <span class="hljs-keyword">if</span> (count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestEventListener), <span class="hljs-keyword">typeof</span>(TestEventListener.VoidDelegate)))
+                {
+                    TestEventListener obj = (TestEventListener)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    TestEventListener.VoidDelegate arg0 = <span class="hljs-keyword">null</span>;
+                    LuaTypes funcType2 = LuaDLL.lua_type(L, <span class="hljs-number">2</span>);
+
+                    <span class="hljs-keyword">if</span> (funcType2 != LuaTypes.LUA_TFUNCTION)
+                    {
+                         arg0 = (TestEventListener.VoidDelegate)ToLua.ToObject(L, <span class="hljs-number">2</span>);
+                    }
+                    <span class="hljs-keyword">else</span>
+                    {
+                        LuaFunction func = ToLua.ToLuaFunction(L, <span class="hljs-number">2</span>);
+                        arg0 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestEventListener.VoidDelegate), func) <span class="hljs-keyword">as</span> TestEventListener.VoidDelegate;
+                    }
+
+                    obj.SetOnFinished(arg0);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">count == <span class="hljs-number">2</span> &amp;&amp; TypeChecker.CheckTypes(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestEventListener</span>), <span class="hljs-title">typeof</span>(<span class="hljs-params">TestEventListener.OnClick</span>)))
+                </span>{
+                    TestEventListener obj = (TestEventListener)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                    TestEventListener.OnClick arg0 = <span class="hljs-keyword">null</span>;
+                    LuaTypes funcType2 = LuaDLL.lua_type(L, <span class="hljs-number">2</span>);
+
+                    <span class="hljs-keyword">if</span> (funcType2 != LuaTypes.LUA_TFUNCTION)
+                    {
+                         arg0 = (TestEventListener.OnClick)ToLua.ToObject(L, <span class="hljs-number">2</span>);
+                    }
+                    <span class="hljs-keyword">else</span>
+                    {
+                        LuaFunction func = ToLua.ToLuaFunction(L, <span class="hljs-number">2</span>);
+                        arg0 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestEventListener.OnClick), func) <span class="hljs-keyword">as</span> TestEventListener.OnClick;
+                    }
+
+                    obj.SetOnFinished(arg0);
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    <span class="hljs-keyword">return</span> LuaDLL.luaL_throw(L, <span class="hljs-string">&quot;invalid arguments to method: TestEventListener.SetOnFinished&quot;</span>);
+                }
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">op_Equality</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                ToLua.CheckArgsCount(L, <span class="hljs-number">2</span>);
+                UnityEngine.Object arg0 = (UnityEngine.Object)ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                UnityEngine.Object arg1 = (UnityEngine.Object)ToLua.ToObject(L, <span class="hljs-number">2</span>);
+                <span class="hljs-keyword">bool</span> o = arg0 == arg1;
+                LuaDLL.lua_pushboolean(L, o);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">Lua_ToString</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> obj = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+
+            <span class="hljs-keyword">if</span> (obj != <span class="hljs-keyword">null</span>)
+            {
+                LuaDLL.lua_pushstring(L, obj.ToString());
+            }
+            <span class="hljs-keyword">else</span>
+            {
+                LuaDLL.lua_pushnil(L);
+            }
+
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_onClick</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestEventListener obj = (TestEventListener)o;
+                TestEventListener.OnClick ret = obj.onClick;
+                ToLua.Push(L, ret);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index onClick on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get_onClickEvent</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            ToLua.Push(L, <span class="hljs-keyword">new</span> EventObject(<span class="hljs-string">&quot;TestEventListener.onClickEvent&quot;</span>));
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">set_onClick</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">object</span> o = <span class="hljs-keyword">null</span>;
+
+            <span class="hljs-keyword">try</span>
+            {
+                o = ToLua.ToObject(L, <span class="hljs-number">1</span>);
+                TestEventListener obj = (TestEventListener)o;
+                TestEventListener.OnClick arg0 = <span class="hljs-keyword">null</span>;
+                LuaTypes funcType2 = LuaDLL.lua_type(L, <span class="hljs-number">2</span>);
+
+                <span class="hljs-keyword">if</span> (funcType2 != LuaTypes.LUA_TFUNCTION)
+                {
+                     arg0 = (TestEventListener.OnClick)ToLua.CheckObject(L, <span class="hljs-number">2</span>, <span class="hljs-keyword">typeof</span>(TestEventListener.OnClick));
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    LuaFunction func = ToLua.ToLuaFunction(L, <span class="hljs-number">2</span>);
+                    arg0 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestEventListener.OnClick), func) <span class="hljs-keyword">as</span> TestEventListener.OnClick;
+                }
+
+                obj.onClick = arg0;
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e, o == <span class="hljs-keyword">null</span> ? <span class="hljs-string">&quot;attempt to index onClick on a nil value&quot;</span> : e.Message);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">set_onClickEvent</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                TestEventListener obj = (TestEventListener)ToLua.CheckObject(L, <span class="hljs-number">1</span>, <span class="hljs-keyword">typeof</span>(TestEventListener));
+                EventObject arg0 = <span class="hljs-keyword">null</span>;
+
+                <span class="hljs-keyword">if</span> (LuaDLL.lua_isuserdata(L, <span class="hljs-number">2</span>) != <span class="hljs-number">0</span>)
+                {
+                    arg0 = (EventObject)ToLua.ToObject(L, <span class="hljs-number">2</span>);
+                }
+                <span class="hljs-keyword">else</span>
+                {
+                    <span class="hljs-keyword">return</span> LuaDLL.luaL_throw(L, <span class="hljs-string">&quot;The event &apos;TestEventListener.onClickEvent&apos; can only appear on the left hand side of += or -= when used outside of the type &apos;TestEventListener&apos;&quot;</span>);
+                }
+
+                <span class="hljs-keyword">if</span> (arg0.op == EventOp.Add)
+                {
+                    TestEventListener.OnClick ev = (TestEventListener.OnClick)DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestEventListener.OnClick), arg0.func);
+                    obj.onClickEvent += ev;
+                }
+                <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">arg0.op == EventOp.Sub</span>)
+                </span>{
+                    TestEventListener.OnClick ev = (TestEventListener.OnClick)LuaMisc.GetEventHandler(obj, <span class="hljs-keyword">typeof</span>(TestEventListener), <span class="hljs-string">&quot;onClickEvent&quot;</span>);
+                    Delegate[] ds = ev.GetInvocationList();
+                    LuaState state = LuaState.Get(L);
+
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; ds.Length; i++)
+                    {
+                        ev = (TestEventListener.OnClick)ds[i];
+                        LuaDelegate ld = ev.Target <span class="hljs-keyword">as</span> LuaDelegate;
+
+                        <span class="hljs-keyword">if</span> (ld != <span class="hljs-keyword">null</span> &amp;&amp; ld.func == arg0.func)
+                        {
+                            obj.onClickEvent -= ev;
+                            state.DelayDispose(ld.func);
+                            <span class="hljs-keyword">break</span>;
+                        }
+                    }
+
+                    arg0.func.Dispose();
+                }
+
+                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestEventListener_OnClick</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                LuaFunction func = ToLua.CheckLuaFunction(L, <span class="hljs-number">1</span>);
+                Delegate arg1 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestEventListener.OnClick), func);
+                ToLua.Push(L, arg1);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+
+        [MonoPInvokeCallbackAttribute(<span class="hljs-keyword">typeof</span>(LuaCSFunction))]
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">TestEventListener_VoidDelegate</span>(<span class="hljs-params">IntPtr L</span>)
+        </span>{
+            <span class="hljs-keyword">try</span>
+            {
+                LuaFunction func = ToLua.CheckLuaFunction(L, <span class="hljs-number">1</span>);
+                Delegate arg1 = DelegateFactory.CreateDelegate(<span class="hljs-keyword">typeof</span>(TestEventListener.VoidDelegate), func);
+                ToLua.Push(L, arg1);
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">catch</span>(Exception e)
+            {
+                <span class="hljs-keyword">return</span> LuaDLL.toluaL_exception(L, e);
+            }
+        }
+    }
+</code></pre>
+<p>&#x1F51A;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2_10 Enum.html" class="navigation navigation-prev " aria-label="Previous page: 2.10 Enum">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2_12 GameObject.html" class="navigation navigation-next " aria-label="Next page: 2.12 GameObject">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.11 Delegate","level":"1.3.11","depth":2,"next":{"title":"2.12 GameObject","level":"1.3.12","depth":2,"path":"第二章 LuaFramework/2_12 GameObject.md","ref":"第二章 LuaFramework/2_12 GameObject.md","articles":[]},"previous":{"title":"2.10 Enum","level":"1.3.10","depth":2,"path":"第二章 LuaFramework/2_10 Enum.md","ref":"第二章 LuaFramework/2_10 Enum.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第二章 LuaFramework/2_11 Delegate.md","mtime":"2017-11-04T13:46:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-04T14:06:07.623Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
