@@ -1,0 +1,1636 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.8 Hotfix · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3_9 GenericMethod.html" />
+    
+    
+    <link rel="prev" href="3_7 AsyncTest.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../第一章 Lua程序设计/">
+            
+                <a href="../第一章 Lua程序设计/">
+            
+                    
+                    第一章 Lua程序设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第一章 Lua程序设计/1_1 类型与值.html">
+            
+                <a href="../第一章 Lua程序设计/1_1 类型与值.html">
+            
+                    
+                    1.1 类型与值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../第一章 Lua程序设计/1_2 表达式.html">
+            
+                <a href="../第一章 Lua程序设计/1_2 表达式.html">
+            
+                    
+                    1.2 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../第一章 Lua程序设计/1_3 语句.html">
+            
+                <a href="../第一章 Lua程序设计/1_3 语句.html">
+            
+                    
+                    1.3 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../第一章 Lua程序设计/1_4 函数.html">
+            
+                <a href="../第一章 Lua程序设计/1_4 函数.html">
+            
+                    
+                    1.4 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../第一章 Lua程序设计/1_5 迭代器与范型for.html">
+            
+                <a href="../第一章 Lua程序设计/1_5 迭代器与范型for.html">
+            
+                    
+                    1.5 迭代器与范型for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../第一章 Lua程序设计/1_6 协同程序.html">
+            
+                <a href="../第一章 Lua程序设计/1_6 协同程序.html">
+            
+                    
+                    1.6 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../第一章 Lua程序设计/1_7 数据结构.html">
+            
+                <a href="../第一章 Lua程序设计/1_7 数据结构.html">
+            
+                    
+                    1.7 数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../第一章 Lua程序设计/1_8 数据文件与持久性.html">
+            
+                <a href="../第一章 Lua程序设计/1_8 数据文件与持久性.html">
+            
+                    
+                    1.8 数据文件与持久性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../第一章 Lua程序设计/1_9 元表与元方法.html">
+            
+                <a href="../第一章 Lua程序设计/1_9 元表与元方法.html">
+            
+                    
+                    1.9 元表与元方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../第一章 Lua程序设计/1_10 环境.html">
+            
+                <a href="../第一章 Lua程序设计/1_10 环境.html">
+            
+                    
+                    1.10 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../第一章 Lua程序设计/1_11 模块与包.html">
+            
+                <a href="../第一章 Lua程序设计/1_11 模块与包.html">
+            
+                    
+                    1.11 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../第一章 Lua程序设计/1_12 面向对象编程.html">
+            
+                <a href="../第一章 Lua程序设计/1_12 面向对象编程.html">
+            
+                    
+                    1.12 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../第一章 Lua程序设计/1_13 弱引用table.html">
+            
+                <a href="../第一章 Lua程序设计/1_13 弱引用table.html">
+            
+                    
+                    1.13 弱引用table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../第一章 Lua程序设计/1_14 数学库.html">
+            
+                <a href="../第一章 Lua程序设计/1_14 数学库.html">
+            
+                    
+                    1.14 数学库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../第一章 Lua程序设计/1_15 table库.html">
+            
+                <a href="../第一章 Lua程序设计/1_15 table库.html">
+            
+                    
+                    1.15 table库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../第一章 Lua程序设计/1_16 字符串库.html">
+            
+                <a href="../第一章 Lua程序设计/1_16 字符串库.html">
+            
+                    
+                    1.16 字符串库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../第一章 Lua程序设计/1_17 I／O库.html">
+            
+                <a href="../第一章 Lua程序设计/1_17 I／O库.html">
+            
+                    
+                    1.17 I／O库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../第一章 Lua程序设计/1_18 用户自定义类型.html">
+            
+                <a href="../第一章 Lua程序设计/1_18 用户自定义类型.html">
+            
+                    
+                    1.18 用户自定义类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../第一章 Lua程序设计/1_30 练习题.html">
+            
+                <a href="../第一章 Lua程序设计/1_30 练习题.html">
+            
+                    
+                    1.30 练习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../第二章 LuaFramework/">
+            
+                <a href="../第二章 LuaFramework/">
+            
+                    
+                    第二章 LuaFramework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第二章 LuaFramework/2_1 HelloWorld.html">
+            
+                <a href="../第二章 LuaFramework/2_1 HelloWorld.html">
+            
+                    
+                    2.1 HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第二章 LuaFramework/2_2 ScriptsFromFile.html">
+            
+                <a href="../第二章 LuaFramework/2_2 ScriptsFromFile.html">
+            
+                    
+                    2.2 ScriptsFromFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第二章 LuaFramework/2_3 CallLuaFunction.html">
+            
+                <a href="../第二章 LuaFramework/2_3 CallLuaFunction.html">
+            
+                    
+                    2.3 CallLuaFunction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../第二章 LuaFramework/2_4 AccessingLuaVariables.html">
+            
+                <a href="../第二章 LuaFramework/2_4 AccessingLuaVariables.html">
+            
+                    
+                    2.4 AccessingLuaVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../第二章 LuaFramework/2_5 LuaCoroutine.html">
+            
+                <a href="../第二章 LuaFramework/2_5 LuaCoroutine.html">
+            
+                    
+                    2.5 LuaCoroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../第二章 LuaFramework/2_6 LuaCoroutine2.html">
+            
+                <a href="../第二章 LuaFramework/2_6 LuaCoroutine2.html">
+            
+                    
+                    2.6 LuaCoroutine2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../第二章 LuaFramework/2_7 LuaThread.html">
+            
+                <a href="../第二章 LuaFramework/2_7 LuaThread.html">
+            
+                    
+                    2.7 LuaThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../第二章 LuaFramework/2_8 AccessingArray.html">
+            
+                <a href="../第二章 LuaFramework/2_8 AccessingArray.html">
+            
+                    
+                    2.8 AccessingArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../第二章 LuaFramework/2_9 Dictionary.html">
+            
+                <a href="../第二章 LuaFramework/2_9 Dictionary.html">
+            
+                    
+                    2.9 Dictionary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../第二章 LuaFramework/2_10 Enum.html">
+            
+                <a href="../第二章 LuaFramework/2_10 Enum.html">
+            
+                    
+                    2.10 Enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../第二章 LuaFramework/2_11 Delegate.html">
+            
+                <a href="../第二章 LuaFramework/2_11 Delegate.html">
+            
+                    
+                    2.11 Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../第二章 LuaFramework/2_12 GameObject.html">
+            
+                <a href="../第二章 LuaFramework/2_12 GameObject.html">
+            
+                    
+                    2.12 GameObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../第二章 LuaFramework/2_13 CustomLoader.html">
+            
+                <a href="../第二章 LuaFramework/2_13 CustomLoader.html">
+            
+                    
+                    2.13 CustomLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../第二章 LuaFramework/2_14 Out.html">
+            
+                <a href="../第二章 LuaFramework/2_14 Out.html">
+            
+                    
+                    2.14 Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../第二章 LuaFramework/2_15 ProtoBuffer.html">
+            
+                <a href="../第二章 LuaFramework/2_15 ProtoBuffer.html">
+            
+                    
+                    2.15 ProtoBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../第二章 LuaFramework/2_16 Int64.html">
+            
+                <a href="../第二章 LuaFramework/2_16 Int64.html">
+            
+                    
+                    2.16 Int64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../第二章 LuaFramework/2_17 Inherit.html">
+            
+                <a href="../第二章 LuaFramework/2_17 Inherit.html">
+            
+                    
+                    2.17 Inherit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../第二章 LuaFramework/2_18 Bundle.html">
+            
+                <a href="../第二章 LuaFramework/2_18 Bundle.html">
+            
+                    
+                    2.18 Bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../第二章 LuaFramework/2_19 cjson.html">
+            
+                <a href="../第二章 LuaFramework/2_19 cjson.html">
+            
+                    
+                    2.19 cjson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../第二章 LuaFramework/2_20 utf8.html">
+            
+                <a href="../第二章 LuaFramework/2_20 utf8.html">
+            
+                    
+                    2.20 utf8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../第二章 LuaFramework/2_21 String.html">
+            
+                <a href="../第二章 LuaFramework/2_21 String.html">
+            
+                    
+                    2.21 String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../第二章 LuaFramework/2_22 Reflection.html">
+            
+                <a href="../第二章 LuaFramework/2_22 Reflection.html">
+            
+                    
+                    2.22 Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../第二章 LuaFramework/2_23 List.html">
+            
+                <a href="../第二章 LuaFramework/2_23 List.html">
+            
+                    
+                    2.23 List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../第二章 LuaFramework/2_24 Performance.html">
+            
+                <a href="../第二章 LuaFramework/2_24 Performance.html">
+            
+                    
+                    2.24 Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="../第二章 LuaFramework/2_25 TestErrorStack.html">
+            
+                <a href="../第二章 LuaFramework/2_25 TestErrorStack.html">
+            
+                    
+                    2.25 TestErrorStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="../第二章 LuaFramework/2_26 TestOverload.html">
+            
+                <a href="../第二章 LuaFramework/2_26 TestOverload.html">
+            
+                    
+                    2.26 TestOverload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="../第二章 LuaFramework/227-dai-ma-re-geng-xin.html">
+            
+                <a href="../第二章 LuaFramework/227-dai-ma-re-geng-xin.html">
+            
+                    
+                    2.27 代码热更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="../第二章 LuaFramework/228-zi-yuan-re-geng-xin.html">
+            
+                <a href="../第二章 LuaFramework/228-zi-yuan-re-geng-xin.html">
+            
+                    
+                    2.28 资源热更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="../第二章 LuaFramework/229-bian-xie-lua-luo-ji.html">
+            
+                <a href="../第二章 LuaFramework/229-bian-xie-lua-luo-ji.html">
+            
+                    
+                    2.29 编写Lua逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="../第二章 LuaFramework/230-luazu-jian.html">
+            
+                <a href="../第二章 LuaFramework/230-luazu-jian.html">
+            
+                    
+                    2.30 Lua组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="../第二章 LuaFramework/231-re-geng-ui.html">
+            
+                <a href="../第二章 LuaFramework/231-re-geng-ui.html">
+            
+                    
+                    2.31 热更UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第三章 XLua教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3_1 HelloWorld.html">
+            
+                <a href="3_1 HelloWorld.html">
+            
+                    
+                    3.1 HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3_2 U3DScripting.html">
+            
+                <a href="3_2 U3DScripting.html">
+            
+                    
+                    3.2 U3DScripting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3_3 UIEvent.html">
+            
+                <a href="3_3 UIEvent.html">
+            
+                    
+                    3.3 UIEvent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3_4 LuaObjectOrented.html">
+            
+                <a href="3_4 LuaObjectOrented.html">
+            
+                    
+                    3.4 LuaObjectOrented
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3_5 NoGc.html">
+            
+                <a href="3_5 NoGc.html">
+            
+                    
+                    3.5 NoGc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3_6 Coroutine.html">
+            
+                <a href="3_6 Coroutine.html">
+            
+                    
+                    3.6 Coroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="3_7 AsyncTest.html">
+            
+                <a href="3_7 AsyncTest.html">
+            
+                    
+                    3.7 AsyncTest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.8" data-path="3_8 Hotfix.html">
+            
+                <a href="3_8 Hotfix.html">
+            
+                    
+                    3.8 Hotfix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="3_9 GenericMethod.html">
+            
+                <a href="3_9 GenericMethod.html">
+            
+                    
+                    3.9 GenericMethod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="3_10 SignatureLoader.html">
+            
+                <a href="3_10 SignatureLoader.html">
+            
+                    
+                    3.10 SignatureLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="3_11 RawObject.html">
+            
+                <a href="3_11 RawObject.html">
+            
+                    
+                    3.11 RawObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="3_12 ReImplementInLua.html">
+            
+                <a href="3_12 ReImplementInLua.html">
+            
+                    
+                    3.12 RelmplementInLua
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="3_13 xLua的配置.html">
+            
+                <a href="3_13 xLua的配置.html">
+            
+                    
+                    3.13 xLua的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.8 Hotfix</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="hotfix">Hotfix</h2>
+<h4 id="hotfixtestcs">HotfixTest.cs</h4>
+<pre><code class="lang-csharp">    <span class="hljs-keyword">using</span> UnityEngine;
+    <span class="hljs-keyword">using</span> XLua;
+
+    [Hotfix]
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">HotfixTest</span> : <span class="hljs-title">MonoBehaviour</span>
+    {
+        LuaEnv luaenv = <span class="hljs-keyword">new</span> LuaEnv();
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> tick = <span class="hljs-number">0</span>; <span class="hljs-comment">//&#x5982;&#x679C;&#x662F;private&#x7684;&#xFF0C;&#x5728;lua&#x8BBE;&#x7F6E;xlua.private_accessible(CS.HotfixTest)&#x540E;&#x5373;&#x53EF;&#x8BBF;&#x95EE;</span>
+
+        <span class="hljs-comment">// Use this for initialization</span>
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span>(<span class="hljs-params"></span>)
+        </span>{
+        }
+
+        <span class="hljs-comment">// Update is called once per frame</span>
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span>(<span class="hljs-params"></span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (++tick % <span class="hljs-number">50</span> == <span class="hljs-number">0</span>)
+            {
+                Debug.Log(<span class="hljs-string">&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Update in C#, tick = &quot;</span> + tick);
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnGUI</span>(<span class="hljs-params"></span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (GUI.Button(<span class="hljs-keyword">new</span> Rect(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">300</span>, <span class="hljs-number">80</span>), <span class="hljs-string">&quot;Hotfix&quot;</span>))
+            {
+                luaenv.DoString(<span class="hljs-string">@&quot;
+                    xlua.hotfix(CS.HotfixTest, &apos;Update&apos;, function(self)
+                        self.tick = self.tick + 1
+                        if (self.tick % 50) == 0 then
+                            print(&apos;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;Update in lua, tick = &apos; .. self.tick)
+                        end
+                    end)
+                &quot;</span>);
+            }
+
+            <span class="hljs-keyword">string</span> chHint = <span class="hljs-string">@&quot;&#x5728;&#x8FD0;&#x884C;&#x8BE5;&#x793A;&#x4F8B;&#x4E4B;&#x524D;&#xFF0C;&#x8BF7;&#x7EC6;&#x81F4;&#x9605;&#x8BFB;xLua&#x6587;&#x6863;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#xFF1A;
+
+    1.&#x5B8F;&#x5B9A;&#x4E49;&#xFF1A;&#x6DFB;&#x52A0; HOTFIX_ENABLE &#x5230; &apos;Edit &gt; Project Settings &gt; Player &gt; Other Settings &gt; Scripting Define Symbols&apos;&#x3002;
+    &#xFF08;&#x6CE8;&#x610F;&#xFF1A;&#x5404;&#x5E73;&#x53F0;&#x9700;&#x8981;&#x5206;&#x522B;&#x8BBE;&#x7F6E;&#xFF09;
+
+    2.&#x751F;&#x6210;&#x4EE3;&#x7801;&#xFF1A;&#x6267;&#x884C; &apos;XLua &gt; Generate Code&apos; &#x83DC;&#x5355;&#xFF0C;&#x7B49;&#x5F85;Unity&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x3002;
+
+    3.&#x6CE8;&#x5165;&#xFF1A;&#x6267;&#x884C; &apos;XLua &gt; Hotfix Inject In Editor&apos; &#x83DC;&#x5355;&#x3002;&#x6CE8;&#x5165;&#x6210;&#x529F;&#x4F1A;&#x6253;&#x5370; &apos;hotfix inject finish!&apos; &#x6216;&#x8005; &apos;had injected!&apos; &#x3002;&quot;</span>;
+            <span class="hljs-keyword">string</span> enHint = <span class="hljs-string">@&quot;Read documents carefully before you run this example, then follow the steps below:
+
+    1. Define: Add &apos;HOTFIX_ENABLE&apos; to &apos;Edit &gt; Project Settings &gt; Player &gt; Other Settings &gt; Scripting Define Symbols&apos;.
+    (Note: Each platform needs to set this respectively)
+
+    2.Generate Code: Execute menu &apos;XLua &gt; Generate Code&apos;, wait for Unity&apos;s compilation.
+
+
+    3.Inject: Execute menu &apos;XLua &gt; Hotfix Inject In Editor&apos;.There should be &apos;hotfix inject finish!&apos; or &apos;had injected!&apos; print in the Console if the Injection is successful.&quot;</span>;
+            GUIStyle style = GUI.skin.textArea;
+            style.normal.textColor = Color.red;
+            style.fontSize = <span class="hljs-number">16</span>;
+            GUI.TextArea(<span class="hljs-keyword">new</span> Rect(<span class="hljs-number">10</span>, <span class="hljs-number">100</span>, <span class="hljs-number">500</span>, <span class="hljs-number">290</span>), chHint, style);
+            GUI.TextArea(<span class="hljs-keyword">new</span> Rect(<span class="hljs-number">10</span>, <span class="hljs-number">400</span>, <span class="hljs-number">500</span>, <span class="hljs-number">290</span>), enHint, style);
+        }
+    }
+</code></pre>
+<h4 id="hotfixtest2cs">HotfixTest2.cs</h4>
+<pre><code class="lang-csharp">    using UnityEngine;
+    using System.Collections.Generic;
+    using XLua;
+
+    [CSharpCallLua]
+    public delegate int TestOutDelegate(HotfixCalc calc, int a, out double b, ref string c);
+
+    [Hotfix]
+    public class HotfixCalc
+    {
+        public int Add(int a, int b)
+        {
+            return a - b;
+        }
+
+        public Vector3 Add(Vector3 a, Vector3 b)
+        {
+            return a - b;
+        }
+
+        public int TestOut(int a, out double b, ref string c)
+        {
+            b = a + 2;
+            c = &quot;wrong version&quot;;
+            return a + 3;
+        }
+
+        public int TestOut(int a, out double b, ref string c, GameObject go)
+        {
+            return TestOut(a, out b, ref c);
+        }
+
+        public T Test1&lt;T&gt;()
+        {
+            return default(T);
+        }
+
+        public T1 Test2&lt;T1, T2, T3&gt;(T1 a, out T2 b, ref T3 c)
+        {
+            b = default(T2);
+            return a;
+        }
+
+        public static int Test3&lt;T&gt;(T a)
+        {
+            return 0;
+        }
+
+        public static void Test4&lt;T&gt;(T a)
+        { 
+        }
+
+        public void Test5&lt;T&gt;(int a, params T[] arg)
+        {
+
+        }
+    }
+
+    public class NoHotfixCalc
+    {
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
+    }
+
+    [Hotfix]
+    public class GenericClass&lt;T&gt;
+    {
+        T a;
+
+        public GenericClass(T a)
+        {
+            this.a = a;
+        }
+
+        public void Func1()
+        {
+            Debug.Log(&quot;a=&quot; + a);
+        }
+
+        public T Func2()
+        {
+            return default(T);
+        }
+    }
+
+    [Hotfix]
+    public class InnerTypeTest
+    {
+        public void Foo()
+        {
+            _InnerStruct ret = Bar();
+            Debug.Log(&quot;{x=&quot; + ret.x + &quot;,y= &quot; + ret.y + &quot;}&quot;);
+        }
+
+        struct _InnerStruct
+        {
+            public int x;
+            public int y;
+        }
+
+        _InnerStruct Bar()
+        {
+            return new _InnerStruct { x = 1, y = 2 };
+        }
+    }
+
+    [Hotfix]
+    public struct StructTest
+    {
+        GameObject go;
+        public StructTest(GameObject go)
+        {
+            this.go = go;
+        }
+
+        public GameObject GetGo(int a, object b)
+        {
+            return go;
+        }
+    }
+
+    [Hotfix(HotfixFlag.Stateful)]
+    public struct GenericStruct&lt;T&gt;
+    {
+        T a;
+
+        public GenericStruct(T a)
+        {
+            this.a = a;
+        }
+
+        public T GetA(int p)
+        {
+            return a;
+        }
+    }
+
+    public class HotfixTest2 : MonoBehaviour {
+
+        // Use this for initialization
+        void Start () {
+            LuaEnv luaenv = new LuaEnv();
+            HotfixCalc calc = new HotfixCalc();
+            NoHotfixCalc ordinaryCalc = new NoHotfixCalc();
+
+            int CALL_TIME = 100 * 1000 * 1000 ;
+            var start = System.DateTime.Now;
+            for (int i = 0; i &lt; CALL_TIME; i++)
+            {
+                calc.Add(2, 1);
+            }
+            var d1 = (System.DateTime.Now - start).TotalMilliseconds;
+            Debug.Log(&quot;Hotfix using:&quot; + d1);
+
+            start = System.DateTime.Now;
+            for (int i = 0; i &lt; CALL_TIME; i++)
+            {
+                ordinaryCalc.Add(2, 1);
+            }
+            var d2 = (System.DateTime.Now - start).TotalMilliseconds;
+            Debug.Log(&quot;No Hotfix using:&quot; + d2);
+
+            Debug.Log(&quot;drop:&quot; + ((d1 - d2) / d1));
+
+            Debug.Log(&quot;Before Fix: 2 + 1 = &quot; + calc.Add(2, 1));
+            Debug.Log(&quot;Before Fix: Vector3(2, 3, 4) + Vector3(1, 2, 3) = &quot; + calc.Add(new Vector3(2, 3, 4), new Vector3(1, 2, 3)));
+            luaenv.DoString(@&quot;
+                xlua.hotfix(CS.HotfixCalc, &apos;Add&apos;, function(self, a, b)
+                    return a + b
+                end)
+            &quot;);
+            Debug.Log(&quot;After Fix: 2 + 1 = &quot; + calc.Add(2, 1));
+            Debug.Log(&quot;After Fix: Vector3(2, 3, 4) + Vector3(1, 2, 3) = &quot; + calc.Add(new Vector3(2, 3, 4), new Vector3(1, 2, 3)));
+
+            double num;
+            string str = &quot;hehe&quot;;
+            int ret = calc.TestOut(100, out num, ref str);
+            Debug.Log(&quot;ret = &quot; + ret + &quot;, num = &quot; + num + &quot;, str = &quot; + str);
+
+            luaenv.DoString(@&quot;
+                xlua.hotfix(CS.HotfixCalc, &apos;TestOut&apos;, function(self, a, c, go)
+                        print(&apos;TestOut&apos;, self, a, c, go)
+                        if go then error(&apos;test error&apos;) end
+                        return a + 10, a + 20, &apos;right version&apos;
+                    end)
+            &quot;);
+            str = &quot;hehe&quot;;
+            ret = calc.TestOut(100, out num, ref str);
+            Debug.Log(&quot;ret = &quot; + ret + &quot;, num = &quot; + num + &quot;, str = &quot; + str);
+
+            luaenv.DoString(@&quot;
+                xlua.hotfix(CS.HotfixCalc, {
+                     Test1 = function(self)
+                        print(&apos;Test1&apos;, self)
+                        return 1
+                     end;
+                     Test2 = function(self, a, b)
+                         print(&apos;Test1&apos;, self, a, b)
+                         return a + 10, 1024, b
+                     end;
+                     Test3 = function(a)
+                        print(a)
+                        return 10
+                     end;
+                     Test4 = function(a)
+                        print(a)
+                     end;
+                     Test5 = function(self, a, ...)
+                        print(&apos;Test4&apos;, self, a, ...)
+                     end
+                })
+            &quot;);
+
+            int r1 = calc.Test1&lt;int&gt;();
+            double r2 = calc.Test1&lt;double&gt;();
+
+            Debug.Log(&quot;r1:&quot; + r1 + &quot;,r2:&quot; + r2);
+
+            string ss = &quot;heihei&quot;;
+            int r3 = calc.Test2(r1, out r2, ref ss);
+            Debug.Log(&quot;r1:&quot; + r1 + &quot;,r2:&quot; + r2 + &quot;,r3:&quot; + r3 + &quot;,ss:&quot; + ss);
+
+            r3 = HotfixCalc.Test3(&quot;test3&quot;);
+            r3 = HotfixCalc.Test3(2);
+            r3 = HotfixCalc.Test3(this);
+            Debug.Log(&quot;r3:&quot; + r3);
+            HotfixCalc.Test4(this);
+            HotfixCalc.Test4(2);
+            calc.Test5(10, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;);
+            calc.Test5(10, 1, 3, 5);
+
+            Debug.Log(&quot;----------------------before------------------------&quot;);
+            TestStateful();
+            System.GC.Collect();
+            System.GC.WaitForPendingFinalizers();
+            luaenv.DoString(@&quot;
+                xlua.hotfix(CS.StatefullTest, {
+                    [&apos;.ctor&apos;] = function(csobj)
+                        return {evt = {}, start = 0}
+                    end;
+                    set_AProp = function(self, v)
+                        print(&apos;set_AProp&apos;, v)
+                        self.AProp = v
+                    end;
+                    get_AProp = function(self)
+                        return self.AProp
+                    end;
+                    get_Item = function(self, k)
+                        print(&apos;get_Item&apos;, k)
+                        return 1024
+                    end;
+                    set_Item = function(self, k, v)
+                        print(&apos;set_Item&apos;, k, v)
+                    end;
+                    add_AEvent = function(self, cb)
+                        print(&apos;add_AEvent&apos;, cb)
+                        table.insert(self.evt, cb)
+                    end;
+                    remove_AEvent = function(self, cb)
+                       print(&apos;remove_AEvent&apos;, cb)
+                       for i, v in ipairs(self.evt) do
+                           if v == cb then
+                               table.remove(self.evt, i)
+                               break
+                           end
+                       end
+                    end;
+                    Start = function(self)
+                        print(&apos;Start&apos;)
+                        for _, cb in ipairs(self.evt) do
+                            cb(self.start, 2)
+                        end
+                        self.start = self.start + 1
+                    end;
+                    StaticFunc = function(a, b, c)
+                       print(a, b, c)
+                    end;
+                    GenericTest = function(self, a)
+                       print(self, a)
+                    end;
+                    Finalize = function(self)
+                       print(&apos;Finalize&apos;, self)
+                    end
+               })
+            &quot;);
+            Debug.Log(&quot;----------------------after------------------------&quot;);
+            TestStateful();
+            luaenv.FullGc();
+            System.GC.Collect();
+            System.GC.WaitForPendingFinalizers();
+
+            var genericObj = new GenericClass&lt;double&gt;(1.1);
+            genericObj.Func1();
+            Debug.Log(genericObj.Func2());
+            luaenv.DoString(@&quot;
+                xlua.hotfix(CS[&apos;GenericClass`1[System.Double]&apos;], {
+                    [&apos;.ctor&apos;] = function(obj, a)
+                        print(&apos;GenericClass&lt;double&gt;&apos;, obj, a)
+                    end;
+                    Func1 = function(obj)
+                        print(&apos;GenericClass&lt;double&gt;.Func1&apos;, obj)
+                    end;
+                    Func2 = function(obj)
+                        print(&apos;GenericClass&lt;double&gt;.Func2&apos;, obj)
+                        return 1314
+                    end
+                })
+            &quot;);
+            genericObj = new GenericClass&lt;double&gt;(1.1);
+            genericObj.Func1();
+            Debug.Log(genericObj.Func2());
+
+            InnerTypeTest itt = new InnerTypeTest();
+            itt.Foo();
+            luaenv.DoString(@&quot;
+                xlua.hotfix(CS.InnerTypeTest, &apos;Bar&apos;, function(obj)
+                        print(&apos;lua Bar&apos;, obj)
+                        return {x = 10, y = 20}
+                    end)
+            &quot;);
+            itt.Foo();
+
+            StructTest st = new StructTest(gameObject);
+            Debug.Log(&quot;go=&quot; + st.GetGo(123, &quot;john&quot;));
+            luaenv.DoString(@&quot;
+                xlua.hotfix(CS.StructTest, &apos;GetGo&apos;, function(self, a, b)
+                        print(&apos;GetGo&apos;, self, a, b)
+                        return nil
+                    end)
+            &quot;);
+            Debug.Log(&quot;go=&quot; + st.GetGo(123, &quot;john&quot;));
+
+            GenericStruct&lt;int&gt; gs = new GenericStruct&lt;int&gt;(1);
+            Debug.Log(&quot;gs.GetA()=&quot; + gs.GetA(123));
+            luaenv.DoString(@&quot;
+                xlua.hotfix(CS[&apos;GenericStruct`1[System.Int32]&apos;], &apos;GetA&apos;, function(self, a)
+                        print(&apos;GetA&apos;,self, a)
+                        return 789
+                    end)
+            &quot;);
+            Debug.Log(&quot;gs.GetA()=&quot; + gs.GetA(123));
+
+            try
+            {
+                calc.TestOut(100, out num, ref str, gameObject);
+            }
+            catch(LuaException e)
+            {
+                Debug.Log(&quot;throw in lua an catch in c# ok, e.Message:&quot; + e.Message);
+            }
+        }
+
+        void TestStateful()
+        {
+            StatefullTest sft = new StatefullTest();
+            sft.AProp = 10;
+            Debug.Log(&quot;sft.AProp:&quot; + sft.AProp);
+            sft[&quot;1&quot;] = 1;
+            Debug.Log(&quot;sft[&apos;1&apos;]:&quot; + sft[&quot;1&quot;]);
+            System.Action&lt;int, double&gt; cb = (a, b) =&gt;
+            {
+                Debug.Log(&quot;a:&quot; + a + &quot;,b:&quot; + b);
+            };
+            sft.AEvent += cb;
+            sft.Start();
+            sft.Start();
+            sft.AEvent -= cb;
+            sft.Start();
+            StatefullTest.StaticFunc(1, 2);
+            StatefullTest.StaticFunc(&quot;e&quot;, 3, 4);
+            sft.GenericTest(1);
+            sft.GenericTest(&quot;hehe&quot;);
+        }
+
+        // Update is called once per frame
+        void Update () {
+
+        }
+    }
+</code></pre>
+<h4 id="statefulltestcs">StatefullTest.cs</h4>
+<pre><code class="lang-csharp">    <span class="hljs-keyword">using</span> UnityEngine;
+    <span class="hljs-keyword">using</span> System.Collections;
+
+    [XLua.Hotfix(XLua.HotfixFlag.Stateful)]
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">StatefullTest</span> {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StatefullTest</span>(<span class="hljs-params"></span>)
+        </span>{
+
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StatefullTest</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b</span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (a &gt; <span class="hljs-number">0</span>)
+            {
+                <span class="hljs-keyword">return</span>;
+            }
+
+            Debug.Log(<span class="hljs-string">&quot;a=&quot;</span> + a);
+            <span class="hljs-keyword">if</span> (b &gt; <span class="hljs-number">0</span>)
+            {
+                <span class="hljs-keyword">return</span>;
+            }
+            <span class="hljs-keyword">else</span>
+            {
+                <span class="hljs-keyword">if</span> (a + b &gt; <span class="hljs-number">0</span>)
+                {
+                    <span class="hljs-keyword">return</span>;
+                }
+            }
+            Debug.Log(<span class="hljs-string">&quot;b=&quot;</span> + b);
+        }
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> AProp
+        {
+            <span class="hljs-keyword">get</span>;
+            <span class="hljs-keyword">set</span>;
+        }
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">event</span> System.Action&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">double</span>&gt; AEvent;
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-keyword">this</span>[<span class="hljs-keyword">string</span> field]
+        {
+            <span class="hljs-keyword">get</span>
+            {
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">set</span>
+            {
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> (<span class="hljs-params"></span>) </span>{
+
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span> (<span class="hljs-params"></span>) </span>{
+
+        }
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> GenericTest&lt;T&gt;(T a)
+        {
+
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">StaticFunc</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b</span>)
+        </span>{
+        }
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">StaticFunc</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> a, <span class="hljs-keyword">int</span> b, <span class="hljs-keyword">int</span> c</span>)
+        </span>{
+        }
+
+        ~StatefullTest()
+        {
+            Debug.Log(<span class="hljs-string">&quot;~StatefullTest&quot;</span>);
+        }
+    }
+</code></pre>
+<p>&#x1F51A;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3_7 AsyncTest.html" class="navigation navigation-prev " aria-label="Previous page: 3.7 AsyncTest">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3_9 GenericMethod.html" class="navigation navigation-next " aria-label="Next page: 3.9 GenericMethod">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.8 Hotfix","level":"1.4.8","depth":2,"next":{"title":"3.9 GenericMethod","level":"1.4.9","depth":2,"path":"第三章 XLua教程/3_9 GenericMethod.md","ref":"第三章 XLua教程/3_9 GenericMethod.md","articles":[]},"previous":{"title":"3.7 AsyncTest","level":"1.4.7","depth":2,"path":"第三章 XLua教程/3_7 AsyncTest.md","ref":"第三章 XLua教程/3_7 AsyncTest.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第三章 XLua教程/3_8 Hotfix.md","mtime":"2017-12-03T14:42:45.946Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-03T15:15:00.945Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
