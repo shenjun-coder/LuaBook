@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.3 UIEvent · GitBook</title>
+        <title>3.16 载入Lua脚本 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="3_4 LuaObjectOrented.html" />
     
-    
-    <link rel="prev" href="3_2 U3DScripting.html" />
+    <link rel="prev" href="3_15 Lua调用CS.html" />
     
 
     </head>
@@ -830,7 +828,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.3" data-path="3_3 UIEvent.html">
+        <li class="chapter " data-level="1.4.3" data-path="3_3 UIEvent.html">
             
                 <a href="3_3 UIEvent.html">
             
@@ -999,7 +997,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.16" data-path="3_16 载入Lua脚本.html">
+        <li class="chapter active" data-level="1.4.16" data-path="3_16 载入Lua脚本.html">
             
                 <a href="3_16 载入Lua脚本.html">
             
@@ -1047,7 +1045,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >3.3 UIEvent</a>
+        <a href=".." >3.16 载入Lua脚本</a>
     </h1>
 </div>
 
@@ -1062,18 +1060,96 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="uievent">UIEvent</h2>
-<h4 id="buttoninteractionluatxt">ButtonInteraction.lua.txt</h4>
-<p>&#x901A;&#x8FC7;<code>LuaBehaviour</code>&#x6267;&#x884C;&#x6B64;<code>Lua</code>&#x811A;&#x672C;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;Injections&#x6570;&#x7EC4;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x7EC4;<code>input</code></p>
-<pre><code>Name:input
-Value:InputField
-</code></pre><pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span><span class="hljs-params">()</span></span>
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;lua start...&quot;</span>)
+                                <h2 id="&#x8F7D;&#x5165;lua&#x811A;&#x672C;">&#x8F7D;&#x5165;Lua&#x811A;&#x672C;</h2>
+<h4 id="&#x4E00;&#x3001;&#x901A;&#x8FC7;&#x6587;&#x4EF6;">&#x4E00;&#x3001;&#x901A;&#x8FC7;&#x6587;&#x4EF6;</h4>
+<pre><code class="lang-csharp">    <span class="hljs-keyword">using</span> UnityEngine;
+    <span class="hljs-keyword">using</span> System.Collections;
+    <span class="hljs-keyword">using</span> XLua;
 
-        self:GetComponent(<span class="hljs-string">&quot;Button&quot;</span>).onClick:AddListener(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>
-            <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;clicked, you input is &apos;&quot;</span> ..input:GetComponent(<span class="hljs-string">&quot;InputField&quot;</span>).text ..<span class="hljs-string">&quot;&apos;&quot;</span>)
-        <span class="hljs-keyword">end</span>)
-    <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ByFile</span> : <span class="hljs-title">MonoBehaviour</span> {
+        LuaEnv luaenv = <span class="hljs-keyword">null</span>;
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span>(<span class="hljs-params"></span>)
+        </span>{
+            luaenv = <span class="hljs-keyword">new</span> LuaEnv();
+            luaenv.DoString(<span class="hljs-string">&quot;require &apos;byfile&apos;&quot;</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span>(<span class="hljs-params"></span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (luaenv != <span class="hljs-keyword">null</span>)
+            {
+                luaenv.Tick();
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnDestroy</span>(<span class="hljs-params"></span>)
+        </span>{
+            luaenv.Dispose();
+        }
+    }
+</code></pre>
+<p>&#x5C06;<code>byfile.lua.txt</code>&#x5B58;&#x653E;&#x5728;<code>Resources</code>&#x6587;&#x4EF6;&#x5939;&#x4E0B;</p>
+<pre><code class="lang-lua">    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;hello world&apos;</span>)
+</code></pre>
+<h4 id="&#x4E8C;&#x3001;&#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;">&#x4E8C;&#x3001;&#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;</h4>
+<pre><code class="lang-csharp">    <span class="hljs-keyword">using</span> UnityEngine;
+    <span class="hljs-keyword">using</span> System.Collections;
+    <span class="hljs-keyword">using</span> XLua;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ByString</span> : <span class="hljs-title">MonoBehaviour</span> {
+        LuaEnv luaenv = <span class="hljs-keyword">null</span>;
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> (<span class="hljs-params"></span>) </span>{
+            luaenv = <span class="hljs-keyword">new</span> LuaEnv();
+            luaenv.DoString(<span class="hljs-string">&quot;print(&apos;hello world&apos;)&quot;</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">if</span> (luaenv != <span class="hljs-keyword">null</span>)
+            {
+                luaenv.Tick();
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnDestroy</span>(<span class="hljs-params"></span>)
+        </span>{
+            luaenv.Dispose();
+        }
+    }
+</code></pre>
+<h4 id="&#x4E09;&#x3001;&#x901A;&#x8FC7;&#x52A0;&#x8F7D;&#x5668;">&#x4E09;&#x3001;&#x901A;&#x8FC7;&#x52A0;&#x8F7D;&#x5668;</h4>
+<pre><code class="lang-csharp">    <span class="hljs-keyword">using</span> UnityEngine;
+    <span class="hljs-keyword">using</span> System.Collections;
+    <span class="hljs-keyword">using</span> XLua;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">CustomLoader</span> : <span class="hljs-title">MonoBehaviour</span> {
+        LuaEnv luaenv = <span class="hljs-keyword">null</span>;
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span>(<span class="hljs-params"></span>)
+        </span>{
+            luaenv = <span class="hljs-keyword">new</span> LuaEnv();
+            luaenv.AddLoader((<span class="hljs-keyword">ref</span> <span class="hljs-keyword">string</span> filename) =&gt; {
+                 <span class="hljs-keyword">if</span> (filename == <span class="hljs-string">&quot;InMemory&quot;</span>)
+                 {
+                     <span class="hljs-keyword">string</span> script = <span class="hljs-string">&quot;return {ccc = 9999}&quot;</span>;
+                     <span class="hljs-keyword">return</span> System.Text.Encoding.UTF8.GetBytes(script);
+                 }
+                 <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+             });
+            luaenv.DoString(<span class="hljs-string">&quot;print(&apos;InMemory.ccc=&apos;, require(&apos;InMemory&apos;).ccc)&quot;</span>);
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span>(<span class="hljs-params"></span>)
+        </span>{
+            <span class="hljs-keyword">if</span> (luaenv != <span class="hljs-keyword">null</span>)
+            {
+                luaenv.Tick();
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnDestroy</span>(<span class="hljs-params"></span>)
+        </span>{
+            luaenv.Dispose();
+        }
+    }
 </code></pre>
 <p>&#x1F51A;</p>
 
@@ -1103,14 +1179,10 @@ Value:InputField
 
             
                 
-                <a href="3_2 U3DScripting.html" class="navigation navigation-prev " aria-label="Previous page: 3.2 U3DScripting">
+                <a href="3_15 Lua调用CS.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 3.15 Lua调用CS">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="3_4 LuaObjectOrented.html" class="navigation navigation-next " aria-label="Next page: 3.4 LuaObjectOrented">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1119,7 +1191,7 @@ Value:InputField
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.3 UIEvent","level":"1.4.3","depth":2,"next":{"title":"3.4 LuaObjectOrented","level":"1.4.4","depth":2,"path":"第三章 XLua教程/3_4 LuaObjectOrented.md","ref":"第三章 XLua教程/3_4 LuaObjectOrented.md","articles":[]},"previous":{"title":"3.2 U3DScripting","level":"1.4.2","depth":2,"path":"第三章 XLua教程/3_2 U3DScripting.md","ref":"第三章 XLua教程/3_2 U3DScripting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第三章 XLua教程/3_3 UIEvent.md","mtime":"2017-12-02T12:29:20.160Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-07T14:17:35.892Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.16 载入Lua脚本","level":"1.4.16","depth":2,"previous":{"title":"3.15 Lua调用CS","level":"1.4.15","depth":2,"path":"第三章 XLua教程/3_15 Lua调用CS.md","ref":"第三章 XLua教程/3_15 Lua调用CS.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第三章 XLua教程/3_16 载入Lua脚本.md","mtime":"2017-12-07T13:29:33.722Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-07T14:17:35.892Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.3 UIEvent · GitBook</title>
+        <title>3.15 Lua调用CS · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="3_4 LuaObjectOrented.html" />
+    <link rel="next" href="3_16 载入Lua脚本.html" />
     
     
-    <link rel="prev" href="3_2 U3DScripting.html" />
+    <link rel="prev" href="3_14 CS调用Lua.html" />
     
 
     </head>
@@ -830,7 +830,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.3" data-path="3_3 UIEvent.html">
+        <li class="chapter " data-level="1.4.3" data-path="3_3 UIEvent.html">
             
                 <a href="3_3 UIEvent.html">
             
@@ -986,7 +986,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.15" data-path="3_15 Lua调用CS.html">
+        <li class="chapter active" data-level="1.4.15" data-path="3_15 Lua调用CS.html">
             
                 <a href="3_15 Lua调用CS.html">
             
@@ -1047,7 +1047,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >3.3 UIEvent</a>
+        <a href=".." >3.15 Lua调用CS</a>
     </h1>
 </div>
 
@@ -1062,20 +1062,311 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="uievent">UIEvent</h2>
-<h4 id="buttoninteractionluatxt">ButtonInteraction.lua.txt</h4>
-<p>&#x901A;&#x8FC7;<code>LuaBehaviour</code>&#x6267;&#x884C;&#x6B64;<code>Lua</code>&#x811A;&#x672C;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;Injections&#x6570;&#x7EC4;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x7EC4;<code>input</code></p>
-<pre><code>Name:input
-Value:InputField
-</code></pre><pre><code class="lang-lua">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span><span class="hljs-params">()</span></span>
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;lua start...&quot;</span>)
+                                <h2 id="lua&#x8C03;&#x7528;cs">Lua&#x8C03;&#x7528;CS</h2>
+<pre><code class="lang-csharp">    <span class="hljs-keyword">using</span> UnityEngine;
+    <span class="hljs-keyword">using</span> System.Collections;
+    <span class="hljs-keyword">using</span> System;
+    <span class="hljs-keyword">using</span> XLua;
+    <span class="hljs-keyword">using</span> System.Collections.Generic;
 
-        self:GetComponent(<span class="hljs-string">&quot;Button&quot;</span>).onClick:AddListener(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>
-            <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;clicked, you input is &apos;&quot;</span> ..input:GetComponent(<span class="hljs-string">&quot;InputField&quot;</span>).text ..<span class="hljs-string">&quot;&apos;&quot;</span>)
-        <span class="hljs-keyword">end</span>)
-    <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">namespace</span> <span class="hljs-title">Tutorial</span>
+    {
+        [LuaCallCSharp]
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">BaseClass</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">BSFunc</span>(<span class="hljs-params"></span>)
+            </span>{
+                Debug.Log(<span class="hljs-string">&quot;Driven Static Func, BSF = &quot;</span>+ BSF);
+            }
+
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> BSF = <span class="hljs-number">1</span>;
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">BMFunc</span>(<span class="hljs-params"></span>)
+            </span>{
+                Debug.Log(<span class="hljs-string">&quot;Driven Member Func, BMF = &quot;</span> + BMF);
+            }
+
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> BMF { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+        }
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">struct</span> Param1
+        {
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> x;
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> y;
+        }
+
+        [LuaCallCSharp]
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> TestEnum
+        {
+            E1,
+            E2
+        }
+
+        [LuaCallCSharp]
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">DrivenClass</span> : <span class="hljs-title">BaseClass</span>
+        {
+            [LuaCallCSharp]
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> TestEnumInner
+            {
+                E3,
+                E4
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DMFunc</span>(<span class="hljs-params"></span>)
+            </span>{
+                Debug.Log(<span class="hljs-string">&quot;Driven Member Func, DMF = &quot;</span> + DMF);
+            }
+
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> DMF { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">ComplexFunc</span>(<span class="hljs-params">Param1 p1, <span class="hljs-keyword">ref</span> <span class="hljs-keyword">int</span> p2, <span class="hljs-keyword">out</span> <span class="hljs-keyword">string</span> p3, Action luafunc, <span class="hljs-keyword">out</span> Action csfunc</span>)
+            </span>{
+                Debug.Log(<span class="hljs-string">&quot;P1 = {x=&quot;</span> + p1.x + <span class="hljs-string">&quot;,y=&quot;</span> + p1.y + <span class="hljs-string">&quot;},p2 = &quot;</span>+ p2);
+                luafunc();
+                p2 = p2 * p1.x;
+                p3 = <span class="hljs-string">&quot;hello &quot;</span> + p1.y;
+                csfunc = () =&gt;
+                {
+                    Debug.Log(<span class="hljs-string">&quot;csharp callback invoked!&quot;</span>);
+                };
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1.23</span>;
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">TestFunc</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> i</span>)
+            </span>{
+                Debug.Log(<span class="hljs-string">&quot;TestFunc(int i)&quot;</span>);
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">TestFunc</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> i</span>)
+            </span>{
+                Debug.Log(<span class="hljs-string">&quot;TestFunc(string i)&quot;</span>);
+            }
+
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> DrivenClass <span class="hljs-keyword">operator</span> +(DrivenClass a, DrivenClass b)
+            {
+                DrivenClass ret = <span class="hljs-keyword">new</span> DrivenClass();
+                ret.DMF = a.DMF + b.DMF;
+                <span class="hljs-keyword">return</span> ret;
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DefaultValueFunc</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> a = <span class="hljs-number">100</span>, <span class="hljs-keyword">string</span> b = <span class="hljs-string">&quot;cccc&quot;</span>, <span class="hljs-keyword">string</span> c = <span class="hljs-keyword">null</span></span>)
+            </span>{
+                UnityEngine.Debug.Log(<span class="hljs-string">&quot;DefaultValueFunc: a=&quot;</span> + a + <span class="hljs-string">&quot;,b=&quot;</span> + b + <span class="hljs-string">&quot;,c=&quot;</span> + c);
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">VariableParamsFunc</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> a, <span class="hljs-keyword">params</span> <span class="hljs-keyword">string</span>[] strs</span>)
+            </span>{
+                UnityEngine.Debug.Log(<span class="hljs-string">&quot;VariableParamsFunc: a =&quot;</span> + a);
+                <span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">var</span> str <span class="hljs-keyword">in</span> strs)
+                {
+                    UnityEngine.Debug.Log(<span class="hljs-string">&quot;str:&quot;</span> + str);
+                }
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> TestEnum <span class="hljs-title">EnumTestFunc</span>(<span class="hljs-params">TestEnum e</span>)
+            </span>{
+                Debug.Log(<span class="hljs-string">&quot;EnumTestFunc: e=&quot;</span> + e);
+                <span class="hljs-keyword">return</span> TestEnum.E2;
+            }
+
+            <span class="hljs-keyword">public</span> Action&lt;<span class="hljs-keyword">string</span>&gt; TestDelegate = (param) =&gt;
+            {
+                Debug.Log(<span class="hljs-string">&quot;TestDelegate in c#:&quot;</span> + param);
+            };
+
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">event</span> Action TestEvent;
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">CallEvent</span>(<span class="hljs-params"></span>)
+            </span>{
+                TestEvent();
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">ulong</span> <span class="hljs-title">TestLong</span>(<span class="hljs-params"><span class="hljs-keyword">long</span> n</span>)
+            </span>{
+                <span class="hljs-keyword">return</span> (<span class="hljs-keyword">ulong</span>)(n + <span class="hljs-number">1</span>);
+            }
+
+            <span class="hljs-keyword">class</span> <span class="hljs-title">InnerCalc</span> : <span class="hljs-title">Calc</span>
+            {
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b</span>)
+                </span>{
+                    <span class="hljs-keyword">return</span> a + b;
+                }
+
+                <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> id = <span class="hljs-number">100</span>;
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> Calc <span class="hljs-title">GetCalc</span>(<span class="hljs-params"></span>)
+            </span>{
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> InnerCalc();
+            }
+
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> GenericMethod&lt;T&gt;()
+            {
+                Debug.Log(<span class="hljs-string">&quot;GenericMethod&lt;&quot;</span> + <span class="hljs-keyword">typeof</span>(T) + <span class="hljs-string">&quot;&gt;&quot;</span>);
+            }
+        }
+
+        [LuaCallCSharp]
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">Calc</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">add</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b</span>)</span>;
+        }
+
+        [LuaCallCSharp]
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title">DrivenClassExtensions</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">GetSomeData</span>(<span class="hljs-params"><span class="hljs-keyword">this</span> DrivenClass obj</span>)
+            </span>{
+                Debug.Log(<span class="hljs-string">&quot;GetSomeData ret = &quot;</span> + obj.DMF);
+                <span class="hljs-keyword">return</span> obj.DMF;
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">GetSomeBaseData</span>(<span class="hljs-params"><span class="hljs-keyword">this</span> BaseClass obj</span>)
+            </span>{
+                Debug.Log(<span class="hljs-string">&quot;GetSomeBaseData ret = &quot;</span> + obj.BMF);
+                <span class="hljs-keyword">return</span> obj.BMF;
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">GenericMethodOfString</span>(<span class="hljs-params"><span class="hljs-keyword">this</span> DrivenClass obj</span>)
+            </span>{
+                obj.GenericMethod&lt;<span class="hljs-keyword">string</span>&gt;();
+            }
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">LuaCallCs</span> : <span class="hljs-title">MonoBehaviour</span> {
+        LuaEnv luaenv = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">string</span> script = <span class="hljs-string">@&quot;
+            function demo()
+                --new C#&#x5BF9;&#x8C61;
+                local newGameObj = CS.UnityEngine.GameObject()
+                local newGameObj2 = CS.UnityEngine.GameObject(&apos;helloworld&apos;)
+                print(newGameObj, newGameObj2)
+
+                --&#x8BBF;&#x95EE;&#x9759;&#x6001;&#x5C5E;&#x6027;&#xFF0C;&#x65B9;&#x6CD5;
+                local GameObject = CS.UnityEngine.GameObject
+                print(&apos;UnityEngine.Time.deltaTime:&apos;, CS.UnityEngine.Time.deltaTime) --&#x8BFB;&#x9759;&#x6001;&#x5C5E;&#x6027;
+                CS.UnityEngine.Time.timeScale = 0.5 --&#x5199;&#x9759;&#x6001;&#x5C5E;&#x6027;
+                print(&apos;helloworld&apos;, GameObject.Find(&apos;helloworld&apos;)) --&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x8C03;&#x7528;
+
+                --&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x5C5E;&#x6027;&#xFF0C;&#x65B9;&#x6CD5;
+                local DrivenClass = CS.Tutorial.DrivenClass
+                local testobj = DrivenClass()
+                testobj.DMF = 1024--&#x8BBE;&#x7F6E;&#x6210;&#x5458;&#x5C5E;&#x6027;
+                print(testobj.DMF)--&#x8BFB;&#x53D6;&#x6210;&#x5458;&#x5C5E;&#x6027;
+                testobj:DMFunc()--&#x6210;&#x5458;&#x65B9;&#x6CD5;
+
+                --&#x57FA;&#x7C7B;&#x5C5E;&#x6027;&#xFF0C;&#x65B9;&#x6CD5;
+                print(DrivenClass.BSF)--&#x8BFB;&#x57FA;&#x7C7B;&#x9759;&#x6001;&#x5C5E;&#x6027;
+                DrivenClass.BSF = 2048--&#x5199;&#x57FA;&#x7C7B;&#x9759;&#x6001;&#x5C5E;&#x6027;
+                DrivenClass.BSFunc();--&#x57FA;&#x7C7B;&#x9759;&#x6001;&#x65B9;&#x6CD5;
+                print(testobj.BMF)--&#x8BFB;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x5C5E;&#x6027;
+                testobj.BMF = 4096--&#x5199;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x5C5E;&#x6027;
+                testobj:BMFunc()--&#x57FA;&#x7C7B;&#x65B9;&#x6CD5;&#x8C03;&#x7528;
+
+                --&#x590D;&#x6742;&#x65B9;&#x6CD5;&#x8C03;&#x7528;
+                local ret, p2, p3, csfunc = testobj:ComplexFunc({x=3, y = &apos;john&apos;}, 100, function()
+                   print(&apos;i am lua callback&apos;)
+                end)
+                print(&apos;ComplexFunc ret:&apos;, ret, p2, p3, csfunc)
+                csfunc()
+
+               --&#x91CD;&#x8F7D;&#x65B9;&#x6CD5;&#x8C03;&#x7528;
+               testobj:TestFunc(100)
+               testobj:TestFunc(&apos;hello&apos;)
+
+               --&#x64CD;&#x4F5C;&#x7B26;
+               local testobj2 = DrivenClass()
+               testobj2.DMF = 2048
+               print(&apos;(testobj + testobj2).DMF = &apos;, (testobj + testobj2).DMF)
+
+               --&#x9ED8;&#x8BA4;&#x503C;
+               testobj:DefaultValueFunc(1)
+               testobj:DefaultValueFunc(3, &apos;hello&apos;, &apos;john&apos;)
+
+               --&#x53EF;&#x53D8;&#x53C2;&#x6570;
+               testobj:VariableParamsFunc(5, &apos;hello&apos;, &apos;john&apos;)
+
+               --Extension methods
+               print(testobj:GetSomeData()) 
+               print(testobj:GetSomeBaseData()) --&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;Extension methods
+               testobj:GenericMethodOfString()  --&#x901A;&#x8FC7;Extension methods&#x5B9E;&#x73B0;&#x8BBF;&#x95EE;&#x6CDB;&#x5316;&#x65B9;&#x6CD5;
+
+               --&#x679A;&#x4E3E;&#x7C7B;&#x578B;
+               local e = testobj:EnumTestFunc(CS.Tutorial.TestEnum.E1)
+               print(e, e == CS.Tutorial.TestEnum.E2)
+               print(CS.Tutorial.TestEnum.__CastFrom(1), CS.Tutorial.TestEnum.__CastFrom(&apos;E1&apos;))
+               print(CS.Tutorial.DrivenClass.TestEnumInner.E3)
+               assert(CS.Tutorial.BaseClass.TestEnumInner == nil)
+
+               --Delegate
+               testobj.TestDelegate(&apos;hello&apos;) --&#x76F4;&#x63A5;&#x8C03;&#x7528;
+               local function lua_delegate(str)
+                   print(&apos;TestDelegate in lua:&apos;, str)
+               end
+               testobj.TestDelegate = lua_delegate + testobj.TestDelegate --combine&#xFF0C;&#x8FD9;&#x91CC;&#x6F14;&#x793A;&#x7684;&#x662F;C#delegate&#x4F5C;&#x4E3A;&#x53F3;&#x503C;&#xFF0C;&#x5DE6;&#x503C;&#x4E5F;&#x652F;&#x6301;
+               testobj.TestDelegate(&apos;hello&apos;)
+               testobj.TestDelegate = testobj.TestDelegate - lua_delegate --remove
+               testobj.TestDelegate(&apos;hello&apos;)
+
+               --&#x4E8B;&#x4EF6;
+               local function lua_event_callback1() print(&apos;lua_event_callback1&apos;) end
+               local function lua_event_callback2() print(&apos;lua_event_callback2&apos;) end
+               testobj:TestEvent(&apos;+&apos;, lua_event_callback1)
+               testobj:CallEvent()
+               testobj:TestEvent(&apos;+&apos;, lua_event_callback2)
+               testobj:CallEvent()
+               testobj:TestEvent(&apos;-&apos;, lua_event_callback1)
+               testobj:CallEvent()
+               testobj:TestEvent(&apos;-&apos;, lua_event_callback2)
+
+               --64&#x4F4D;&#x652F;&#x6301;
+               local l = testobj:TestLong(11)
+               print(type(l), l, l + 100, 10000 + l)
+
+               --typeof
+               newGameObj:AddComponent(typeof(CS.UnityEngine.ParticleSystem))
+
+               --cast
+               local calc = testobj:GetCalc()
+               calc:add(1, 2)
+               assert(calc.id == 100)
+               cast(calc, typeof(CS.Tutorial.Calc))
+               calc:add(1, 2)
+               assert(calc.id == nil)
+           end
+
+           demo()
+
+           --&#x534F;&#x7A0B;&#x4E0B;&#x4F7F;&#x7528;
+           local co = coroutine.create(function()
+               print(&apos;------------------------------------------------------&apos;)
+               demo()
+           end)
+           assert(coroutine.resume(co))
+        &quot;</span>;
+
+        <span class="hljs-comment">// Use this for initialization</span>
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> (<span class="hljs-params"></span>) </span>{
+            luaenv = <span class="hljs-keyword">new</span> LuaEnv();
+            luaenv.DoString(script);
+        }
+
+        <span class="hljs-comment">// Update is called once per frame</span>
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">if</span> (luaenv != <span class="hljs-keyword">null</span>)
+            {
+                luaenv.Tick();
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnDestroy</span>(<span class="hljs-params"></span>)
+        </span>{
+            luaenv.Dispose();
+        }
+    }
 </code></pre>
-<p>&#x1F51A;</p>
 
                                 
                                 </section>
@@ -1103,12 +1394,12 @@ Value:InputField
 
             
                 
-                <a href="3_2 U3DScripting.html" class="navigation navigation-prev " aria-label="Previous page: 3.2 U3DScripting">
+                <a href="3_14 CS调用Lua.html" class="navigation navigation-prev " aria-label="Previous page: 3.14 CS调用Lua">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="3_4 LuaObjectOrented.html" class="navigation navigation-next " aria-label="Next page: 3.4 LuaObjectOrented">
+                <a href="3_16 载入Lua脚本.html" class="navigation navigation-next " aria-label="Next page: 3.16 载入Lua脚本">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1119,7 +1410,7 @@ Value:InputField
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.3 UIEvent","level":"1.4.3","depth":2,"next":{"title":"3.4 LuaObjectOrented","level":"1.4.4","depth":2,"path":"第三章 XLua教程/3_4 LuaObjectOrented.md","ref":"第三章 XLua教程/3_4 LuaObjectOrented.md","articles":[]},"previous":{"title":"3.2 U3DScripting","level":"1.4.2","depth":2,"path":"第三章 XLua教程/3_2 U3DScripting.md","ref":"第三章 XLua教程/3_2 U3DScripting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第三章 XLua教程/3_3 UIEvent.md","mtime":"2017-12-02T12:29:20.160Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-07T14:17:35.892Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.15 Lua调用CS","level":"1.4.15","depth":2,"next":{"title":"3.16 载入Lua脚本","level":"1.4.16","depth":2,"path":"第三章 XLua教程/3_16 载入Lua脚本.md","ref":"第三章 XLua教程/3_16 载入Lua脚本.md","articles":[]},"previous":{"title":"3.14 CS调用Lua","level":"1.4.14","depth":2,"path":"第三章 XLua教程/3_14 CS调用Lua.md","ref":"第三章 XLua教程/3_14 CS调用Lua.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第三章 XLua教程/3_15 Lua调用CS.md","mtime":"2017-12-07T13:22:26.512Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-07T14:17:35.892Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
